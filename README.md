@@ -1,7 +1,8 @@
 # A Memory–Magic Exchange Law in Streaming Clifford+T Compilation
 
-Source, data and scripts for the manuscript. Every number, table and figure in the paper is
-produced by a script in `scripts/` from an input in `data/`, and this file says which.
+Source, data and scripts for the manuscript submitted to PRX Quantum (October 2026). This repository
+is a snapshot of the authors' working repository taken on 2026-10-15. Every number, table and figure
+in the paper is produced by a script in `scripts/` from an input in `data/`, and this file says which.
 
 The manuscript is `main.tex` (REVTeX 4.2, PRX Quantum style): main text, appendices with all
 proofs of the main-text theorems, and references. The Supplemental Material is `supplement.tex`
@@ -10,13 +11,13 @@ The two files cross-reference each other through `xr-hyper` (labels of the other
 the prefix `S:` or `M:`), so build them in the same directory in the order
 `pdflatex main && pdflatex supplement && pdflatex main && pdflatex supplement && pdflatex main`.
 
-**arXiv.** [arXiv:2609.37368](https://arxiv.org/abs/2609.37368). Version 1 (tag `arxiv-v1`) proves the
-unconditional rate 17/7; version 2, the present sources, proves every rate below 5/2.
+**arXiv.** [arXiv:2609.37368](https://arxiv.org/abs/2609.37368). Version 1 proves the unconditional rate
+17/7; version 2 and the submitted manuscript here prove every rate below 5/2.
 
 **Status.** Not yet peer reviewed. All results are proven except Theorem 8 and Corollary S3, which are
-conditional on Conjecture 1, and the achievable rates of Corollary 4 and Proposition S2, which
-are conditional on the synthesis hypotheses stated there (Eq. (S11) for Proposition S2). Conjecture 1 is the volume law for
-every frame up to a subexponential factor `2^{o(tau)}`; at Clifford cosets it is Theorem 2. Earlier versions stated it with fixed
+conditional on Conjecture 1, and the achievable rates of Corollary 5 and Proposition S2, which
+are conditional on the synthesis hypotheses stated there (Eq. (13) and Eq. (S11)). Conjecture 1 is the volume law for
+every frame up to a subexponential factor `2^{o(tau)}`; at Clifford cosets it is Theorem 6. Earlier versions stated it with fixed
 constants `c0 + c1 tau + c 2^tau eps^2`, which the exact enumeration and a heuristic count make implausible (the required `c`
 reaches 626.3 at `L = 21`, `torus_tube_enum.py`, Table S3, and `research/conj1_c/`), so no number in the paper depends on Conjecture 1.
 
@@ -54,9 +55,9 @@ current directory and must be run from inside `data/`.
 | Fig. 1 (schematic) | — (drawn by hand, `fig0_schematic.pdf`) | — |
 | Table S1, Fig. 2 (coset counts to `t = 22`) | `enum_arith.py`, `arith_analysis.py`, `fig1_fig.py` | `enum_arith.pkl`, `enum_res2.pkl` |
 | Table S2 (low-cost words per frame) | `lowcost_counts.py` | `lowcost_counts.json` |
-| Table I (the bounds at `eps = 1e-10`, including Corollary 4, the finite form of Theorem 3: 37.40) | `thm_numbers.py` | `gridsynth_tau.json`, `gridsynth_tau_dproj_eps.json` (read for the achievable row) |
+| Tables I and II (the bounds at `eps = 1e-10`, including Corollary 4, the finite form of Theorem 3: 37.40) | `thm_numbers.py` | `gridsynth_tau.json`, `gridsynth_tau_dproj_eps.json` (read for the achievable row) |
 | Fig. 3(a) (exact optima, both error budgets) | `frontier_eps_half.py`, `make_fig2.py` | `taumin_eps_half.json`, `frontier_L{5,6}_eps2.json` |
-| Fig. 3(b), Table I (Ross–Selinger at chemistry scale) | `gridsynth_run.py` (20 000 angles at `d_proj <= eps/2`, the certified share accuracy: 102.32), then `gridsynth_run.py --dproj 1e-10 --out gridsynth_tau_dproj_eps.json` (the same angles at `d_proj <= eps`, the calibration: 99.28), then `make_fig2.py` | `gridsynth_tau.json`, `gridsynth_tau_dproj_eps.json`, `gridsynth_cache.json` |
+| Fig. 3(b), Tables I and II (Ross–Selinger at chemistry scale) | `gridsynth_run.py` (20 000 angles at `d_proj <= eps/2`, the certified share accuracy: 102.32), then `gridsynth_run.py --dproj 1e-10 --out gridsynth_tau_dproj_eps.json` (the same angles at `d_proj <= eps`, the calibration: 99.28), then `make_fig2.py` | `gridsynth_tau.json`, `gridsynth_tau_dproj_eps.json`, `gridsynth_cache.json` |
 | Sec. S1, exact `tau_min` for `L <= 6` | `taumin.py` | `taumin.pkl`, `taumin_exact.json` |
 | Sec. S1, axis cosets: first scan (25 frames x 4 accuracies, `tau <= 15`) | `conj1_scan.py 15` | `conj1_scan_output.txt` |
 | Sec. S1, axis cosets: second scan (272 frames x 5 accuracies, 1360 cells) | `scan2.py`, then `scan2_report.py` | `scan2.jsonl`, `scan2_summary.txt` |
@@ -91,7 +92,7 @@ cost-4/5 axes, and the numbers in the paper are those of `scan2_report.py` on th
 Cheap (seconds to a couple of minutes, all from cached data):
 
 ```bash
-.venv/bin/python scripts/thm_numbers.py      # Table I
+.venv/bin/python scripts/thm_numbers.py      # Tables I and II
 .venv/bin/python scripts/mixing_bounds.py    # every constant of Sec. S4
 .venv/bin/python scripts/scan2_report.py     # every count in the axis-coset paragraph
 .venv/bin/python scripts/astra1.py           # the 232-word step (c >= 163.9 for a fixed-constant bound) at L = 5
