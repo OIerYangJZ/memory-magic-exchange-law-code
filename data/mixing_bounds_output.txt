@@ -1,0 +1,55 @@
+=== Part A: randomized checks of the elementary inequalities ===
+A1 window inequality: max(lhs - rhs) over 20000 random mixtures = -1.468e-06  (must be <= 0)
+A2 tube radius: max dproj/(sqrt2*eta) = 0.999922  (must be <= 1)
+A3 2(1-F_e) - ||J(E)-Phi_V||_1 : max = -9.747e-04  (must be <= 0)
+A4 concentration on Campbell-type two-word mixtures:
+   eps=1e-04: violations of the Markov mass bound = 0/2000
+   eps=1e-06: violations of the Markov mass bound = 0/2000
+   eps=1e-08: violations of the Markov mass bound = 0/2000
+
+=== Part B: constants of Theorem S3 at S = 0, delta = 0 ===
+       eps       L   log2K coarse bits(a)  ThmS3a T/m | bits(b) FREE    A2p  ThmS3b FREE | bits(b) SUPP  ThmS3b SUPP
+  1.00e-10    33.2   32.87          14.81        4.12 |         8.59  16.43       -13.25 |        13.76        -7.29
+  2.84e-14    45.0   44.65          20.70        7.92 |        14.48  17.72        -6.35 |        19.65         0.07
+  8.67e-19    60.0   59.65          28.20       13.04 |        21.98  18.87         3.16 |        27.15         9.98
+  8.27e-25    80.0   79.65          38.20       20.09 |        31.98  19.92        16.59 |        37.15        23.67
+  7.52e-37   120.0  119.65          58.20       34.52 |        51.98  21.30        44.52 |        57.15        51.85
+  6.22e-61   200.0  199.65          98.20       63.87 |        91.98  22.93       102.08 |        97.15       109.59
+rate one (Thm S3(a)): first positive at L = 20
+rate two (Thm S3(b)) FREE: first positive at L = 56
+rate two (Thm S3(b)) SUPP: first positive at L = 45
+
+Deterministic CW reference at eps=1e-10 (paper): Thm1 21.75, Thm3 25.72 (37.40 in the finite form of Cor 4), achievable 102.32 (shares at d_proj <= eps/2; T per coordinate per round)
+Mixed model at eps=1e-10, gamma=1/4: coarse bits 14.81, ThmS3(a) 4.12, ThmS3(b) -13.25 (vacuous)
+L=200: ThmS3(b)/L = 0.510  (-> 1-gamma = 0.75)
+L=400: ThmS3(b)/L = 0.622  (-> 1-gamma = 0.75)
+L=800: ThmS3(b)/L = 0.682  (-> 1-gamma = 0.75)
+
+Best gamma for Thm S3(b) at L=120:
+  gamma=0.05: coarse bits 50.82, A2'=21.24, bound 54.30
+  gamma=0.1: coarse bits 51.32, A2'=21.27, bound 52.29
+  gamma=0.25: coarse bits 51.98, A2'=21.30, bound 44.52
+  gamma=0.5: coarse bits 52.48, A2'=21.33, bound 30.16
+
+=== Part D: Proposition S3 (measurement-adaptive protocols on n qubits, rate 1/(2n+2)) ===
+L=  33.2: n=2 (one ancilla)  (T+M)/m >=    0.00;   n=1 crude count  T/m >=    1.37
+L=  60.0: n=2 (one ancilla)  (T+M)/m >=    1.46;   n=1 crude count  T/m >=    3.68
+L= 120.0: n=2 (one ancilla)  (T+M)/m >=    5.04;   n=1 crude count  T/m >=    9.09
+L= 200.0: n=2 (one ancilla)  (T+M)/m >=    9.93;   n=1 crude count  T/m >=   16.44
+L= 400.0: n=2 (one ancilla)  (T+M)/m >=   22.29;   n=1 crude count  T/m >=   34.99
+n=2: first positive at L = 34; asymptotic slope (1-gamma)/(2n+2)/2 = 0.0625 per L (floor L/16 per share at gamma=1/4)
+
+=== Part F: achievable numbers used in Table S3 (Kliuchnikov et al., Quantum 7, 1208, as quoted in Bothe et al., Eqs. (9),(13)) ===
+Ross-Selinger scaling constant (d_proj convention) c_RS = -0.361, from E tau = 102.32 at d_proj <= 5e-11, 99.28 at d_proj <= 1e-10
+Proposition S2 with Campbell Thm 2 (full diamond <= 10 eta^2): word accuracy eta = sqrt(eps/(5 r)):
+  eps=1e-10, r=2: eta = 3.162e-06, RS scaling 3 log2(1/eta) -0.36 = 54.45 T per call  (1.5 L + 1.5 log2(5r) = 54.81); measured single calls: data/mixed_achievable_results.json
+  eps=1e-10, r=4: eta = 2.236e-06, RS scaling 3 log2(1/eta) -0.36 = 55.95 T per call  (1.5 L + 1.5 log2(5r) = 56.31); measured single calls: data/mixed_achievable_results.json
+delta=1e-10: mixed-diagonal 1.52 log2(1/delta) - 0.01 =  50.48;  mixed-fallback 0.53 log2(1/delta) + 4.86 =  22.47;  two-word RS scaling at d_proj = sqrt(delta/2): 3 log2(1/sqrt(delta/2)) -0.36 =  50.97
+delta=5e-11: mixed-diagonal 1.52 log2(1/delta) - 0.01 =  52.00;  mixed-fallback 0.53 log2(1/delta) + 4.86 =  23.00;  two-word RS scaling at d_proj = sqrt(delta/2): 3 log2(1/sqrt(delta/2)) -0.36 =  52.47
+Corollary S2(i): expected T of Bothe et al., Eq. (10), for a share whose low ell bits are shed (angle 8 eps 2^ell, delta = eps):
+   ell=10: angle=8.19e-07, T_small-angle =   0.17   (L/2 = 16.6)
+   ell=12: angle=3.28e-06, T_small-angle =   2.92   (L/2 = 16.6)
+   ell=13: angle=6.55e-06, T_small-angle =  10.56   (L/2 = 16.6)
+   ell=14: angle=1.31e-05, T_small-angle =  28.16   (L/2 = 16.6)
+   ell=15: angle=2.62e-05, T_small-angle =  46.59   (L/2 = 16.6)
+   ell=16: angle=5.24e-05, T_small-angle =  53.88   (L/2 = 16.6)

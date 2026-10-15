@@ -1,0 +1,23 @@
+# Versions used to produce the data: numpy 2.5.2, mpmath 1.4.1, matplotlib 3.11.1,
+# pygridsynth 2.0.0 (Python 3.14).
+
+# Enumeration, counting and the bound evaluations need only these two.
+numpy>=1.24
+mpmath>=1.3
+
+# Figures.
+matplotlib>=3.7
+
+# Only for gridsynth_run.py and for run_mixed_achievable.py --backend pygridsynth (Ross-Selinger synthesis).
+# The Haskell `gridsynth` binary on PATH works too, via --backend cli.
+pygridsynth==2.0.0   # T-counts are cached per (angle, accuracy); pinned so reruns match
+
+# Only for scripts/torus_tube_enum.py, the exact tube enumeration of Table S3 (factoring and LLL; the all-moduli kernel).
+python-flint>=0.9
+numba>=0.60
+
+# Only for research/uniform52/verify_z3.py, the exact SMT check behind Theorem 4 (stored output: z3 5.1.0).
+z3-solver>=4.12
+
+# Optional: an independent second solver for the SMT-LIB export (research/uniform52/check_cvc5.py; stored output: cvc5 1.4.2).
+cvc5>=1.1

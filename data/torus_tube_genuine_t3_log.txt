@@ -1,0 +1,56 @@
+==== 2026-10-12 09:34:02 band L=10: eps in (0.00048828125, 0.0009765625], tau <= 30, frame genuine_t3: 'TSHTHTSSHSS','HTHTHTSSH'  cmd: scripts/torus_tube_enum.py band --L 10 --K 10 --G1 TSHTHTSSHSS --G2 HTHTHTSSH --name genuine_t3  code {"script_sha256_16": "2941eecd5d611deb", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 36, 74066 words of T-count <= 30 within 0.0009765625 of the coset, 16s
+tube: max required c over the band = 169.0 at tau=23, eps=0.00048828, N=392
+grid, all 1606 moduli 3..1608, tau 0..30: max required c = 86.2 (Q=1340, tau=22, eps=0.00057597, N=172, 2^tau eps^2=1.391); tuned Q only: 83.4 (Q=1340); post-onset: 86.2; 1s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 804, 960, 1024, 1137, 1168, 1176, 1212, 1240, 1276, 1340, 1420, 1488, 1512], tau <= 30: max 86.2 at Q=1340, tau=22
+worst cell: Q=1340 (Q_eps=1363), eps=0.0005759651 (jump at 0.0005759650), tau=22: N=172, shells [1, 0, 0, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 2, 32, 2, 102], required c = 86.2
+dyadic cell eps=2^-10, Q=804: grid shells [1, 0, 0, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 4, 24, 6, 104, 108, 214, 332, 870, 1452, 3056, 6322, 12038]; grid shell/Haar at t=tau_max: 0.980; tube shell/Haar at t=tau_max: 0.997
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_genuine_t3_L10.json  (total 18s)
+==== 2026-10-12 09:35:39 band L=11: eps in (0.000244140625, 0.00048828125], tau <= 32, frame genuine_t3: 'TSHTHTSSHSS','HTHTHTSSH'  cmd: scripts/torus_tube_enum.py band --L 11 --K 10 --G1 TSHTHTSSHSS --G2 HTHTHTSSH --name genuine_t3  code {"script_sha256_16": "6ccdaf99a2c76e37", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 38, 73644 words of T-count <= 32 within 0.00048828125 of the coset, 10s
+tube: max required c over the band = 185.9 at tau=23, eps=0.00045996, N=384
+grid, all 3214 moduli 3..3216, tau 0..32: max required c = 48.4 (Q=1696, tau=24, eps=0.00046287, N=230, 2^tau eps^2=3.594); tuned Q only: 48.4 (Q=1696); post-onset: 48.4; 3s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 952, 1024, 1168, 1348, 1360, 1420, 1488, 1536, 1584, 1608, 1620, 1696, 2048, 2274], tau <= 32: max 48.4 at Q=1696, tau=24
+worst cell: Q=1696 (Q_eps=1696), eps=0.0004628678 (jump at 0.0004628678), tau=24: N=230, shells [1, 0, 0, 0, 1, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 8, 4, 12, 14, 36, 56, 90], required c = 48.4
+dyadic cell eps=2^-11, Q=1608: grid shells [1, 0, 0, 0, 1, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 2, 4, 10, 14, 30, 72, 110, 228, 342, 742, 1476, 3228, 5894, 11752]; grid shell/Haar at t=tau_max: 0.957; tube shell/Haar at t=tau_max: 0.976
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_genuine_t3_L11.json  (total 13s)
+==== 2026-10-12 09:36:43 band L=9: eps in (0.0009765625, 0.001953125], tau <= 28, frame genuine_t3: 'TSHTHTSSHSS','HTHTHTSSH'  cmd: scripts/torus_tube_enum.py band --L 9 --K 10 --G1 TSHTHTSSHSS --G2 HTHTHTSSH --name genuine_t3  code {"script_sha256_16": "6ccdaf99a2c76e37", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 34, 71808 words of T-count <= 28 within 0.001953125 of the coset, 6s
+tube: max required c over the band = 83.8 at tau=23, eps=0.00097656, N=724
+grid, all 802 moduli 3..804, tau 0..28: max required c = 33.8 (Q=552, tau=22, eps=0.00130156, N=292, 2^tau eps^2=7.105); tuned Q only: 32.2 (Q=752); post-onset: 33.8; 0s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 402, 512, 552, 568, 640, 700, 752, 755, 760, 764, 768, 784, 788], tau <= 28: max 33.8 at Q=552, tau=22
+worst cell: Q=552 (Q_eps=603), eps=0.001301559 (jump at 0.0013015589), tau=22: N=292, shells [1, 0, 0, 0, 1, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 2, 0, 4, 24, 12, 56, 42, 144], required c = 33.8
+dyadic cell eps=2^-9, Q=402: grid shells [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 6, 16, 16, 66, 80, 188, 372, 762, 1554, 2938, 6048, 11984]; grid shell/Haar at t=tau_max: 0.976; tube shell/Haar at t=tau_max: 0.964
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_genuine_t3_L9.json  (total 7s)
+==== 2026-10-12 09:38:06 band L=12: eps in (0.0001220703125, 0.000244140625], tau <= 34, frame genuine_t3: 'TSHTHTSSHSS','HTHTHTSSH'  cmd: scripts/torus_tube_enum.py band --L 12 --K 10 --G1 TSHTHTSSHSS --G2 HTHTHTSSH --name genuine_t3  code {"script_sha256_16": "6ccdaf99a2c76e37", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 40, 73406 words of T-count <= 34 within 0.000244140625 of the coset, 3s
+tube: max required c over the band = 82.9 at tau=30, eps=0.00018341, N=3062
+grid, all 6431 moduli 3..6433, tau 0..34: max required c = 33.9 (Q=3696, tau=28, eps=0.00021136, N=470, 2^tau eps^2=11.992); tuned Q only: 33.7 (Q=3696); post-onset: 33.9; 3s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 3096, 3208, 3216, 3440, 3544, 3560, 3696, 3736, 3744, 3892, 4024, 4096, 4549], tau <= 34: max 33.9 at Q=3696, tau=28
+worst cell: Q=3696 (Q_eps=3715), eps=0.0002113597 (jump at 0.0002113596), tau=28: N=470, shells [1, 0, 0, 0, 1, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 4, 8, 40, 36, 140, 226], required c = 33.9
+dyadic cell eps=2^-12, Q=3216: grid shells [1, 0, 0, 0, 1, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 8, 22, 34, 72, 172, 380, 738, 1444, 2976, 6006, 12076]; grid shell/Haar at t=tau_max: 0.983; tube shell/Haar at t=tau_max: 0.990
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_genuine_t3_L12.json  (total 6s)
+==== 2026-10-12 09:41:09 band L=13: eps in (6.103515625e-05, 0.0001220703125], tau <= 36, frame genuine_t3: 'TSHTHTSSHSS','HTHTHTSSH'  cmd: scripts/torus_tube_enum.py band --L 13 --K 10 --G1 TSHTHTSSHSS --G2 HTHTHTSSH --name genuine_t3  code {"script_sha256_16": "6ccdaf99a2c76e37", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 42, 74456 words of T-count <= 36 within 0.0001220703125 of the coset, 6s
+tube: max required c over the band = 83.9 at tau=32, eps=0.00008294, N=2552
+grid, all 12865 moduli 3..12867, tau 0..36: max required c = 38.3 (Q=10704, tau=29, eps=0.00007310, N=176, 2^tau eps^2=2.869); tuned Q only: 38.1 (Q=10704); post-onset: 38.3; 10s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 6433, 6832, 7366, 8176, 8192, 8360, 8632, 8768, 9080, 9099, 9124, 10360, 10704], tau <= 36: max 38.3 at Q=10704, tau=29
+worst cell: Q=10704 (Q_eps=10744), eps=7.309954e-05 (jump at 0.0000730995), tau=29: N=176, shells [1, 0, 0, 0, 1, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 8, 4, 8, 18, 44, 84], required c = 38.3
+dyadic cell eps=2^-13, Q=6433: grid shells [1, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 6, 16, 38, 94, 212, 426, 830, 1706, 3060, 5966, 12416]; grid shell/Haar at t=tau_max: 1.011; tube shell/Haar at t=tau_max: 1.019
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_genuine_t3_L13.json  (total 17s)
+==== 2026-10-12 09:41:58 band L=8: eps in (0.001953125, 0.00390625], tau <= 26, frame genuine_t3: 'TSHTHTSSHSS','HTHTHTSSH'  cmd: scripts/torus_tube_enum.py band --L 8 --K 10 --G1 TSHTHTSSHSS --G2 HTHTHTSSH --name genuine_t3  code {"script_sha256_16": "6ccdaf99a2c76e37", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 32, 73858 words of T-count <= 26 within 0.00390625 of the coset, 4s
+tube: max required c over the band = 73.9 at tau=20, eps=0.00351151, N=1004
+grid, all 400 moduli 3..402, tau 0..26: max required c = 26.3 (Q=364, tau=23, eps=0.00212414, N=1050, 2^tau eps^2=37.849); tuned Q only: 26.0 (Q=364); post-onset: 26.3; 0s
+grid, selected moduli [8, 16, 32, 64, 128, 193, 200, 201, 256, 284, 308, 337, 364, 369, 376, 378, 392, 397], tau <= 26: max 26.3 at Q=364, tau=23
+worst cell: Q=364 (Q_eps=369), eps=0.00212414 (jump at 0.0021241398), tau=23: N=1050, shells [1, 0, 0, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 10, 22, 44, 62, 110, 252, 540], required c = 26.3
+dyadic cell eps=2^-8, Q=201: grid shells [1, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 2, 6, 6, 22, 42, 112, 192, 330, 754, 1504, 3166, 6062, 12118]; grid shell/Haar at t=tau_max: 0.986; tube shell/Haar at t=tau_max: 1.002
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_genuine_t3_L8.json  (total 4s)
+==== 2026-10-12 09:42:20 band L=6: eps in (0.0078125, 0.015625], tau <= 22, frame genuine_t3: 'TSHTHTSSHSS','HTHTHTSSH'  cmd: scripts/torus_tube_enum.py band --L 6 --K 10 --G1 TSHTHTSSHSS --G2 HTHTHTSSH --name genuine_t3  code {"script_sha256_16": "6ccdaf99a2c76e37", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 28, 73856 words of T-count <= 22 within 0.015625 of the coset, 4s
+tube: max required c over the band = 73.9 at tau=20, eps=0.00878778, N=6033
+grid, all 98 moduli 3..100, tau 0..22: max required c = 26.0 (Q=88, tau=21, eps=0.00892009, N=4390, 2^tau eps^2=166.866); tuned Q only: 26.0 (Q=88); post-onset: 26.0; 0s
+grid, selected moduli [8, 16, 32, 50, 64, 71, 72, 76, 82, 84, 85, 87, 88, 91, 95, 98], tau <= 22: max 26.0 at Q=88, tau=21
+worst cell: Q=88 (Q_eps=88), eps=0.008920089 (jump at 0.0089200881), tau=21: N=4390, shells [1, 0, 0, 0, 1, 0, 2, 4, 0, 2, 0, 2, 2, 12, 22, 30, 74, 105, 286, 514, 1062, 2271], required c = 26.0
+dyadic cell eps=2^-6, Q=50: grid shells [1, 0, 0, 0, 1, 0, 0, 0, 0, 2, 2, 2, 12, 22, 24, 84, 182, 347, 640, 1565, 3134, 6035, 11939]; grid shell/Haar at t=tau_max: 0.977; tube shell/Haar at t=tau_max: 1.006
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_genuine_t3_L6.json  (total 4s)

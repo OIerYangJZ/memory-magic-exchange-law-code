@@ -1,0 +1,639 @@
+\pdfoutput=1
+\documentclass[aps,prx,twocolumn,superscriptaddress,nofootinbib,longbibliography]{revtex4-2}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{graphicx,booktabs}
+\usepackage{xcolor}
+\usepackage{xr-hyper}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+% The bibliography is a thebibliography environment in this file (and nofootinbib puts no notes
+% into it), so stop REVTeX from reading a main.bbl at its end.
+\makeatletter\let\auto@bib@innerbib\@empty\makeatother
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{conjecture}{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\newcommand{\dproj}{d_{\mathrm{proj}}}
+\newcommand{\Tpre}{T_{\mathrm{pre}}}
+\newcommand{\Tout}{T_{\mathrm{out}}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\PU}{\mathrm{PU}(2)}
+\newcommand{\SU}{\mathrm{SU}(2)}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\supp}{\operatorname{supp}}
+\DeclareMathOperator{\spec}{spec}
+% Supplemental numbering: S1, S2, ... for sections, equations, theorems, tables and figures.
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\theequation}{S\arabic{equation}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetheorem}{S\arabic{theorem}}
+\renewcommand{\thelemma}{S\arabic{lemma}}
+\renewcommand{\thecorollary}{S\arabic{corollary}}
+\renewcommand{\theproposition}{S\arabic{proposition}}
+\renewcommand{\thedefinition}{S\arabic{definition}}
+\renewcommand{\theremark}{S\arabic{remark}}
+
+% Import external labels after defining macros that may occur in their captions.
+% References to the main text (main.tex) carry the prefix M:.
+\externaldocument[M:]{main}
+
+\begin{document}
+
+\title{Supplemental Material for ``A Memory--Magic Exchange Law in Streaming \texorpdfstring{Clifford+$T$}{Clifford+T} Compilation''}
+
+
+\author{Jinze Yang}
+\affiliation{School of Physics, Xidian University, Xi'an 710071, China}
+
+\author{Haotong Luan}
+\affiliation{Future Technology School, Shenzhen Technology University, Shenzhen 518118, China}
+
+\author{Yangyang Li}
+\email{yyli@xidian.edu.cn}
+\affiliation{Key Laboratory of Intelligent Perception and Image Understanding of Ministry of Education of China,
+Collaborative Innovation Center of Quantum Information of Shaanxi Province, Institute of Interdisciplinary Quantum Science and Technology (IIQST),
+School of Artificial Intelligence, Xidian University, Xi'an 710071, China}
+
+\author{Xiu-Hao Deng}
+\email{dengxiuhao@iqasz.cn}
+\affiliation{Shenzhen International Quantum Academy, Shenzhen 518048, China}
+\affiliation{Shenzhen Branch, Hefei National Laboratory, Shenzhen, 518048, China}
+
+\maketitle
+
+This Supplemental Material presents extended numerical evidence (Sec.~\ref{sec:numsupp}), the role of side information (Sec.~\ref{sec:side}), the dependence on the synthesis model and batched commitment (Sec.~\ref{sec:modelsupp}), the law under probabilistic mixing and under measurement adaptivity, with proofs (Sec.~\ref{sec:mixing}), and heuristic remarks on the limit $\tfrac52$ (Sec.~\ref{sec:what52}). Sections, equations, theorems, figures and tables numbered without the prefix S are those of the main text.
+
+\section{Extended numerical evidence}\label{sec:numsupp}
+
+
+We enumerated all single-qubit Clifford+$T$ unitaries of $T$-count $\le22$ ($3.0\times10^8$ words, of which $1.5\times10^8$ lie at $T$-count exactly $22$) using the Matsumoto--Amano normal form. Closure was checked for the $24$ right Cliffords.
+
+\paragraph{Conjecture~\ref{M:conj:equid} (Fig.~\ref{M:fig:tube}).} For each $t\le22$, $\varepsilon\in\{2^{-4},\dots,2^{-8}\}$ with tuned $Q_\varepsilon\in\{12,25,50,100,201\}$, and three coset pairs (identity and two Haar-random $(G_1,G_2)$), we counted words within $\varepsilon$ of some grid rotation $G_1R_z(2\pi d/Q)G_2$ and words within $\varepsilon$ of the whole coset. A least-squares fit over the $136$ cells with count $\ge30$ gives
+\begin{equation}
+\log_2N=1.001\,t-2.007\,L+\text{const},
+\end{equation}
+giving\ exponents $(1,2)$ to three decimals. The prefactors are not fitted. The grid constant is $c_{\mathrm{grid}}=36\cdot\tfrac13\cdot8\varepsilon/(2\pi/Q_\varepsilon)=48\varepsilon Q_\varepsilon/\pi$, which equals $12$ only up to the rounding of $Q_\varepsilon$ and is $11.46,11.94,11.94,11.94,12.00$ for $\varepsilon=2^{-4},\dots,2^{-8}$; the tube constant is $36$ for every $\varepsilon$. 
+
+At $t=22$, pooling the two Haar pairs, $N/(2^t\varepsilon^2)=11.47,11.96,11.99,12.16,12.14$ for the grid and $35.98,35.98,36.02,36.20,36.43$ for the tube, agreeing column by column to $0.1,0.2,0.5,1.8,1.2$ percent and to $0.1,0.1,0.1,0.6,1.2$ percent respectively. Over the whole table, restricted to the $30$ Haar-pair cells whose \emph{expected} count exceeds $3000$, $N$ divided by its exact prediction lies in $[0.98,1.04]$ for the grid and $[0.98,1.01]$ for the tube; this threshold is applied to the expected count, since selecting cells by observed count conditions on the upper Poisson tail. Using $12$ in place of $c_{\mathrm{grid}}$ instead leaves the $\varepsilon=2^{-4}$ column low by a systematic $4.5\%$ at every $t$ ---at $t=22$ a deficit of about $8\,400$ words out of $1.9\times10^5$, much larger than the spread between the frames and explained exactly by the rounding of $Q_\varepsilon$. Extending the enumeration by three $T$-counts improves the comparison at the small-$\varepsilon$ end of the table, where the expected counts were previously of order one: at $t=19$ the $\varepsilon=2^{-8}$ cell held $77$ words against a prediction of $96$ ($20\%$ low; the small expected count limits the interpretation of this ratio), whereas at $t=22$ it holds $786$ against $768$ ($2\%$ high). 
+
+Under Haar measure the squared off-diagonal entry $|b|^2$ is uniform on $[0,1]$, so the tube $\{|b|^2\le\varepsilon^2\}$ has measure $\varepsilon^2$ and $36\cdot2^t\varepsilon^2$ of the $36\cdot2^t$ words of $T$-count $t$ are expected in it; the grid acceptance region $\{s+\varphi^2/4\le\varepsilon^2\}$ in the (transverse, angular) coordinates occupies one third of the tube per angular window of width $8\varepsilon$, and the windows are spaced by $2\pi/Q_\varepsilon$, giving $c_{\mathrm{grid}}2^t\varepsilon^2$ with $c_{\mathrm{grid}}=48\varepsilon Q_\varepsilon/\pi$ as above. 
+
+On the frames tested the counts therefore agree with the Haar prediction to within a few percent wherever the expected count is large. These are deterministic counts on finitely many frames, and arithmetic words enter a tube in whole orbits of its symmetries, so no Poisson model or significance level is attached to them. At the identity coset the count is exactly $0$ for $2\le t\le9$ at $L=4$, with onset at $t=10=2L+2$: that coset is \emph{below} Haar at low cost, reflecting the entry fee.
+
+Fig.~\ref{M:fig:tube} of the main text plots these counts.
+
+\begin{table}[t]
+\centering\scriptsize
+\caption{Grid counts on Haar coset pair 0. The exact Haar prediction $c_{\mathrm{grid}}2^{t-2L}$, $c_{\mathrm{grid}}=48\varepsilon Q_\varepsilon/\pi$, is given in parentheses.}
+\label{tab:counts}
+\setlength{\tabcolsep}{1pt}\begin{tabular}{@{}c ccccc@{}}
+\toprule
+$t$ & $\varepsilon=2^{-4}$ & $2^{-5}$ & $2^{-6}$ & $2^{-7}$ & $2^{-8}$\\
+\midrule
+12 & 187 (183) & 48 (48) & 11 (12) & 2 (3.0) & 0 (0.7)\\
+15 & 1470 (1467) & 372 (382) & 100 (95) & 23 (24) & 4 (6.0)\\
+19 & 23426 (23468) & 6104 (6112) & 1487 (1528) & 338 (382) & 77 (96)\\
+22 & 187707 (187747) & 48772 (48892) & 12321 (12223) & 3039 (3056) & 786 (768)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Arithmetic cosets.} The cosets that Corollary~\ref{M:cor:profile} provides to Theorems~\ref{M:thm:rate2} and~\ref{M:thm:main2} are not Haar-random: $G_1$ and $G_2$ are themselves Clifford+$T$ words, and Conjecture~\ref{M:conj:equid} is asserted uniformly in $(G_1,G_2)$, including these arithmetic frames. We therefore repeated the whole count on four arithmetic pairs---random Matsumoto--Amano words of $T$-count $5$, $10$ and $15$, and a pair of Cliffords ($T$-count $0$)---with the three pairs of the previous paragraph recomputed as a consistency check ($345$ cells, all identical). The fitted exponents remain unchanged: a fit over the $180$ arithmetic cells with count $\ge30$ gives $\log_2N=1.006\,t-2.003\,L$ for the grid count and $1.002\,t-2.009\,L$ for the tube, against $1.001\,t-2.000\,L$ and $0.997\,t-2.003\,L$ on the Haar pairs. The prefactor also agrees for pairs of $T$-count $10$ and $15$: over all cells with expected count $\ge100$ the ratio $N/(c_{\mathrm{grid}}2^{t-2L})$ lies in $[0.87,1.07]$, which is the spread of the Haar pairs themselves ($[0.87,1.08]$). 
+
+Cosets close to the identity exhibit the expected arithmetic structure. A Clifford pair reproduces the identity-coset counts \emph{cell by cell}: for $G_1,G_2$ Clifford, $W\mapsto G_1^\dagger WG_2^\dagger$ is a $T$-count-preserving bijection of $\Lambda_k$ carrying the grid onto itself, so Clifford cosets are isometric copies of the identity coset and inherit its fee. There the ratio ranges over $[0.34,1.75]$---suppressed below the onset $t\approx2L$, overshooting for a few $T$-counts above it---and the $T$-count-$5$ pair interpolates, $[0.73,1.24]$. All $70$ cells at $t=22$ lie in $[0.86,1.04]$. Uniformity in $(G_1,G_2)$ thus costs at least a factor of two over the Haar constant near the onset, and large steps at the identity coset motivate a prefactor that may grow with cost (below). This is why Conjecture~\ref{M:conj:equid} carries a subexponential factor. 
+
+The additive terms have a different origin: an arithmetic coset contains the exact word $G_1G_2$ at $\theta=0$, so it has grid hits at $T$-count $\le t_1+t_2$ no matter how small $\varepsilon$ is, and a frame whose axis is aligned with that of an infinite-order word carries the powers of that word (Proposition~\ref{M:prop:cluster}). 
+
+Table~\ref{tab:lowcost} counts, on each frame and each $\varepsilon$, the words of cost $\le\tau_{24}=\lfloor2L-\log_224\rfloor$ within $\varepsilon$ of a grid rotation, against $c_0+c_1\tau_{24}$ with $(c_0,c_1)=(8,2)$, the additive term of the fixed-constant form of earlier versions of Conjecture~\ref{M:conj:equid}. On the identity and Clifford frames the count is the number of $T$-powers that fall within $\varepsilon$ of the grid; on the arithmetic and Haar-random frames it is at most three. The last row is a frame built for Proposition~\ref{M:prop:cluster}: $G_1\in\Gamma$ of $T$-count $16$ is the word of cost $\le16$ whose image $G_1\hat z$ of the $z$-axis is closest to the rotation axis of $HT$ (angle $1.0\times10^{-2}$), and $G_2=G_1^{-1}$, so that the powers $(HT)^{\pm j}$ lie within about $10^{-2}$ of the coset. Where that alignment is finer than $\varepsilon$ ($L\le6$) the cluster is visible---seven words at $L=4$, i.e.\ all of $(HT)^{\pm j}$ with $j\le\tau_{24}=3$, and seven of the fifteen candidates at $L=6$, about the fraction of the coset that the grid balls cover at the tuned modulus; where it is coarser ($L\ge7$) the frame behaves like an arithmetic one. 
+
+Every entry is below $c_0+c_1\tau_{24}$, and the linear term is a worst case over frames rather than the population of a generic one. 
+
+The shell counts above were computed by \texttt{scripts/\allowbreak enum\_arith.py} and \texttt{scripts/\allowbreak arith\_analysis.py}; Table~\ref{tab:lowcost}, the optimal synthesis costs $\tau_{\min}(d)$ below, and Fig.~\ref{M:fig:frontier} were computed using \texttt{lowcost\_counts.py}, \texttt{thm\_numbers.py} and \texttt{make\_fig2.py}.
+\begin{table}[t]
+\centering\footnotesize
+\caption{Words of cost $\le\tau_{24}:=\lfloor2L-\log_224\rfloor$ within $\varepsilon$ of a grid rotation of the tuned family, on the frames indicated, compared with $c_0+c_1\tau_{24}$ with $(c_0,c_1)=(8,2)$, the additive term of the fixed-constant form of earlier versions of Conjecture~\ref{M:conj:equid}. On the axis-aligned frame the powers $(HT)^{\pm j}$, $j\le\tau_{24}$, lie within $10^{-2}$ of the coset, which is below $\varepsilon$ at $L\le6$ and above it at $L\ge7$. Computed by \texttt{scripts/lowcost\_counts.py}.}
+\label{tab:lowcost}
+\setlength{\tabcolsep}{4pt}\begin{tabular}{@{}l ccccc@{}}
+\toprule
+$L$ & $4$ & $5$ & $6$ & $7$ & $8$\\
+$\tau_{24}$ & $3$ & $5$ & $7$ & $9$ & $11$\\
+\midrule
+identity & $4$ & $3$ & $2$ & $4$ & $3$\\
+Clifford pair & $4$ & $3$ & $2$ & $4$ & $3$\\
+arithmetic, $T$-count $5$ & $0$ & $0$ & $0$ & $0$ & $3$\\
+arithmetic, $T$-count $10$ & $1$ & $1$ & $0$ & $1$ & $1$\\
+arithmetic, $T$-count $15$ & $3$ & $0$ & $1$ & $1$ & $0$\\
+Haar-random pair A & $0$ & $0$ & $0$ & $0$ & $1$\\
+Haar-random pair B & $1$ & $1$ & $1$ & $0$ & $0$\\
+axis-aligned (Prop.~\ref{M:prop:cluster}) & $7$ & $3$ & $7$ & $3$ & $3$\\
+\midrule
+$c_0+c_1\tau_{24}$ & $14$ & $18$ & $22$ & $26$ & $30$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Axis cosets and the steps of the count.} The frames on which a bound $c_0+c_1\tau+c\,2^\tau\varepsilon^2$ with constant $c$ is tightest are the cosets $DR_zD^\dagger$ of the rotation axis of a cheap word $V$, with $D$ the eigenbasis of $V$. On the axis of $HT$ at $\varepsilon=2^{-5}$, $Q=25$, the cumulative grid count at $\tau=11$ is $137$---shell counts $1,0,0,2,0,0,2,4,8,16,32,72$---against the allowance $8+22+48\cdot2^{11}\varepsilon^2=126$ that $c=48$ would give, so a uniform constant must satisfy $c\ge53.5$ if $(c_0,c_1)=(8,2)$ are kept. 
+
+The enumeration reveals the mechanism. Since $V$ lies on the coset and $\dproj$ is bi-invariant, left multiplication by $V$ maps the $\varepsilon$-tube of the coset bijectively onto itself, and it changes the Matsumoto--Amano cost by at most one, $t_{\min}(VW)\le t_{\min}(W)+1$. It does not raise the cost of every word: $V=HT$ and $W=V^{-1}$ each cost one $T$ while $VW=I$ costs none. The resulting relation concerns cumulative counts rather than individual shells---the tube words of cost $\le\tau$ contain $V$ times those of cost $\le\tau-1$---and that containment alone is no stronger than monotonicity of the cumulative count. The enumeration itself explains the behavior at the level of individual shells: at $t=11$, $57$ of the $156$ tube words of that shell are $V$ times a tube word of shell $10$, against a Haar prediction of $72$ words for the shell. Near the onset of the $2^\tau\varepsilon^2$ term the shell counts run at $2.2$--$2.4$ times the Haar value ($t=8$--$10$); the fraction of genuinely new words then falls below Haar ($0.78$ at $t=15$), the shell ratio returns to $1.07$ by $t=17$, and the required constant falls from $53.5$ at $\tau=11$ to $28.5$ at $\tau=17$. The same frame at $\varepsilon=2^{-6}$ shows no overshoot at all up to $t=17$ (shell ratio $\le1.09$, required $c\le27.8$). Between the dyadic accuracies it needs more: a six-word orbit of $T$-count $9$ lies at distance $0.026499139$ from the grid of modulus $29$, and at $\varepsilon=0.0265$, where still $Q_\varepsilon=29$, the coset carries $69$ words of $T$-count $\le9$ (shells $1,2,2,2,2,2,2,6,18,32$), which forces $c\ge119.6$ (at $\varepsilon=0.0264991$, just below the orbit, the count is $63$ and the requirement $102.9$). The overshoot is therefore a finite-cost effect of the orbit of a cheap word inside the tube, not a change of exponent. 
+
+The identity coset exhibits a larger effect at a nondyadic accuracy. Its tube is invariant under left and right multiplication by powers of $T$ and under conjugation by $X$, so words enter the count in whole orbits of those symmetries, all at the same distance. At $\varepsilon=0.024532$---just above the distance $0.0245310$ of one such orbit---and $Q=Q_\varepsilon=32$, the cumulative count at $\tau=11$ is $232$, in shells $4,4,0,\dots,0,64,160$ and at only two distinct distances $0.022965$ and $0.024531$, against the $8+22+c\cdot1.23$ that~\eqref{M:eq:conj} allows: this forces $c\ge163.9$, and it rules out both $48$ and $96$. At the dyadic $\varepsilon=2^{-5}$ the same coset needs only $c\le24.8$, so the step lies between the dyadic accuracies that our scans sample. The dyadic-scan value $53.5$ below is therefore not an estimate of the constant such a bound would need: a finite scan bounds it from below, never from above, and the next paragraph finds substantially larger required values within the computationally accessible range. 
+
+Two scans examine the required constant. The first takes $25$ frames---identity, Clifford and Haar pairs, the exact axes of fourteen words of cost $\le3$, the $HT$ axis perturbed by $0.01$ to $0.1$ rad, and four angular offsets of the grid---at $\varepsilon\in\{2^{-3},\dots,2^{-6}\}$ and $\tau\le15$: $100$ cells, $1600$ triples. The second takes $272$ frames, among them the rotation axes of all words of cost $\le3$ ($213$ distinct axes, six of which enter twice, with opposite signs, and give identical counts) and forty axes of cost-$4$ and cost-$5$ words, at $\varepsilon\in\{2^{-3},\dots,2^{-7}\}$ and $\tau\le14$: $1360$ cells, $20\,400$ triples. The maximum required $c$ is $53.5$ in both, and the second produces no new counterexample. Of its $17$ cells above $48$, sixteen are the orbit of the $HT$ axis under the Clifford group---the twelve directions of that axis together with four cost-$2$ and cost-$3$ words sharing it, all at $\varepsilon=2^{-5}$, $\tau=11$, with identical shell counts---and the seventeenth is the same axis perturbed by $0.003$ rad, at $49.5$. Everything further away is smaller: axes of other cheap words need at most $43.5$, a perturbation of $0.1$ rad restores the Haar value, and Haar frames give $23.0$--$25.4$ at every accuracy. The overshoot is also confined to one accuracy: the per-accuracy maxima are $29.5$, $24.8$, $\mathbf{53.5}$, $29.0$ and $11.0$ for $\varepsilon=2^{-3},\dots,2^{-7}$. In neither scan is the linear term $(8,2)$ ever breached below onset ($0$ of $1360$ cells). Profiling four further axes to $\tau=17$ at $\varepsilon=2^{-6}$ and $2^{-7}$ gives peaks between $12.6$ and $29.5$, so the $HT$ axis at $L=5$ is the only frame in the dyadic scan above twice the Haar value, and at $L=6$ and $7$ the same and neighboring axes stay below $30$. These scans nevertheless miss the identity-coset step and the nondyadic $HT$-axis step above, which are larger and sit at non-dyadic $\varepsilon$: sampling accuracies on the dyadic ladder is what hides the worst steps. The scans do not cover pairs $(G_1,G_2)$ not of the form $(D,D^\dagger V)$, axes of words of cost $\ge6$, $L\ge8$, and non-dyadic accuracies other than the two exhibited; the identity coset is scanned exactly at every accuracy below. 
+
+The scans use \texttt{scripts/conj1\_scan.py} and \texttt{scripts/scan2.py}, with additional profiles from \texttt{scripts/ht\_profile.py}. The step calculations use \texttt{scripts/astra1.py} for the identity coset and \texttt{scripts/ht\_axis\_step.py} for the nondyadic $HT$ axis. The script \texttt{scripts/scan2\_report.py} recomputes the scan totals from the stored scan.
+
+\paragraph{Exact tube enumeration.} At the identity coset the words of minimal $T$-count $t$ within $\varepsilon$ of the torus can be listed directly in the parametrization of the proof of Theorem~\ref{M:thm:clifford}: they are $\pm w/|w|$ with $w=a+bi+cj+dk\in\mathcal O$ not divisible by $\sqrt2$, $\mathrm{nrd}(w)=n_t$ and $c^2+d^2\le(\varepsilon^2-\varepsilon^4/4)\,n_t$ at the first real place, and for each admissible $(c,d)$ the pair $(a,b)$ runs over the solutions of $\alpha\bar\alpha=4(n_t-c^2-d^2)$, $\alpha=2a+2bi\in\Z[\omega]$, found by factoring. This reproduces the exhaustive enumeration exactly---the same $4\,693\,384$ words within $\tfrac18$ of the torus at $T$-count $\le22$, and all tube and grid counts in $195$ pairs $(\varepsilon,Q)$---and costs minutes per octave of $\varepsilon$ up to $T$-count $2L+16$ to $2L+18$. Since the count is a right-continuous step function of $\varepsilon$, the supremum over $\varepsilon$ of the required constant is attained at the distance of a word, and we evaluate it exactly for every $\varepsilon\in(2^{-25},\tfrac18]$ and every modulus $3\le Q\le Q_\varepsilon$ (Table~\ref{tab:tubeenum}). 
+
+Large requirements occur sporadically and persist across the scanned range of $L$: the required constant exceeds $300$ in six octaves between $L=10$ and $L=22$, with maximum $c\ge626.3$ ($575.2$ on the tuned modulus), and it reaches $308.0$ at the dyadic accuracy $2^{-19}$. Each large step is one or two orbits of words of least transverse norm, $4(c^2+d^2)$ of norm $4$ or $8$, and its size is the number of representations of $4(n_t-c^2-d^2)$ as a relative norm from $\Z[\omega]$. The largest lie on $t=3m-1$, where this element is a unit times $2\sqrt2(X^m-1)$, $X=4+2\sqrt2$, and factors cyclotomically; along that family a partial search over moduli finds requirements above $500$ again near $\varepsilon\approx3\times10^{-17}$, while the representation number grows more slowly than the volume term, so the family alone should eventually decay. 
+
+A brute-force recount to $T$-count $23$, and explicit gate strings for every counted word, confirm the cells above $300$. Arithmetic frames of $T$-count $1$ to $5$, treated by the change of variables $W=G_1VG_2$, inherit the steps, attenuated by the $T$-count of the frame (at most $253.0$, $L\le13$). The $HT$-axis coset is not of the form $G_1R_zG_2$ with $G_i\in\Gamma$ and is not covered. These are deterministic counts on finitely many cosets; they bound $c$ from below and do not determine it. Computed by \texttt{scripts/torus\_tube\_enum.py}.
+
+\begin{table}[t]\centering\footnotesize
+\caption{Identity coset: the largest required value of $c$ in a bound $c_0+c_1\tau+c\,2^\tau\varepsilon^2$ with $(c_0,c_1)=(8,2)$ over $\varepsilon\in(2^{-L-1},2^{-L}]$, all $3\le Q\le Q_\varepsilon$ and the $T$-counts $\tau$ shown, with the cell $(Q,\varepsilon,\tau,N)$ that attains it ($\varepsilon$ a decimal just above the step), and the maximum over the tuned moduli $Q=Q_\varepsilon$ alone. The rows $L=18$ and $20$ are limits at the lower end of the octave. Computed by \texttt{scripts/torus\_tube\_enum.py}.}
+\label{tab:tubeenum}
+\setlength{\tabcolsep}{3pt}\begin{tabular}{@{}r r r r r r r r@{}}
+\toprule
+$L$ & $\tau\le$ & $c_{\rm req}$ & $Q$ & $\varepsilon$ & $\tau$ & $N$ & tuned\\
+\midrule
+$3$&$22$&$35.4$&$4$&$0.1120854$&$10$&$484$&$33.9$\\
+$4$&$24$&$101.0$&$24$&$0.03125$&$11$&$232$&$100.1$\\
+$5$&$26$&$163.9$&$32$&$0.02453096$&$11$&$232$&$163.9$\\
+$6$&$28$&$57.2$&$56$&$0.008521719$&$14$&$104$&$53.3$\\
+$7$&$30$&$60.1$&$144$&$0.005444408$&$21$&$3784$&$60.1$\\
+$8$&$32$&$43.2$&$392$&$0.001983234$&$23$&$1480$&$42.6$\\
+$9$&$34$&$130.3$&$756$&$0.001004121$&$23$&$1156$&$122.0$\\
+$10$&$36$&$365.9$&$960$&$5.551348\times10^{-4}$&$23$&$1000$&$344.7$\\
+$11$&$38$&$337.7$&$1360$&$4.819556\times10^{-4}$&$23$&$712$&$277.1$\\
+$12$&$40$&$87.4$&$2792$&$1.892109\times10^{-4}$&$28$&$904$&$74.6$\\
+$13$&$41$&$178.8$&$8632$&$6.876425\times10^{-5}$&$29$&$520$&$157.1$\\
+$14$&$42$&$56.1$&$13704$&$5.155467\times10^{-5}$&$28$&$104$&$55.7$\\
+$15$&$43$&$45.2$&$22760$&$2.935979\times10^{-5}$&$35$&$1416$&$42.0$\\
+$16$&$44$&$91.2$&$95688$&$7.630858\times10^{-6}$&$38$&$1544$&$78.8$\\
+$17$&$45$&$155.8$&$129856$&$5.643836\times10^{-6}$&$38$&$1448$&$141.5$\\
+$18$&$46$&$308.0$&$97736$&$2^{-19}$&$38$&$392$&$307.8$\\
+$19$&$47$&$451.9$&$379448$&$1.574636\times10^{-6}$&$38$&$392$&$430.3$\\
+$20$&$47$&$197.1$&$1625640$&$2^{-21}$&$47$&$6408$&$192.9$\\
+$21$&$48$&$626.3$&$2919736$&$2.447978\times10^{-7}$&$47$&$5384$&$575.2$\\
+$22$&$50$&$578.5$&$2919736$&$2.3547\times10^{-7}$&$47$&$4616$&$492.6$\\
+$23$&$52$&$110.2$&$5888960$&$1.087954\times10^{-7}$&$49$&$840$&$108.4$\\
+$24$&$54$&$34.8$&$20221976$&$3.322458\times10^{-8}$&$54$&$808$&$32.5$\\
+\bottomrule
+\end{tabular}\end{table}
+
+\paragraph{Larger $T$-counts.} Three further searches, run with \texttt{research/conj1\_c/} on a separate server, find no larger step.
+
+(i) For every $\tau\le85$, all words within $\sqrt{64/2^\tau}$ of the torus give a requirement of at most $980.8$ in the modulus-free tube count, and at most $533.7$ for grids shifted by the frame $(I,R_z(\phi))$, which Conjecture~\ref{M:conj:equid} also covers, the shift being optimized exactly. 
+
+(ii) The orbits of least transverse norm, $y_2=(1+\sqrt2)^k(1-\omega)^j$ with $j\in\{0,1\}$ and the two smallest admissible $k$, built exactly for every level $t\le300$ with angles in high precision, give at most $520$; the fraction of these $m$ that are relative norms falls like $(\log N(m))^{-1/2}$ ($0.24$, $0.15$, $0.07$ over $t<100$, $<200$, $<300$), and the representation numbers that occur stay between $2$ and $128$. 
+
+(iii) The algebraic families $m=\text{unit}\cdot(Z^g-1)$, $Z=\sqrt2^{\,p}(1+\sqrt2)^q$, in which $2^\tau\varepsilon^2=|Z^\bullet|^g/4$ stays bounded when $q/p$ lies just below $\log2/(2\log(1+\sqrt2))=0.39322$, need $Z\pm1$ to be relative norms; for $p\le200$ only $(p,q)=(3,1)$, the family of the steps at $\tau=22,23,46,47$, and $(191,75)$, which at $t=380$ gives an orbit of $1024$ words at $2^\tau\varepsilon^2=0.30$ and a requirement of $189$, qualify. 
+
+Near the onset, the linear term $c_1\tau$ grows faster than typical representation numbers, which is why large steps become less frequent at large $T$-count; but under the usual model for integers built from split primes the number of levels at which some orbit exceeds a bound with fixed constants is still infinite, and along algebraic families with $|Z^\bullet|$ close to $1$ the representation number should exceed any power of $\tau$. These are the reasons for the subexponential factor in Conjecture~\ref{M:conj:equid} (Appendix~\ref{M:app:conj}).
+
+\paragraph{Exact optimal synthesis and the frontier (Fig.~\ref{M:fig:frontier}).} The same enumeration yields, for $L\le6$, the minimal $T$-count $\tau_{\min}(d)$ of a word within $\varepsilon$ of every grid rotation $R_z(2\pi d/Q)$; this gives the exact optimum without relying on factoring. At $L=5$ ($Q=25$) the mean synthesis cost over the $24$ nonzero grid angles is $11.83$ and the largest is $16$ ($3L=15$); at $L=6$ ($Q=50$) they are $15.59$ and $18$ ($3L=18$). Fractional passthrough with canonical sharing ($m=64$, $r=2$) then has $S=q\log_2Q$ and $\Tpre=(m-q)\E_u\tau_{\min}(u)$, in which $u$ is uniform on all of $\Z_Q$ and the zero share is free, so the mean that sets the slope is $\E_u\tau_{\min}=11.36$ and $15.28$ --- the $d\ne0$ means above, times $(Q-1)/Q$ --- giving $\E\tau/\log_2K=2.48$ ($L=5$) and $2.72$ ($L=6$). 
+
+Both are computed at word accuracy $\varepsilon$, so they calibrate a single rotation and are \emph{not} the $r=2$ point of Theorem~\ref{M:thm:frontier}, which certifies a committed share only at $\varepsilon/2$. Repeating the enumeration at that budget resolves every grid point, at $T$-count $18$ for $L=5$ and $22$ for $L=6$, and gives $\E_u\tau_{\min}=15.28$ and $18.72$---slopes $3.333$ and $3.334$, worst cases $18$ and $22$. The calibration at $\varepsilon$ rises through $2.478$, $2.721$ and $3.020$, the last at $\varepsilon=10^{-10}$ below, while the $\varepsilon/2$ sequence falls through $3.333$, $3.334$ and $3.113$ (the last at nominal tolerance, as explained below). Both sequences are consistent with the asymptotic slope $3$. Fig.~\ref{M:fig:frontier}(a) plots both, and it is the second sequence that Theorem~\ref{M:thm:frontier} bounds and that may be compared with panel (b). Computed by \texttt{scripts/frontier\_eps\_half.py}, whose $\varepsilon$ column reproduces \texttt{data/taumin\_exact.json} grid point by grid point. 
+
+A partial-commitment variant that commits the low $\ell$ bits of a share as a rotation and stores the rest---cost $\E_u\tau_{\min}(u\bmod2^\ell)$ per coordinate for $\ell$ bits shed---costs $4.8,3.2,2.9,2.7$ $T$ gates per bit shed for $\ell=1,\dots,4$ at $L=5$, and $8.5,6.1,4.6,3.7,3.0$ for $\ell=1,\dots,5$ at $L=6$: strictly worse than passthrough and worsening as $\ell$ decreases, illustrating the commitment threshold at exact optimality. 
+
+At $L\le6$, the additive terms dominate the main terms: at $L=6$ they are $m\log_236=5.17m$ for Theorem~\ref{M:thm:main1} and $mA_2=15.4m$ for Theorem~\ref{M:thm:rate2}, against $m\log_2K=5.6m$, so both bounds are vacuous, and Theorem~\ref{M:thm:main2} has no explicit constants at all. Fig.~\ref{M:fig:frontier}(a) therefore compares slopes alone.
+
+\paragraph{Chemistry scale (Fig.~\ref{M:fig:frontier}(b)).} Exhaustive enumeration stops at $L\le6$, so at a chemically relevant accuracy we replace $\tau_{\min}$ by Ross--Selinger synthesis in the \texttt{pygridsynth}~2.0.0 implementation. Its accuracy parameter $\varepsilon_{\mathrm{gs}}$ differs from $\dproj$. The acceptance criterion $\mathrm{Re}(\bar zu)\ge\sqrt{1-\varepsilon_{\mathrm{gs}}^2/4}$ implies
+\[
+\dproj\le g(\varepsilon_{\mathrm{gs}}):=\sqrt{2-2\sqrt{1-\varepsilon_{\mathrm{gs}}^2/4}}
+=\frac{\varepsilon_{\mathrm{gs}}}{2}+\frac{\varepsilon_{\mathrm{gs}}^3}{64}+O(\varepsilon_{\mathrm{gs}}^5).
+\]
+For a strict tolerance $\dproj\le\eta$, one must use $\varepsilon_{\mathrm{gs}}\le2\eta\sqrt{1-\eta^2/4}$. Our stored benchmarks instead use $\varepsilon_{\mathrm{gs}}=2\eta$, with $\eta$ the \emph{nominal} tolerance, and hence guarantee $\dproj\le\eta+\eta^3/8+O(\eta^5)$. At the two tolerances below, the excess is less than $1.3\times10^{-31}$ and has no effect at the displayed precision. In each benchmark we re-synthesized and checked $200$ of the $20\,000$ sampled angles; their largest errors were $4.9930\times10^{-11}$ for $\eta=\varepsilon/2$ and $9.9994\times10^{-11}$ for $\eta=\varepsilon$. These checks establish the nominal tolerance on the validation subsamples. The reported means were not recomputed using the strict parameter conversion. 
+
+At $\varepsilon=10^{-10}$, the tuned modulus is $Q_\varepsilon=7\,853\,981\,633$ and $\log_2K_\varepsilon=32.871$. Under canonical sharing the share $u$ is uniform on $\Z_Q$ and the frontier depends on it only through $\E_u\tau(u)$, so we sample rather than synthesize all $Q_\varepsilon$ rotations: $20\,000$ uniform $u$ give $\E_u\tau=99.28\pm0.02$ (s.d.\ $2.12$, range $87$--$111$) at nominal tolerance $\eta=\varepsilon$, against $3L=99.66$, hence $\E\tau/\log_2K=3.020\pm0.001$; this is the single-rotation cost benchmark at nominal tolerance $\varepsilon$. 
+
+Theorem~\ref{M:thm:frontier} with $r=2$ requires each committed share to satisfy $\dproj\le\varepsilon/2=5\times10^{-11}$. At this nominal tolerance, synthesis of the same $20\,000$ angles gives $\E_u\tau=102.32\pm0.02$ (s.d.\ $2.16$, range $88$--$113$), i.e.\ $3.113$ per bit, three gates more per share as the $3\log_2r$ of Ross--Selinger scaling predicts, and it is this point that Table~\ref{M:tab:numbers}, Table~\ref{tab:models} and Fig.~\ref{M:fig:frontier}(b) use. Fitting $\E\tau=3\log_2(1/\eta)+c_{\mathrm{RS}}$ to the two nominal-tolerance points gives $c_{\mathrm{RS}}=-0.36$. Both numbers exceed $3$ slightly, as expected --- $\tau_{\mathrm{RS}}=3L+O(\log L)$, and Corollary~\ref{M:cor:frontier} asserts only the limit. With $m=10^4$ and $r=2$ this is $\Tpre=1.023\times10^6$ committed $T$ gates at $S=0$; both axes are linear in $m$, so $m=10^5$ is the same line scaled tenfold. 
+
+Partial commitment of the low $\ell$ bits, with the committed piece synthesized at nominal tolerance $\eta=\varepsilon$, costs $62,45,34,27,22,18,16,13$ $T$ gates per bit released for $\ell=1,\dots,8$ (at nominal tolerance $\eta=\varepsilon/2$: $61,46,35,28,22,19,16,14$): the substantial cost of the tested low-bit commitment strategy persists at this accuracy, at between $4.4$ and $20$ times the calibration slope $3.020$ at the same accuracy. The nonzero small-angle pieces $2\pi k/Q$ with $0<k<2^\ell$ tested here average $108$ to $123$ $T$ gates, above the generic $99.3$. A different commitment strategy is the exact commitment of Remark~\ref{M:rem:firstbit}, which on the admissible grid $Q=8\lfloor Q_\varepsilon/8\rfloor$ releases two bits per coordinate for no magic and a third for $\tfrac12$ a $T$ gate; those points, and not the $\ell=1$ cross, are the true left end of the family. That the fee is a property of the deterministic-unitary model and not of fault-tolerant synthesis in general is discussed in Sec.~\ref{M:sec:models}.
+
+\paragraph{The bounds at chemistry scale (Table~\ref{M:tab:numbers}).} With $C_1,C_2$ explicit, the lower bounds can be evaluated at finite accuracy. At $\varepsilon=10^{-10}$, $m=10^4$, $\delta=0$ and $S=0$, Theorem~\ref{M:thm:main1} gives $\bar T_t\ge21.75\,m$, Theorem~\ref{M:thm:rate2} gives $25.72\,m$ as stated (with $A_2=20.0$ bits of the $32.9$ available) and $37.40\,m$ in the finite form of Corollary~\ref{M:cor:finite}, and the passthrough benchmark at nominal share tolerance costs $102.32\,m$. This benchmark is a factor $2.74$ above Corollary~\ref{M:cor:finite} and $4.7$ above Theorem~\ref{M:thm:main1}. As stated, the rate-two bound includes its additive term twice and exceeds the rate-one bound only for $S<3.7\,m$ bits; in its finite form it does so for $S<22.1\,m$ bits, $67\%$ of the range of $S$, and at $S=0$ at every accuracy at which either bound is positive. Fig.~\ref{M:fig:frontier}(b) plots the bounds including their additive terms: because the bound of Theorem~\ref{M:thm:main1} contains a logarithm of $\bar T_t$, its finite-precision derivative $-\partial\bar T_t/\partial S$ at $S=0$ is $0.94$ rather than the leading coefficient $1$. These numbers are per coordinate and per round and are computed by \texttt{scripts/thm\_numbers.py}. The rate-two bounds and the construction scale linearly in $m$; rate one has a small additional logarithmic overhead.
+
+\section{Side information}\label{sec:side}
+
+\begin{theorem}[Side information]\label{thm:side}
+Let $X\sim P_X$ on $[K]^m$, let the sharing have any joint law with $X$, and let $Y$ be side information in one of two access models: (i) $Y$ is read once, before the first round, as a round $0$ of the stream, so that any part of it needed after a cut must be carried in the snapshot; or (ii) $Y$ can be re-read in every round free of charge, i.e.\ the restart semantics of Definition~\ref{M:def:model}(ii) are extended so that the segments emitted after a cut are functions of $(\sigma_t,\mathrm{Fut},Y)$. Then in either model, for every round $t$,
+\begin{multline}
+S+\bar T_t+m\log_236+\rho_m(\bar T_t)\\
+\ge\ H\big(X\mid\mathrm{Past},\mathrm{Fut},Y\big)-h_2(\delta)-\delta\log_2(K^m-1).
+\end{multline}
+\end{theorem}
+\begin{proof}
+Apply Theorem~\ref{M:thm:main1} with $Z:=(\mathrm{Past},\mathrm{Fut},Y,\rho)$. The tape is independent of $(\text{stream},Y)$, and $a^{(t)}\leftrightarrow X$ is a bijection given the other rounds. In model (i), $Y$ is part of $\mathrm{Past}$ for every $t\ge1$ and the restart semantics are unchanged. In model (ii), the extended semantics make the final unitary a function of $(M_t,\sigma_t,Z)$, as required by step (ii) of that proof.
+\end{proof}
+\begin{corollary}\label{cor:side}
+(a) Uniform $X$, canonical sharing and trivial $Y$ recover Theorem~\ref{M:thm:main1}.
+(b) If $Y$ determines the earlier shares (the process holds the sharing or twirl seed), the right side is $0$ and the theorem gives no obstruction. Whether a vanishing lower bound can be attained by a zero-resource implementation depends on the access model. In model (ii) the process regenerates the earlier shares from $Y$ after the cut and commits everything in the last round, with no memory and no committed magic. In model (i) the seed, or as much of it as is used after the cut, must be retained in the snapshot: with $Y=a^{(1)}$, for instance, the process must store $a^{(1)}$ or commit it, exactly as without $Y$. This identifies the scope of the design rule ``randomize and lower late'' of~\cite{Paper1}.
+(c) Suppose the shares of rounds $1,\dots,r-1$ are a deterministic injective function of a $\lambda$-bit uniform seed $V$, independent of $X$ and unknown to the process, and $Y$ is trivial. Given the other rounds, $A^{(t)}$ is a function of $V$, so
+\[H\big(X\mid\mathrm{Past},\mathrm{Fut}\big)=H\big(A^{(t)}\mid\mathrm{Past},\mathrm{Fut}\big)\le H(V)=\lambda\]
+and the bound of Theorem~\ref{thm:side} degrades from $m\log_2K$ to $\lambda$: this distinction matters in practice, since in randomized compiling $\lambda$ is a handful of bits, not $m\log_2K$. A matching lower bound holds for two rounds and a uniform aggregate: for $r=2$ and $X$ uniform on $[K]^m$, $H(a^{(2)})\le m\log_2Q$ and $H(a^{(2)}\mid A^{(1)})=H(X)=m\log_2K$, so $I(A^{(1)};a^{(2)})\le m\log_2(Q/K)$ and
+\[H\big(A^{(1)}\mid a^{(2)}\big)\ \ge\ \lambda-m\log_2(Q/K),\]
+where $m\log_2(Q/K)=O(m/Q)$ is negligible for the tuned family. This is the precise form of~\cite[Rem.~9]{Paper1}: the lower bound is governed by the information unavailable to the process, not by the size of the aggregate.
+
+Both restrictions are needed. With $r=3$, take $a^{(1)}:=V$, $a^{(2)}:=-V$ and $a^{(3)}:=X$, where $V\in\Z_Q^m$ is the injective image of the $\lambda$-bit seed. The first two rounds are still an injective function of the seed, but for $t=1$ the conditioning already contains $a^{(3)}=X$, so $H(X\mid\mathrm{Past},\mathrm{Fut})=0$ and the bound imposes no charge. A seed whose effect is canceled in a later round gives no lower bound, regardless of its entropy; only the upper bound $\lambda$ survives for general $r$.
+(d) For nonproduct sources Theorems~\ref{M:thm:rate2} and~\ref{M:thm:main2} hold with $m\ell_\delta$ replaced by $\sum_jH(A_j\mid Z)-m(h_2(\delta)+\delta\log_2K)$ and $S$ by $S+\mathrm{TC}(A\mid Z)$, since $\sum_jI(A_j;\sigma\mid Z)\le I(A;\sigma\mid Z)+\mathrm{TC}(A\mid Z)$.
+\end{corollary}
+
+\begin{theorem}[One-shot]\label{thm:oneshot}
+Let the process be deterministic with worst-case resources $S_{\max}$, $T_{\max}$, correct with probability $\ge1-\delta$ over $(X,\text{sharing},Y)$, and $r=2$. With the set-smoothed entropy $H_0^\delta(U\mid VY):=\min_{\Omega:\Pr[\Omega]\ge1-\delta}\log_2\max_{v,y}|\{u:(u,v,y)\in\Omega\}|$ of Renner--Wolf~\cite{RennerWolf},
+\begin{multline}
+S_{\max}+T_{\max}+m\log_272+m\log_2\!\big(e(1+T_{\max}/m)\big)\\
+\ge\ H_0^\delta(U\mid V,Y).
+\end{multline}
+\end{theorem}
+The Shannon form (Theorem~\ref{thm:side}) applies to expected resources and the one-shot form to worst-case resources; the two forms therefore concern different resource guarantees. We state the bound in terms of $H_0^\delta$ only. It can be relaxed further to a smooth max-entropy, but not at the same smoothing parameter: truncating to an event of probability $1-\delta$ and renormalizing moves the distribution by $\sqrt\delta$ and not $\delta$ in purified distance, so the resulting statement is a bound by $H^{\sqrt\delta}_{\max}$, with a different second-order term~\cite{TomamichelHayashi}. We retain the set-smoothed form used below.
+
+\begin{proof}[Proof of Theorem~\ref{thm:oneshot}]
+Let $\Omega$ be the success event. On $\Omega$, $u$ is a function of the message (snapshot and unitary tuple) together with $(v,y)$, and the message takes at most $2^{S_{\max}}N^{\le}_m(T_{\max})$ values. Lemma~\ref{M:lem:MA} gives the inequality.
+\end{proof}
+
+\section{Model dependence and batched commitment}\label{sec:modelsupp}
+
+\begin{table*}[t]
+\centering\small
+\caption{Exchange rate $\alpha$ (committed $T$ gates per bit of memory forgone) in several synthesis models.}
+\label{tab:models}
+\begin{tabular}{@{}p{3.6cm} p{5.2cm} p{4.6cm} p{3.4cm}@{}}
+\toprule
+\raggedright Model & \raggedright Rigorous lower bound & \raggedright Achievable & \raggedright Granularity\tabularnewline
+\midrule
+\raggedright CW ancilla-free Clifford+$T$ & \raggedright $1$ (Thm.~\ref{M:thm:main1}); $2$ with explicit constants (Thm.~\ref{M:thm:rate2}, via the theorem (R)); $\tfrac{11}5$ asymptotically and without (R) (Thm.~\ref{M:thm:rate115}); $\tfrac{17}7$ by a height dichotomy (Thm.~\ref{M:thm:rate177}) and every rate $<\tfrac52$ with rational projections (Thm.~\ref{M:thm:rate52}), asymptotically and without (R); $3-o(1)$ for rotation-segmented processes (Thm.~\ref{M:thm:rate3seg}); every rate $<3$ under Conj.~\ref{M:conj:equid} (Thm.~\ref{M:thm:main2}) & \raggedright $\to3$ (Thm.~\ref{M:thm:frontier}, under the synthesis hypothesis of Cor.~\ref{M:cor:frontier}); $3.113$ by \texttt{gridsynth} at nominal share tolerance $\eta=\varepsilon/2$, $\varepsilon=10^{-10}$; exact $3.333$ ($L=5$) and $3.334$ ($L=6$) at $\varepsilon/2$, against calibrations $2.478$ and $2.721$ at $\varepsilon$ (Sec.~\ref{M:sec:num}) & \raggedright one rotation (fee $(2-o(1))L$) under Conj.~\ref{M:conj:equid}, past the first $o(L)$ bits of a coordinate (Rem.~\ref{M:rem:firstbit}, Prop.~\ref{M:prop:cluster})\tabularnewline
+\raggedright CW $+$ probabilistic mixing (Def.~\ref{def:mixed}; \cite{Campbell17,Hastings17,KLMPP,Bothe}) & \raggedright $0$ on the low bits; $1-\gamma$ per coarse bit \emph{in total}, beyond a $\log_236+O(\log L)$ allowance (Thm.~\ref{thm:mixing}(a)); $2(1-\gamma)$ given (R) (Thm.~\ref{thm:mixing}(b)); every rate $<3$ per coarse bit under Conj.~\ref{M:conj:equid} (Cor.~\ref{cor:mixq}); lower bound $L-O(\log L)$ per share, $\tfrac32L$ under Conj.~\ref{M:conj:equid}. All vacuous at $\varepsilon=10^{-10}$ except Thm.~\ref{thm:mixing}(a) & \raggedright $O(1)$ on the low $\tfrac12L-\tfrac12\log_2L$ bits; $\tfrac32L$ for a share that commits more, under the mixed-synthesis hypothesis~\eqref{eq:mixhyp}---four-word mixing \cite[Thm.~2]{Campbell17} at word accuracy $\sqrt{\varepsilon/(5r)}$, where a single \texttt{gridsynth} call at nominal word tolerance costs $53.9$ on average at $\varepsilon=10^{-10}$, $r=2$ (measured; the program itself is not certified); $1.52\log_2(1/\delta)-0.01=50.5$ $T$ per share at $\delta=10^{-10}$ \cite{KLMPP,Bothe} & \raggedright bits below $\tfrac12L-\tfrac12\log_2L-O(1)$ free (Cor.~\ref{cor:mixstop}(i), \cite{Bothe}); bits at $\tfrac12L-O(1)$ cannot be committed at bounded cost by any program (Lem.~\ref{lem:nocheap}); the top $\log_2\gcd(Q,8)$ bits free at any position; fee $(1-o(1))L$ under Conj.~\ref{M:conj:equid} (Cor.~\ref{cor:mixq})\tabularnewline
+\raggedright CW $+$ RUS/fallback on $n$ qubits (measurement-adaptive, unitary branches; Prop.~\ref{prop:adaptive}) & \raggedright $(1-\gamma)/(2n+2)$ per high bit, in $T$ gates plus measurements; lower bound $L/(4n+4)$ per share & \raggedright $\tau\approx1.15L$ \cite{BRS}; $0.53\log_2(1/\delta)+4.86=22.5$ at $\delta=10^{-10}$ with mixed fallback \cite{KLMPP,Bothe} & \raggedright open: the token count of Prop.~\ref{prop:adaptive} does not capture the entry fee\tabularnewline
+\raggedright Quasi-probabilistic mixtures \cite{Bothe} & \raggedright not covered: a signed mixture is not a channel, and the resource is sample overhead & \raggedright $\tilde O(\theta^2/(\lambda-1))$ at small angles \cite{Bothe} & \raggedright open\tabularnewline
+\raggedright Phase gradient + adder, $Q=2^b$ & \raggedright none for general prefixes & \raggedright $\approx4$ per coordinate, unbatched~\cite{Gidney}: commit the high $b-\ell$ bits of a share into the top gradient bits, remember the low $\ell$ bits, one $b$-bit addition in the suffix; batched, see next row & \raggedright one bit, no fee: the catalytic gradient state pays the fee once\tabularnewline
+\raggedright General $n$-qubit Clifford+$T$, clean ancillas & \raggedright $(m\log_2K-S-\log_2|\mathcal C_n|-O(n))/(2n+1)$ from $\#\le|\mathcal C_n|(2\cdot4^n)^t$; uninformative for $n\sim m$ & \raggedright $O(1/\log L)$ per bit with a phase-gradient catalyst, for $\log L=o(m)$ (Prop.~\ref{prop:batch}); $80$ (total error) and $64$ (coordinatewise) $T$ per share at $\varepsilon=10^{-10}$, $m=10^4$, $r=2$ & \raggedright no constant-rate law\tabularnewline
+\raggedright $Q\mid8$ & \raggedright vacuous: $\log_2K\le\log_27<\log_236$, so Theorem~\ref{M:thm:main1} asserts nothing & \raggedright $\le1$ $T$ gate per share: every grid rotation is a power of $T$, exactly & \raggedright one bit, no fee. This case is \emph{not} excluded by $\varepsilon<\sin(\pi/(2Q))$, which at $Q=8$ permits every $\varepsilon\le1/8$; the low-cost allowance in Conj.~\ref{M:conj:equid} covers the whole grid\tabularnewline
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Table~\ref{tab:models} summarizes what changes with the synthesis model. Three cases clarify the model dependence. In the phase-gradient model the exchange is bit-granular: adding the high bits of a share into the top bits of the gradient register is an exact operation whose cost is linear in the number of bits, so the fee of the CW model disappears; the catalytic gradient state is, in this sense, a device that has paid the fee once for all subsequent rotations. 
+
+In the mixed-channel models now used in resource estimation the fee also disappears, but only at small angles and for a different reason: a rotation by $\theta$ may be realized as a probabilistic or quasi-probabilistic mixture of Clifford+$T$ channels in which the identity, at zero cost, carries most of the weight, giving an average cost $\tilde O(\theta^2/\delta)$ instead of $O(\log(1/\delta))$~\cite{Bothe}. The low bits of a share are exactly the small angles, so a mixing implementation can release them at low cost, and the quantization of Theorem~\ref{M:thm:main2} does not survive in that range. The saving is limited to this range: Sec.~\ref{sec:mixing} extends the counting argument to channels and shows that mixing rescales the law by one half rather than removing it, the free bits being exactly the ones the rescaled bound does not charge. 
+
+In the fully general $n$-qubit model even the premise fails: a $T$ gate on $n$ qubits can be any of $2\cdot4^n$ Pauli rotations, and with ancillas a tensor product of many single-qubit rotations can be synthesized for far less than the sum of their costs, the optimal $T$-count for an arbitrary diagonal $n$-qubit unitary being $\Theta(\sqrt{2^n\log(1/\varepsilon)}+\log(1/\varepsilon))$~\cite{GKW}. No constant-rate law survives ancilla-assisted synthesis across coordinates.
+
+We distinguish two forms of ancilla access. If ancilla qubits may survive a cut, a share can be copied into them with $X$ gates, which are Clifford, and read back in round $r$. This gives $\Tpre=0$ at $S=0$. These qubits retain information and must therefore be charged as memory. The meaningful model therefore has \emph{clean} ancillas, prepared in $|0\rangle$ and returned to $|0\rangle$ within a round, and possibly a catalytic register that does not depend on the stream.
+
+\begin{proposition}[Batched commitment]\label{prop:batch}
+Allow in every round clean ancillas, the measurement-based uncomputation of~\cite{Gidney}, and a catalytic phase-gradient register of $b:=\lceil L+\log_2(2\pi mr)\rceil$ qubits, prepared once before round~$1$; its preparation is independent of the stream and is not counted in $T_t$. Then for every $g\ge1$ there is a one-pass process with total projective error $\le\varepsilon$ on every valid stream, $S=O(\log(mQr))$, and
+\[
+T_t\ \le\ \Big\lceil\frac mg\Big\rceil\big(8(2^g-1)+4(b-1)\big)\qquad(t<r).
+\]
+If $\log L=o(m)$ and $\log(mr)=o(L)$, the choice $2^g\asymp L/\log L$ gives $T_t\le(4+o(1))\,mL/\log_2L$, so the exchange rate is $O(1/\log L)=O(1/\log\log(1/\varepsilon))$.
+\end{proposition}
+\begin{proof}
+Split the coordinates into $\lceil m/g\rceil$ blocks of at most $g$. Up to a global phase, the round-$t$ rotation of a block of $h\le g$ coordinates acts on its basis states $|x\rangle$, $x\in\{0,1\}^h$, as $e^{\mathrm i\Delta\phi(x)}$ with $\phi(x)=\sum_{j}a^{(t)}_jx_j$; we conjugate by the public Clifford $V$ as in Sec.~\ref{M:sec:setting}. Let $\tilde y_j$ be $2^ba^{(t)}_j/Q$ rounded to an integer, and $y(x):=\sum_j\tilde y_jx_j\bmod2^b$. Then $|2\pi y(x)/2^b-\Delta\phi(x)|\le\pi h2^{-b}$.
+
+The process performs three steps.
+\begin{enumerate}\setlength\itemsep{0pt}
+\item A unary-iteration lookup~\cite{Babbush} writes $y(x)$ into a clean $b$-qubit register with $4(2^h-1)\le4(2^g-1)$ $T$ gates. The data are written by CNOTs, so the cost does not depend on $b$.
+\item An addition of that register into the phase-gradient register~\cite{Gidney} costs $4(b-1)$ $T$ gates and applies the phase $e^{2\pi\mathrm iy(x)/2^b}$.
+\item The lookup is uncomputed at the same cost.
+\end{enumerate}
+All ancillas return to $|0\rangle$ and the gradient register is unchanged. The error of a block of $h$ coordinates is $\le\pi h2^{-b}$ in operator norm; the block sizes add up to $m$, so over all blocks and $r$ rounds the error is $\le\pi mr2^{-b}\le\varepsilon/2$, and the remaining $\varepsilon/2$ is reserved for preparing the gradient register. Every share is committed on arrival, so the snapshot holds only a program counter. Each of the $\lceil m/g\rceil$ blocks costs at most $8(2^g-1)+4(b-1)$ $T$ gates per round, which is the bound on $T_t$. 
+
+For the asymptotics, $2^g\asymp L/\log L$ gives $g=\log_2L-\log_2\log L+O(1)$ and $8(2^g-1)+4(b-1)=(4+o(1))L$, because $b=(1+o(1))L$ when $\log(mr)=o(L)$. Moreover, $\lceil m/g\rceil\le\frac mg(1+\frac gm)$ with $g/m\to0$ when $\log L=o(m)$.
+\end{proof}
+Proposition~\ref{prop:batch} is an instance of known ancilla-assisted diagonal synthesis. $\bigotimes_{j\le g}R_z$ is a $g$-qubit diagonal, of $T$-count $O(\sqrt{2^g\log(1/\varepsilon)}+\log(1/\varepsilon))$~\cite{LKS,GKW}, hence $O(L/\log L)$ per rotation at $2^g\asymp L$. Phase-gradient addition of looked-up angles is standard~\cite{Gidney,Sanders}. Batching across coordinates eliminates the constant-rate law: with $g=1$ the construction costs $4b+4\approx4L$ per share, and the saving requires enough coordinates for batching, as expressed by the condition $\log L=o(m)$ of the proposition. A bounded number of coordinates, e.g.\ $m=1$, gives back a cost of order $L$ per share. 
+
+The gradient register is prepared once, before round $1$, with $O(b\log(b/\varepsilon))$ $T$ gates; since it is returned unchanged, its preparation error enters once, not per use. That cost does not depend on the stream, so it carries no information about any share and does not contribute to committed magic as defined here; a comparison of total $T$-counts must add it once. 
+
+Convergence to the asymptotic regime is slow: at $L=50$ the cost is still about $2.8$ times $4L/\log_2L$, and at $\varepsilon=10^{-10}$ batching saves about $40\%$, not an order of magnitude.
+At $\varepsilon=10^{-10}$, $m=10^4$ and $r=2$ the best block size is $g=4$. The cost is $80$ $T$ gates per share at total error $\varepsilon$ ($b=51$). Since $e^{2\pi\mathrm iy(x)/2^b}=\prod_je^{2\pi\mathrm i\tilde y_jx_j/2^b}$ is a product of single-qubit phases, a coordinate accumulates $\dproj\le\pi r2^{-b-1}$. Under the coordinatewise criterion of Theorem~\ref{M:thm:frontier}, $b=\lceil L+\log_2(\pi r/2)\rceil=35$ suffices, and the cost is $64$ ($1.95$ per bit), compared with the nominal-tolerance ancilla-free passthrough benchmark $102.32$. Asymptotically the ratio tends to zero like $1/\log L$. 
+
+Matching lower bounds remain open: counting circuits on $n$ qubits gives only the uninformative bound of Table~\ref{tab:models}, and magic monotones bound the magic of the final unitary, which is $\Theta(m)$, not the magic committed before the information arrived~\cite{BCHK,GKW}. The constant-rate law of this paper is therefore specific to coordinatewise synthesis, with ancillas bounded per coordinate as in Proposition~\ref{prop:adaptive}, which is the setting covered by the lower bounds above.
+
+\section{The law under mixing}\label{sec:mixing}
+
+The counting argument of Secs.~\ref{M:sec:tube}--\ref{M:sec:conj} of the main text concerns deterministic words. Mixed-channel synthesis~\cite{KLMPP,Bothe} and the mixing constructions of Campbell~\cite{Campbell17} and Hastings~\cite{Hastings17} replace the committed word by a program sampled at run time. The resulting channel is closer to the target than any word in its support, allowing small angles to be committed at very low expected cost~\cite{Bothe}. We show that the gap is exactly a square root: under mixing, a committed word need only be accurate to $\sqrt\varepsilon$. Consequently, a share is charged for the top half of its bits, with the same exchange rate for those bits.
+
+\begin{definition}[Mixed-unitary CW process]\label{def:mixed}
+A \emph{mixed-unitary CW process} is a charged one-pass process (Definition~\ref{M:def:model}) whose output tape holds, for each coordinate $j\in[m]$ and round $t\in[r]$, a \emph{program} $\pi^{(t)}_j$: a finitely supported probability distribution on single-qubit Clifford+$T$ words. At execution each program is sampled once, independently of every other program and of the tape $\rho$, and the sampled word is applied. The operation implemented on coordinate $j$ is the channel
+\begin{equation}
+\mathcal E_j=\mathcal E^{(r)}_j\circ\cdots\circ\mathcal E^{(1)}_j,\quad
+\mathcal E^{(t)}_j:=\sum_{W}\pi^{(t)}_j(W)\,\mathcal U_W,
+\end{equation}
+and the process is \emph{correct} on a stream if $\|\mathcal E_j-\mathcal U_{R_z(\Delta x_j)}\|_\diamond\le2\varepsilon$ for every $j$. The charge $S$ is as in Definition~\ref{M:def:model}. The committed magic is the expected number of $T$ gates \emph{executed} while reading round $t$,
+\begin{equation}
+T_t:=\sum_j\E_{W\sim\pi^{(t)}_j}t(W),\qquad\Tpre:=\sum_{t<r}T_t,
+\end{equation}
+with $t(W)$ the number of $T$ records of the word as written. Finally $n_f$ denotes the largest, over $j$ and $t<r$, of $\log_2N^{<t}_j+\log_2N^{>t}_j$, where $N^{<t}_j$ and $N^{>t}_j$ are the numbers of distinct words in the supports of the prefix programs $\pi^{(1)}_j,\dots,\pi^{(t-1)}_j$ and the suffix programs $\pi^{(t+1)}_j,\dots,\pi^{(r)}_j$. It is a parameter of the process that Definition~\ref{def:mixed} does not bound; the results below do not use it, and it appears only in the sharper bounded-support variant of Remark~\ref{rem:mixconst}.
+\end{definition}
+
+Three remarks clarify the definition. (i) The CW criterion implies this criterion: for unitaries $\|\mathcal U-\mathcal V\|_\diamond=2\sin(\Theta/2)=2\dproj(U,V)\sqrt{1-\dproj^2/4}\le2\dproj(U,V)$ with $\Theta$ as in Lemma~\ref{M:lem:dproj} \cite[Thm.~3.55]{Watrous}, so a deterministic CW process correct to $\dproj\le\varepsilon$ is a mixed-unitary process correct in the above sense, with one-point programs and $n_f=0$. 
+
+(ii) Independence of the samples across rounds specifies the access model: a seed shared by the executor across the cut is side information in the sense of Theorem~\ref{thm:side}, and Corollary~\ref{cor:side}(b)--(c) determines its resource charge. 
+
+(iii) Measurement-adaptive protocols (repeat-until-success, fallback~\cite{BRS,KLMPP}) fall outside Definition~\ref{def:mixed}, because the operation realized on a branch is not an ancilla-free Clifford+$T$ word; Proposition~\ref{prop:adaptive} extends the bound to them at a weaker rate. Quasi-probabilistic mixtures~\cite{Bothe} remain outside: a signed mixture is not a channel, its correctness is a statement about an estimator, and its resource is sample overhead.
+
+We use the following two elementary facts, proved in Sec.~\ref{app:mixing}.
+
+\begin{lemma}[Fidelity from diamond error]\label{lem:fid}
+For a qubit channel $\mathcal E$ and a unitary $V$ let $F_e(\mathcal E,V):=\langle\Phi_V|J(\mathcal E)|\Phi_V\rangle$ be the entanglement fidelity, $J$ the normalized Choi state and $|\Phi_V\rangle=(V\otimes I)|\Phi\rangle$. Then $1-F_e(\mathcal E,V)\le\tfrac12\|\mathcal E-\mathcal U_V\|_\diamond$, and for a mixed-unitary channel $\mathcal E=\sum_ip_i\mathcal U_{X_i}$ one has $F_e(\mathcal E,V)=\sum_ip_i|\tr(V^\dagger X_i)/2|^2$.
+\end{lemma}
+
+\begin{lemma}[Concentration: window and tube]\label{lem:conc}
+Let $X_1,\dots,X_N\in\SU$, let $p$ be a distribution, $V\in\SU$, $f_i:=|\tr(V^\dagger X_i)/2|^2$, and suppose $\sum_ip_if_i\ge1-\eta^2$ with $\eta\le\tfrac12$.
+
+(i) \emph{(window)} For every $\psi\in[-\pi,\pi]$,
+\begin{equation}\label{eq:window}
+\sum_ip_i\Big|\tfrac12\tr\big((VR_z(\psi))^\dagger X_i\big)\Big|^2\le\cos^2\tfrac\psi2+\eta^2+\eta|\sin\psi|,
+\end{equation}
+and the right side is $<1-\eta^2$ whenever $\sin(|\psi|/2)>(1+\sqrt3)\eta$.
+
+(ii) \emph{(tube)} If $f_i\ge1-\eta^2$ then $\dproj(X_i,V)\le\sqrt2\,\eta$.
+\end{lemma}
+
+\begin{theorem}[The law under mixing]\label{thm:mixing}
+Let the process be mixed-unitary (Definition~\ref{def:mixed}), correct with probability $\ge1-\delta$ over $\rho$ on every valid stream, and fix $\gamma\in(0,1)$; put $\eta:=\sqrt{\varepsilon/\gamma}$,
+\[
+\begin{gathered}
+w:=\Big\lfloor\tfrac Q\pi\arcsin\big((1+\sqrt3)\eta\big)\Big\rfloor,\qquad
+\varepsilon':=36\sqrt2\,\eta,\\
+w':=\Big\lfloor\tfrac{2Q}\pi\arcsin\varepsilon'\Big\rfloor,
+\end{gathered}
+\]
+$k_\gamma:=\log_2K-\log_2(2w+1)$ and $k'_\gamma:=\log_2K-\log_2(2w'+1)-1$, the \emph{coarse bits} of a coordinate. Then for every round $t<r$:
+
+(a) \emph{(rate one, unconditional)} If $\gamma\ge4(1+\sqrt3)^2\varepsilon$, so that $(1+\sqrt3)\eta\le\tfrac12$,
+\begin{multline}\label{eq:mixone}
+S+\frac{\bar T_t}{1-\gamma}+m\log_236+\rho_m\!\Big(\frac{\bar T_t}{1-\gamma}\Big)\\ \ge\ (1-\delta)\,m\,k_\gamma-h_2(\delta).
+\end{multline}
+
+(b) \emph{(rate two, given (R))} If $\varepsilon'\le\tfrac18$, then with $K':=\lfloor Q/(2w'+1)\rfloor$, $\tau_*':=\lceil2\log_2K'\rceil$, $n_{\varepsilon'}(\tau):=C_12^\tau\varepsilon'^2+C_2(\tau+1)2^{\tau/2}$ and $A_2':=1+\log_2\sum_{\tau\le\tau_*'}n_{\varepsilon'}(\tau)2^{-\tau/2}$,
+\begin{multline}\label{eq:mixtwo}
+\bar T_t\ \ge\ 2(1-\gamma)\big[(1-\delta)\,m\,(k'_\gamma-1)-\delta\,m\log_2K'\\-2m\,h_2(\delta)-S-m\,A_2'\big].
+\end{multline}
+The program supports are unrestricted in size: the prefix and suffix programs of a coordinate may mix over arbitrarily many words.
+\end{theorem}
+For the tuned family $k_\gamma=\tfrac12L-0.80-\tfrac12\log_2\tfrac1\gamma+o(1)$ and $k'_\gamma=\tfrac12L-7.0-\tfrac12\log_2\tfrac1\gamma+o(1)$, the constant $7.0=\log_2(4\cdot36\sqrt2/\pi)+1$ being the overhead of the argument that avoids conditioning on the frame (Remark~\ref{rem:mixconst}), while $A_2'=\log_2C_2+2\log_2L+O(1)$. Hence with $\delta=0$ and $\gamma=1/L$, \eqref{eq:mixtwo} reads $\bar T_t\ge m\log_2K-2S-O(m\log L)$, i.e.
+\begin{equation}\label{eq:mixfloor}
+\bar\Tpre\ \ge\ (r-1)\big(m\log_2K-2S\big)-O(rm\log L):
+\end{equation}
+Under mixing, a coordinate not retained in memory still costs at least $L-O(\log L)$ committed $T$ gates per round---one half of the deterministic lower bound $2L$ of Theorem~\ref{M:thm:rate2}.
+
+The exchange rate for the remaining chargeable bits is still two gates per bit, reflected in the factor $2$ multiplying $S$. 
+
+The proof (Sec.~\ref{app:mixing}) uses the argument of Theorems~\ref{M:thm:main1} and~\ref{M:thm:rate2} applied not to the committed word but to a \emph{representative}: the cheapest word in the support of $\pi^{(t)}_j$ whose composite channel still has fidelity $\ge1-\eta^2$ with the target. Markov's inequality gives the qualifying set of words total probability $\ge1-\gamma$, which is where the factor $1-\gamma$ comes from. Lemma~\ref{lem:conc}(i) shows that it list-decodes the share to a window of half-width $w$. For (b) the representative must in addition be placed in a tube around a coset whose frame does not depend on the share, which Lemma~\ref{lem:cluster} does without bounding the supports, using the radius $36\sqrt2\eta$ in place of $\sqrt2\eta$.
+
+\begin{corollary}[Where mixing stops paying]\label{cor:mixstop}
+Write the shares in binary with $\log_2Q$ bits.
+
+(i) \emph{(the low bits are cheap, with a logarithm)} For a rotation $R_z(\varphi)$ implemented as a probabilistic mixture of Clifford+$T$ channels at diamond error $\delta$, Ref.~\cite{Bothe} gives the expected cost $T(\varphi,\delta)=\min\{T_{\mathrm{small}}(\varphi/2,\delta),\,1.52\log_2(1/\delta)-0.01\}$ \cite[Eqs.~(9)--(12), in the convention $R_Z(\theta)=e^{i\theta Z}$]{Bothe}, where $T_{\mathrm{small}}$ is the cost of a mixture whose under-rotation is the identity and the second entry is the angle-independent mixed-diagonal cost of~\cite{KLMPP}. Along the ray $\theta=\Theta(\sqrt\delta)$ that formula gives $T_{\mathrm{small}}=\Theta\big((\theta^2/\delta)\log_2(1/\delta)\big)$, so the logarithm is not a constant there. It is a bound along that ray only, and not a cost law on the region $\theta^2\le\delta$; two examples show why. 
+
+At $\theta=\delta/4$ the identity channel is already within $2\sin\theta\le\delta/2$ of the target in diamond norm, so zero $T$ gates suffice while $\theta^2\le\delta$ still holds, and no positive lower bound of that form can hold there. At $\theta=\delta L_\delta$, writing $L_\delta:=\log_2(1/\delta)$, reading the expression as a law would predict $\Theta(\delta L_\delta^3)$, whereas the formula of~\cite{Bothe} gives $\Theta(\delta L_\delta^2\log L_\delta)$, smaller by a factor $L_\delta/\log L_\delta$. 
+
+We use only the resulting \emph{upper} bound below. On the tuned grid the low $\ell$ bits of a share span angles $\varphi\le2\pi2^\ell/Q\approx8\varepsilon2^\ell$, so committing them through a mixed program at $\delta=\Theta(\varepsilon)$ costs $O(\varepsilon4^\ell L)$ expected $T$ gates, which is $O(1)$ for
+\begin{equation}\label{eq:freezone}
+\ell\ \le\ \tfrac12L-\tfrac12\log_2L-O(1),
+\end{equation}
+so~\eqref{eq:freezone} is a sufficient condition for a free zone supplied by a known construction. The same formula grows geometrically over the next $\tfrac12\log_2L$ bits and reaches the angle-independent cost $\Theta(L)$ at $\ell=\tfrac12L-O(1)$. At $\varepsilon=10^{-10}$ the formula gives $2.9$, $10.6$, $28.2$ and $50.5$ expected $T$ gates for $\ell=12,13,14,16$, against $\tfrac12L=16.6$ and $\tfrac12\log_2L=2.5$.
+
+(ii) \emph{(the coarse bits are charged, in total)} By Theorem~\ref{thm:mixing}(a) the $k_\gamma=\tfrac12L-O(1)$ coarse bits of every share are paid \emph{in total} at rate $\ge1-\gamma$ committed $T$ gates per bit per round, beyond an allowance of $\log_236+\rho_m(\bar T_t)/m$ bits per coordinate, and by (b) at rate $\ge2(1-\gamma)$ beyond $A_2'+2=O(\log L)$ bits, given (R).
+\end{corollary}
+The allowance in (ii) accounts for the information carried by Cliffords and by powers of $T$, which are free or cost one gate. On a grid with $4\mid Q$ the top bit $h$ of a share $u=hQ/2+v$ can be released at no magic cost---$R_z(2\pi u/Q)\sim Z^hR_z(2\pi v/Q)$ up to phase, so a process may commit the Clifford $Z^h$ and keep $v$---and with $8\mid Q$ the top three bits cost at most one $T$ gate. Theorem~\ref{thm:mixing} is therefore a statement about the total count and not about individual bit positions: every coarse bit beyond the allowance costs a committed $T$ gate, regardless of its position in the share.
+
+The two boundaries lie $\tfrac12\log_2L+O(1)$ bits apart: \eqref{eq:freezone} frees the bits below $\tfrac12L-\tfrac12\log_2L-O(1)$ by construction, and Theorem~\ref{thm:mixing} charges those above $\tfrac12L-O(1)$. Since the slack of Theorem~\ref{thm:mixing} is itself $O(\log L)$ bits per coordinate, the two agree to within the theorem's resolution. Their tightness remains open. Lemma~\ref{lem:nocheap} rules out extending the free zone all the way to $\tfrac12L-O(1)$, but it is stated for a fixed ratio $a=\theta/\sqrt\delta$ and gives no rate of divergence, so it does not exclude a free zone at, say, $\ell=\tfrac12L-\tfrac14\log_2L$, which would correspond to $a(L)=\Theta(L^{-1/4})$. Determining the exact boundary and the transition between the two regimes requires a lower bound quantitative in $a(L)$, which we do not have.
+
+\begin{lemma}[No cheap rotation at angle $\sqrt\delta$]\label{lem:nocheap}
+Fix $a>0$ and let $V_\delta:=e^{i\theta_\delta Z}$ with $\theta_\delta=a\sqrt\delta$. If $\mathcal E_\delta=\sum_jp_j\mathcal U_{U_j}$ is a mixture of single-qubit Clifford+$T$ unitaries with $\|\mathcal E_\delta-\mathcal U_{V_\delta}\|_\diamond\le\delta$, then for every integer $M$
+\[
+\liminf_{\delta\to0}\Pr_{j\sim p}\big[t_{\min}(U_j)>M\big]\ \ge\ \frac{a^2}{a^2+1/2},
+\]
+so $\liminf_{\delta\to0}\E_{j\sim p}t(U_j)\ge(M+1)a^2/(a^2+\tfrac12)$ and the expected $T$-count diverges as $\delta\to0$.
+\end{lemma}
+On the tuned grid a low residue of $\ell=\tfrac12L-C$ bits subtends an angle $\varphi\approx8\varepsilon2^\ell=\Theta(\sqrt\varepsilon)$, so Lemma~\ref{lem:nocheap} applies for every fixed $C$: no choice of program makes a residue at angle $\asymp\sqrt\delta$ cheap, and in particular the free zone~\eqref{eq:freezone} cannot extend to $\tfrac12L-O(1)$. The lemma does not cover ratios $a$ that shrink with $L$, so it does not by itself identify the exact position of the boundary.
+
+\begin{proposition}[Mixed passthrough]\label{prop:mixach}
+Let a \emph{mixed synthesizer} return, for every grid angle and every diamond budget $\varepsilon'$, a program of expected cost $\tau_{\mathrm{mix}}(\varepsilon')$. Running the fractional-passthrough process of Theorem~\ref{M:thm:frontier} with programs in place of words, each committed share at diamond budget $2\varepsilon/r$, gives a mixed-unitary CW process with
+\[
+S\le\lceil q\log_2Q\rceil+O(\log(mQr)),\quad T_t\le(m-q)\tau_{\mathrm{mix}}(2\varepsilon/r)
+\]
+for $t<r$, correct to coordinatewise diamond error $2\varepsilon$, since diamond errors of composed channels add. Campbell's Theorem~2~\cite{Campbell17} provides the synthesizer: for an axial target $V$ and any $\eta<0.01$, four Clifford+$T$ words $U_1,U_2,ZU_1Z,ZU_2Z$, each obtained by one call to a deterministic synthesizer at operator-norm accuracy $\eta$, can be mixed so that $\tfrac12\|\mathcal E-\mathcal U_V\|_\diamond\le5\eta^2$, i.e.\ $\|\mathcal E-\mathcal U_V\|_\diamond\le10\eta^2$; a similar four-word construction is in~\cite{Hastings17}. Hence $\tau_{\mathrm{mix}}(\varepsilon')\le f_{\mathrm{ax}}(\sqrt{\varepsilon'/10})$ with $f_{\mathrm{ax}}$ the \emph{worst-case} cost of the deterministic synthesizer at that accuracy over axial targets. 
+
+To obtain the average $\tfrac32L$ we assume, in place of Corollary~\ref{M:cor:frontier},
+\begin{equation}\label{eq:mixhyp}
+\E\,\max\big(t(U_1),t(U_2)\big)\ \le\ 3\log_2(1/\eta)+o(L)
+\end{equation}
+for the two words the construction actually calls at accuracy $\eta$, the expectation being over the uniform grid share. Under~\eqref{eq:mixhyp} the committed cost per share is
+\[
+\begin{aligned}
+\tau_{\mathrm{mix}}(2\varepsilon/r)\ &\le\ 3\log_2\sqrt{5r/\varepsilon}+o(L)\\
+&=\ \tfrac32L+\tfrac32\log_2(5r)+o(L),
+\end{aligned}
+\]
+and the mixed family has slope $\alpha_{\mathrm{mix}}\to\tfrac32$.
+\end{proposition}
+Hypothesis~\eqref{eq:mixhyp} is stronger than Corollary~\ref{M:cor:frontier} and is not implied by it. Corollary~\ref{M:cor:frontier} concerns the mean cost of one synthesis call at a uniform grid angle, whereas Campbell's second word approximates a target offset from the first, with the offset chosen from the first word's error direction; it need not be a grid point, and the cost that enters is the maximum of the two call costs rather than either mean. We do not prove~\eqref{eq:mixhyp}, and the $\tfrac32$ of this proposition is conditional on it.
+
+Two qualifications are needed. First, the construction is not a pair of words with exactly antiparallel errors. Such a pair $VR_{\mathbf n}(\pm a)$, whose equal-weight mixture would have diamond error $2\sin^2(a/2)$, need not exist at all: for $V=R_z(2\pi/25)$ it would give $W_++W_-=2\cos(a/2)V$, so the ratio $\zeta_{25}^{-1}$ of the diagonal entries of $V$, a primitive $25$th root of unity of degree $20$ over $\Q$, would have to lie in the degree-$8$ field $\Q(\zeta_{16})$ that contains every entry of every $SU(2)$ representative of a Clifford+$T$ word---a contradiction at every $T$-count, and $Q=25$ is in the tuned family. Campbell's construction instead uses one over- and one under-rotation with weights chosen to cancel the first-order $Z$ component, leaving residual $X,Y$ components at second order. 
+
+Second, the average cost of a single deterministic synthesis is not the cost of a mixed program. On the $20\,000$ grid angles of Fig.~\ref{M:fig:frontier}(b), \texttt{gridsynth} at nominal tolerance $\eta=7.07\times10^{-6}$ gives $\E_u\tau=50.37\pm0.02$ (s.d.\ $2.28$, range $37$--$61$), which is a measurement of single-word cost at that accuracy. The budget $2\varepsilon/r$ requires $\eta=\sqrt{\varepsilon/(5r)}=3.16\times10^{-6}$ at $\varepsilon=10^{-10}$, $r=2$; a single call at that nominal tolerance costs $\E_u\tau=53.91\pm0.02$ (s.d.\ $2.21$), in line with the Ross--Selinger scaling $3\log_2(1/\eta)-0.36=54.4$, and the four-word program costs the larger of two such calls, somewhat more. Certifying the mixed-program cost requires synthesizing both words at $\eta$ and verifying the channel error; this certification is not performed here. For comparison the angle-independent mixed-diagonal formula of~\cite{KLMPP,Bothe} gives $50.5$ at $\delta=10^{-10}$, and all of these are about half the deterministic $102.32$. 
+
+These values were computed by \texttt{scripts/mixing\_bounds.py} and \texttt{scripts/run\_mixed\_achievable.py}.
+
+\paragraph{The exchange curve under mixing.} Corollary~\ref{cor:mixstop} and Proposition~\ref{prop:mixach} together describe the achievable tradeoff. Committing the low $\ell\le\tfrac12L-\tfrac12\log_2L-O(1)$ bits of a share costs $O(1)$. Over the next $\tfrac12\log_2L$ bits the cost of that construction grows geometrically to $\Theta(L)$, and by $\ell=\tfrac12L-O(1)$ Lemma~\ref{lem:nocheap} shows no program at all is cheap, though it does not pin down where within this window the transition occurs. From $\ell=\tfrac12L-O(1)$ onward, committing needs a program for an angle $\gtrsim\sqrt\varepsilon$ whose cost is the angle-independent $\tfrac32L$ independent of the number of bits it carries~\cite{KLMPP,Bothe}. The \emph{achievable} curve---the cost of the constructions above, not a determination of the optimum---is thus flat at $O(1)$ on the low $\tfrac12L-\tfrac12\log_2L$ bits, climbs over the next $\tfrac12\log_2L$, and is flat again at $\tfrac32L$, except for the top $\log_2\gcd(Q,8)$ bits, which are Clifford or $T$-power information and are free wherever they sit (Corollary~\ref{cor:mixstop}(ii)). 
+
+Averaged over the share, this is $\alpha_{\mathrm{mix}}=\tfrac32$ per bit \emph{of the share}---not per coarse bit, the unit in which Theorem~\ref{thm:mixing} charges---but the memory worth keeping is the \emph{high} part: remembering the top $\tfrac12L+O(\log L)$ bits of a coordinate and committing the rest releases the remaining memory for $O(1)$ committed $T$ gates, whereas remembering the low half saves nothing. 
+
+Theorem~\ref{thm:mixing} bounds \emph{every} program from below by a line of the same shape---nothing charged on the low part, slope $\ge1-\gamma$ unconditionally and $\ge2(1-\gamma)$ given (R) on the coarse bits beyond an $O(\log L)$ allowance---and under Conjecture~\ref{M:conj:equid} the bound enforces an entry fee of $(1-o(1))L$ once a committed word carries more than $o(L)$ coarse bits, followed by every slope below $3$. Bound and construction agree at the top of the share and at $S=0$; the optimal cost between these endpoints remains open.
+
+\begin{corollary}[Rate three under mixing]\label{cor:mixq}
+Assume Conjecture~\ref{M:conj:equid}, with $\psi$ non-decreasing, and let the process be mixed-unitary and correct with probability $\ge1-\delta$. Fix $\gamma$ with $\varepsilon':=36\sqrt{2\varepsilon/\gamma}\le2^{-6}$, put $L':=\log_2(1/\varepsilon')$ and $\bar k:=\log_2K'$ with $K'$ as in Theorem~\ref{thm:mixing}, and
+\[
+D_t':=(1-\delta)m(k'_\gamma-1)-2mh_2(\delta)-2\delta m\log_2K'-S.
+\]
+Then for every $\alpha<3$ there is $A'_\alpha$, depending only on $\alpha$ and $\psi$, such that for every round $t<r$
+\begin{equation}\label{eq:mixrate}
+\bar T_t\ \ge\ (1-\gamma)\,\alpha\,\big(D_t'-mA'_\alpha\big),
+\end{equation}
+and, for every $\nu\in(0,2)$, writing $\tau'_\nu:=\lfloor(2-\nu)L'\rfloor$ and $\bar{\mathcal A}'^{>}_t$ for the expected number of coordinates that are correct and whose representative round-$t$ word has minimal $T$-count above $\tau'_\nu$,
+\begin{equation}\label{eq:mixactive}
+\bar{\mathcal A}'^{>}_t\ \ge\ \frac{D_t'-m\big(2+\psi(\tau'_\nu)\big)}{\bar k}.
+\end{equation}
+\end{corollary}
+Since $L'=\tfrac12L-\tfrac12\log_2(1/\gamma)-5.67$, the corollary gives, for $\delta=0$ and $\gamma\to0$ slowly, $\bar\Tpre\ge\tfrac32(r-1)(m\log_2K-2S)-o(rmL)$. This meets Proposition~\ref{prop:mixach} in its leading term at $S=0$, both giving $\tfrac32(r-1)mL$, but not in its dependence on $S$: the lower bound falls with slope $3(r-1)$ in $S$, the whole-coordinate passthrough family only with $\tfrac32(r-1)$. The two rates use different units---the bound charges up to $3$ per coarse bit, of which a share has $\tfrac12L$, while the family trades whole shares of $\log_2Q$ bits against $\tfrac32L$ gates---and they therefore cannot be combined into a single exchange rate $\alpha$ away from $S=0$. 
+
+Closing the gap would require an achievable family that keeps the high bits of some coordinates and sheds their low bits cheaply, which we do not construct. 
+
+A representative of cost at most $(2-\nu)L'$ carries $o(L)$ bits about its coordinate: the fee is $(1-o(1))L$, one half of the deterministic $(2-o(1))L$. Neither $A'_\alpha$ nor $\psi$ is explicit, and at $\varepsilon=10^{-10}$ the radius $\varepsilon'=2^{-9.9}$ leaves only $L'=9.9$, so the corollary concerns the asymptotic rate.
+
+\begin{proposition}[Measurement-adaptive protocols]\label{prop:adaptive}
+Let a process be as in Definition~\ref{def:mixed} except that the round-$t$ program of coordinate $j$ is an adaptive circuit on $n$ qubits---the coordinate's qubit and $n-1$ ancillas prepared in $|0\rangle$ and measured or reset before the next program---built from Clifford gates, $T$ gates and single-qubit computational-basis measurements, in which each gate may depend on the outcomes obtained earlier in the same program, and such that on every outcome branch of nonzero probability the operation induced on the coordinate's qubit is unitary. Repeat-until-success and fallback synthesis~\cite{BRS,KLMPP} are of this form. Let $T_t$ and $M_t$ be the expected numbers of $T$ gates and of measurements executed in round $t$, and $|\mathcal C_n|$ the order of the $n$-qubit Clifford group modulo phase. Then, with $k_\gamma$ and $\rho_m$ as above,
+\begin{multline}\label{eq:adaptive}
+S+(2n+2)\frac{\bar T_t+\bar M_t}{1-\gamma}+m\log_2|\mathcal C_n|+\rho_m\Big(\frac{\bar T_t+\bar M_t}{1-\gamma}\Big)\\ \ge\ (1-\delta)mk_\gamma-h_2(\delta).
+\end{multline}
+\end{proposition}
+Asymptotically $\bar T_t+\bar M_t\ge(1-\gamma)(m\log_2K-2S)/(4n+4)\cdot(1-o(1))-O(m\log L)$: with one ancilla ($n=2$) a share not retained in memory costs at least $L/12$ committed $T$ gates plus measurements per round, against $0.53\log_2(1/\delta)+4.86\approx0.53L$ achievable by mixed fallback~\cite[Eq.~(13)]{KLMPP,Bothe}. The constant is weak because~\eqref{eq:adaptive} counts transcripts by a crude token bound and not by a normal form; at $n=1$ it gives four tokens per bit where Theorem~\ref{thm:mixing}(a) gives one. Equation~\eqref{eq:adaptive} establishes the scaling: with a bounded number of ancillas, measurement adaptivity retains a lower bound of the same order, with a rate reduced by a factor depending only on $n$.
+
+\paragraph{Comparison of the results.} In the deterministic CW model the rigorous lower bound per share is $2L$ with explicit constants (Theorem~\ref{M:thm:rate2}) and $(\tfrac52-o(1))L$ asymptotically (Theorem~\ref{M:thm:rate52}), the conjectural lower bound and entry fee are $(3-o(1))L$ and $(2-o(1))L$ (Theorem~\ref{M:thm:main2}), and the achievable cost is $3L$ (Theorem~\ref{M:thm:frontier}). 
+
+Under mixing, the same three statements read $L$ (Theorem~\ref{thm:mixing}(b)), $(\tfrac32-o(1))L$ and $(1-o(1))L$ (Corollary~\ref{cor:mixq}, under the same Conjecture~\ref{M:conj:equid}) and $\tfrac32L$ (Proposition~\ref{prop:mixach} under~\eqref{eq:mixhyp}; $1.52L$ measured in~\cite{KLMPP}), all of them asymptotic in $L$---the two lower bounds vacuous at $\varepsilon=10^{-10}$, the two achievable costs conditional on a synthesis hypothesis, Corollary~\ref{M:cor:frontier} in one model and~\eqref{eq:mixhyp} in the other. Mixing rescales the accuracy exponent by $\tfrac12$, and with it every quantity linear in $L$, leaving the ratio rigorous-with-explicit-constants\,:\,conjectural\,:\,achievable at $2:3:3$ in both models; it preserves the exchange rate for the chargeable bits.
+
+Remark~\ref{rem:mixconst} in Sec.~\ref{app:mixing} evaluates the constants. Theorem~\ref{thm:mixing} is asymptotic in the same sense as Theorems~\ref{M:thm:main1} and~\ref{M:thm:rate2}, and its additive terms are larger, because $\log_236$ and $A_2'$ are now compared with $\tfrac12L$ bits instead of $L$: at $\varepsilon=10^{-10}$, $\gamma=1/4$ and $S=0$, \eqref{eq:mixone} gives $\bar T_t\ge4.1\,m$ and~\eqref{eq:mixtwo} is vacuous, becoming positive only at $L\ge56$ ($L\ge45$ under the bounded-support hypothesis).
+
+\subsection{Proofs}\label{app:mixing}
+
+
+\begin{proof}[Proof of Lemma~\ref{lem:fid}]
+Let $J(\mathcal E)=(\mathcal E\otimes I)(|\Phi\rangle\langle\Phi|)$ and $\Phi_V:=|\Phi_V\rangle\langle\Phi_V|=J(\mathcal U_V)$. Since $|\Phi\rangle\langle\Phi|$ is an admissible input in the definition of the diamond norm, $\|J(\mathcal E)-\Phi_V\|_1\le\|\mathcal E-\mathcal U_V\|_\diamond$. For a state $\rho$ and a pure state $\Phi$, $\|\rho-\Phi\|_1=2\max_{0\le P\le I}\tr P(\rho-\Phi)\ge2\tr(I-\Phi)(\rho-\Phi)=2(1-\langle\Phi|\rho|\Phi\rangle)$. Combining these bounds gives $1-F_e\le\tfrac12\|\mathcal E-\mathcal U_V\|_\diamond$. For $\mathcal E=\sum_ip_i\mathcal U_{X_i}$, $F_e=\sum_ip_i|\langle\Phi_V|(X_i\otimes I)|\Phi\rangle|^2=\sum_ip_i|\tr(V^\dagger X_i)/2|^2$.
+\end{proof}
+
+\begin{proof}[Proof of Lemma~\ref{lem:conc}]
+Both sides of (i) and the hypothesis are invariant under $X_i\mapsto-X_i$, so write $V^\dagger X_i=W_i=\cos\tfrac{\phi_i}2I-i\sin\tfrac{\phi_i}2(\mathbf n_i\!\cdot\!\sigma)$ with $\phi_i\in[0,\pi]$, so that $f_i=\cos^2(\phi_i/2)$ and $s_i:=1-f_i=\sin^2(\phi_i/2)$, whence $\sum_ip_is_i\le\eta^2$.
+
+(i) With $R_z(\psi)^\dagger=\cos\tfrac\psi2I+i\sin\tfrac\psi2Z$ one has $\tfrac12\tr(R_z(\psi)^\dagger W_i)=\cos\tfrac\psi2\cos\tfrac{\phi_i}2+\sin\tfrac\psi2\sin\tfrac{\phi_i}2n_{i,z}$, whose modulus is at most $\cos\tfrac{|\psi|}2\cos\tfrac{\phi_i}2+\sin\tfrac{|\psi|}2\sin\tfrac{\phi_i}2=\cos\tfrac{|\psi|-\phi_i}2$. Now
+\[
+\cos^2\tfrac{|\psi|-\phi}2-\cos^2\tfrac\psi2=\tfrac12\big[\cos\psi(\cos\phi-1)+|\sin\psi|\sin\phi\big]
+\]
+which is at most $\sin^2\tfrac\phi2+|\sin\psi|\sin\tfrac\phi2$ for $\phi\in[0,\pi]$. Averaging with $p$ and using $\sum_ip_i\sin\tfrac{\phi_i}2\le(\sum_ip_is_i)^{1/2}\le\eta$ by Cauchy--Schwarz gives~\eqref{eq:window}. For the threshold, $\cos^2\tfrac\psi2+\eta^2+\eta|\sin\psi|<1-\eta^2$ if and only if $\sin^2\tfrac{|\psi|}2>2\eta^2+\eta|\sin\psi|$; since $|\sin\psi|\le2\sin\tfrac{|\psi|}2$ it suffices that $x^2-2\eta x-2\eta^2>0$ with $x=\sin\tfrac{|\psi|}2$, i.e.\ $x>(1+\sqrt3)\eta$.
+
+(ii) $f_i\ge1-\eta^2$ gives $\sin(\phi_i/2)\le\eta$; by Lemma~\ref{M:lem:dproj}, $\dproj(X_i,V)=2\sin(\phi_i/4)=\sin(\phi_i/2)/\cos(\phi_i/4)\le\eta/\cos(\pi/4)=\sqrt2\eta$.
+\end{proof}
+
+\begin{lemma}[Fano for list decoding]\label{lem:fanolist}
+Let $A$ take values in a set of size $M$, let $\mathcal L$ be a random list that is a function of $Y$ with $|\mathcal L|\le\ell$ and $\Pr[A\in\mathcal L]\ge1-\delta$. Then $H(A\mid Y)\le h_2(\delta)+(1-\delta)\log_2\ell+\delta\log_2M$.
+\end{lemma}
+\begin{proof}
+With $E:=\mathbf1[A\notin\mathcal L]$, $H(A\mid Y)\le H(E)+H(A\mid Y,E)\le h_2(\delta)+(1-\delta)\log_2\ell+\delta\log_2M$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:mixing}(a)]
+Fix $t<r$ and, as in the proof of Theorem~\ref{M:thm:main1}, put $A:=a^{(t)}$, $Z:=(\mathrm{Past},\mathrm{Fut},\rho)$ and let $\sigma_t$ be the snapshot after round $t$. Given $\rho$, the process is deterministic, so the programs of rounds $<t$ on every coordinate are functions of $(\mathrm{Past},\rho)$ and those of rounds $>t$ are functions of $(\sigma_t,\mathrm{Fut})$; both are therefore determined by $(\sigma_t,Z)$. Fix a coordinate $j$ and values $(s,z)$, let $c:=\sum_{s'\ne t}a^{(s')}_j$ and $V_a:=R_z(\Delta(a+c))$.
+
+\emph{Representative.} For $U$ in the support of $\pi^{(t)}_j$ put $\mathcal C_U:=\mathcal E^{>t}_j\circ\mathcal U_U\circ\mathcal E^{<t}_j$. Because the samples of different rounds are independent, $\mathcal E_j=\sum_U\pi^{(t)}_j(U)\mathcal C_U$. Since $F_e(\cdot,V_a)$ is affine, on the event that the coordinate is correct Lemma~\ref{lem:fid} gives $\E_U[1-F_e(\mathcal C_U,V_a)]=1-F_e(\mathcal E_j,V_a)\le\varepsilon$. Markov's inequality then gives $\Pr_U[1-F_e(\mathcal C_U,V_a)>\eta^2]\le\varepsilon/\eta^2=\gamma$. Let $W^*_j$ be the cheapest $U$ (ties broken by a fixed order) with $1-F_e(\mathcal C_U,V_a)\le\eta^2$, and $W^*_j:=I$ if the coordinate is incorrect. Then in either case
+\begin{equation}\label{eq:rep}
+\E_{U\sim\pi^{(t)}_j}t(U)\ \ge\ (1-\gamma)\,t(W^*_j).
+\end{equation}
+
+\emph{Decoding.} Given $(W^*_j,s,z)$, the decoder knows $\mathcal C_{W^*_j}$ and outputs the list $\mathcal L_j:=\{a':F_e(\mathcal C_{W^*_j},V_{a'})\ge1-\eta^2\}$, which contains $a$ on the correct event. Moreover $\mathcal C_{W^*_j}$ is a mixture of unitaries $X_i=U^>_iW^*_jU^<_i$ with $\sum_ip_i|\tr(V_a^\dagger X_i)/2|^2\ge1-\eta^2$, and $V_{a'}=V_aR_z(\psi)$ with $\psi=\Delta(a'-a)$ reduced to $[-\pi,\pi]$; by Lemma~\ref{lem:conc}(i) every $a'\in\mathcal L_j$ satisfies $\sin(\pi|a'-a|_Q/Q)\le(1+\sqrt3)\eta$, i.e.\ $|a'-a|_Q\le w$, so $|\mathcal L_j|\le2w+1$.
+
+\emph{Counting.} Let $M^*:=(W^*_1,\dots,W^*_m)$ and $\mathcal L:=\prod_j\mathcal L_j$, of size $\le(2w+1)^m$, a function of $(M^*,\sigma_t,Z)$ containing $A$ with probability $\ge1-\delta$. By item (i) of the proof of Theorem~\ref{M:thm:main1}, $H(A\mid Z)=m\log_2K$, so Lemma~\ref{lem:fanolist} gives $I(A;M^*,\sigma_t\mid Z)\ge(1-\delta)mk_\gamma-h_2(\delta)$. On the other side, $I(A;M^*,\sigma_t\mid Z)\le H(\sigma_t)+H(M^*)\le S+\bar T'+m\log_236+\rho_m(\bar T')$ by Definition~\ref{M:def:model}(iii) and Lemma~\ref{M:lem:ent}, with $T':=\sum_jt(W^*_j)\ge\sum_jt_{\min}(W^*_j)$. Also, $\bar T'\le\bar T_t/(1-\gamma)$ by~\eqref{eq:rep} summed over $j$ and averaged. Since $\rho_m$ is increasing, \eqref{eq:mixone} follows.
+\end{proof}
+
+\begin{proof}[Proof of Lemma~\ref{lem:nocheap}]
+Choose $SU(2)$ representatives and write $U_j=q_{0j}I+i(q_{xj}X+q_{yj}Y+q_{zj}Z)$ with $\sum_\nu q_{\nu j}^2=1$. In the orthonormal basis $(I,iX,iY,iZ)$ of the normalized Choi vector these are its real coordinates. The diamond bound makes the normalized Choi states differ by at most $\delta$ in trace norm, so measuring the projector onto the orthogonal complement of the \emph{identity} channel's Choi vector, and separately the off-diagonal observable between $I$ and $iZ$, gives
+\[
+\begin{gathered}
+\sum_jp_j(1-q_{0j}^2)\le B_\delta:=\sin^2\theta_\delta+\tfrac\delta2,\\
+\sum_jp_jq_{0j}q_{zj}\ge\cos\theta_\delta\sin\theta_\delta-\tfrac\delta2 .
+\end{gathered}
+\]
+Fix $M$. There are finitely many projective Clifford+$T$ words of minimal $T$-count $\le M$, so $\mu_M:=\min(1-q_0^2)>0$ over the nonidentity ones. By the first inequality the low-cost nonidentity words carry total probability at most $B_\delta/\mu_M$, so their contribution to the left side of the second has modulus at most $B_\delta/(2\mu_M)=O(\theta_\delta^2)$, while the identity contributes nothing because $q_z=0$ there. Writing $P_{>M}$ for the probability that $t_{\min}(U_j)>M$, Cauchy--Schwarz with the first inequality bounds the remaining contribution by $\sqrt{P_{>M}B_\delta}$. With $\theta_\delta=a\sqrt\delta$ one has $B_\delta=(a^2+\tfrac12)\delta+O(\delta^2)$ while the right side of the second inequality is $a\sqrt\delta-\tfrac\delta2+O(\delta^{3/2})$, of order $\sqrt\delta$; since the low-cost part contributes only $O(\delta)$, the high-cost part must supply this contribution, giving $\sqrt{P_{>M}(a^2+\tfrac12)\delta}\ge a\sqrt\delta(1-o(1))$ and hence $\liminf P_{>M}\ge a^2/(a^2+\tfrac12)$. As $t(U)\ge t_{\min}(U)$, the expected recorded $T$-count is at least $(M+1)P_{>M}$, and $M$ was arbitrary.
+\end{proof}
+
+\begin{lemma}[Frame clustering]\label{lem:cluster}
+Let $p,q$ be distributions on finite sets of unitaries $\{U^<_i\}$, $\{U^>_k\}$, let $W,V\in\SU$, put $F_{ik}:=|\tr(V^\dagger U^>_kWU^<_i)/2|^2$, and suppose $\sum_{i,k}p_iq_k(1-F_{ik})\le\eta^2$ with $\eta\le1/8$. Let $P:=\{i:\sum_kq_k(1-F_{ik})\le4\eta^2\}$ and $K:=\{k:\sum_ip_i(1-F_{ik})\le4\eta^2\}$. Then $p(P)\ge3/4$ and $q(K)\ge3/4$; $\dproj(U^<_i,U^<_{i'})\le8\sqrt2\eta$ for all $i,i'\in P$ and $\dproj(U^>_k,U^>_{k'})\le8\sqrt2\eta$ for all $k,k'\in K$; and some pair $(i,k)\in P\times K$ has $\dproj(U^>_kWU^<_i,V)\le4\sqrt2\eta$.
+\end{lemma}
+\begin{proof}
+We use $1-F\le x\Rightarrow\dproj\le\sqrt{2x}$ (Lemma~\ref{lem:conc}(ii) with $\eta^2$ replaced by $x$, valid for $x\le1/4$), together with bi-invariance and the triangle inequality for $\dproj$. Markov's inequality gives $p(P),q(K)\ge3/4$. For $i\in P$ the set $K_i:=\{k:1-F_{ik}\le16\eta^2\}$ has $q(K_i)\ge3/4$, again by Markov's inequality. Given $i,i'\in P$, choose $k\in K_i\cap K_{i'}$, a set of mass $\ge1/2$: then $\dproj(U^>_kWU^<_i,V)\le4\sqrt2\eta$ and likewise for $i'$, so $\dproj(U^>_kWU^<_i,U^>_kWU^<_{i'})\le8\sqrt2\eta$, and bi-invariance gives $\dproj(U^<_i,U^<_{i'})\le8\sqrt2\eta$. The suffix statement follows by symmetry. For the last claim, take any $i\in P$ and $k\in K_i\cap K$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:mixing}(b)]
+Keep the notation of (a). Given $(s,z)$, the prefix program $\pi^<$ and the suffix program $\pi^>$ of coordinate $j$ are fixed distributions. The prefix is a function of $(\mathrm{Past},\rho)$ and the suffix of $(\sigma_t,\mathrm{Fut})$. Both $\mathrm{Past}$ and $\mathrm{Fut}$ are part of $z$, and the executor samples the programs independently. By Lemma~\ref{lem:fid} the representative $W^*_j$ of (a) satisfies $\sum_{i,k}p_iq_k(1-F_{ik})\le\eta^2$ with $F_{ik}=|\tr(V_a^\dagger U^>_kW^*_jU^<_i)/2|^2$, and~\eqref{eq:rep} holds as before.
+
+\emph{A frame independent of the share.} Let $a_0=a_0(s,z)$ be the lexicographically first value in the conditional support of $A_j$ given $(s,z)$ on which coordinate $j$ is correct; if that event has conditional probability zero, set $X:=Y:=I$, in which case $d_j=1$ and the coordinate contributes nothing, since the splitting on $E_j$ below then costs $h_2(1)=0$. The anchor $a_0$ is a function of $(s,z)$ alone, and Lemma~\ref{lem:cluster} applies at $a_0$ because correctness at $a_0$ is exactly the hypothesis $\sum_{i,k}p_iq_k(1-F_{ik})\le\eta^2$ for that value. 
+
+Choosing $a_0=0$ instead need not satisfy the hypothesis. On $Q=8$, where every grid rotation is a power of $T$, the process that stores the round-$t$ share and commits $T^{A_j+a^{(r)}_j}$ in the last round is exactly correct at every share; but under a conditioning in which $a^{(r)}_j=0$ and the true share is $1$, the suffix is $T$ and evaluating $1-F$ at the value $0$ rather than at the true share gives $\sin^2(\pi/8)=0.146$, far above $4\eta^2$, so the clustering sets of Lemma~\ref{lem:cluster} are empty and the lemma does not apply.
+
+Apply Lemma~\ref{lem:cluster} at $a_0$, with $W^*_j(a_0)$ and $V_{a_0}$, and let $i_1,k_1$ be the lexicographically first elements of the resulting sets $P_{a_0},K_{a_0}$; put $X:=U^<_{i_1}$ and $Y:=U^>_{k_1}$, functions of $(s,z)$ alone. 
+
+For the actual value $a$, Lemma~\ref{lem:cluster} gives $P_a,K_a$ and a pair $(i,k)\in P_a\times K_a$ with $\dproj(U^>_kW^*_jU^<_i,V_a)\le4\sqrt2\eta$. Since $p(P_a),p(P_{a_0})\ge3/4$, some $i_2$ lies in both, and clustering inside $P_a$ and inside $P_{a_0}$ gives $\dproj(U^<_i,X)\le16\sqrt2\eta$; likewise $\dproj(U^>_k,Y)\le16\sqrt2\eta$. Hence
+\[
+\begin{aligned}
+\dproj\big(YW^*_jX,V_a\big)&\le4\sqrt2\eta+16\sqrt2\eta+16\sqrt2\eta\\
+&=36\sqrt2\eta=\varepsilon',
+\end{aligned}
+\]
+so $W^*_j\in T_{\varepsilon'}(Y^\dagger V_aX^\dagger)$, the tube of radius $\varepsilon'$ around the coset $G_1R_zG_2$ with $G_1=Y^\dagger$ and $G_2=X^\dagger$, the grid shift being absorbed into $\theta$ as in Corollary~\ref{M:cor:profile}. By Theorem~\ref{M:thm:tube} with $\varepsilon'\le1/8$ the number of such words of cost $\le\tau$ is at most $n_{\varepsilon'}(\tau)$. Nearest-grid decoding of $YW^*_jX$ returns $a$ up to $w'$, a grid rotation within $2\varepsilon'$ of $V_a$ being at most $(2Q/\pi)\arcsin\varepsilon'$ steps away, so $\mathcal L_j$ is a window of half-width $w'$.
+
+\emph{Coarse variable.} Let $h:=2w'+1$ and $n:=\lfloor Q/h\rfloor=K'$, and partition $\Z_Q$ into $n$ consecutive cells of sizes $\lfloor Q/n\rfloor$ or $\lceil Q/n\rceil$. Every cell then contains at least $h$ residues, since $n\le Q/h$ gives $\lfloor Q/n\rfloor\ge h$, and at most $2h$: the hypothesis $\varepsilon'\le1/8$ gives $h\le(4Q/\pi)\arcsin\tfrac18+1\le0.16\,Q+1\le Q/2$ for $Q\ge3$, whence $n\ge Q/(2h)$ and $\lceil Q/n\rceil\le2h$. (The sharper $h+1$ is false: $Q=100$ and $\varepsilon'=0.115$ give $w'=7$, $h=15$, $n=6$ and cells of size $17$. Only the bound $2h$ is used.)
+
+Let $\bar A_j$ be the cell of $A_j$, so $|\supp\bar A_j|\le K'$. As $A_j$ is uniform on a translate of $[K]$ given $z$ and each cell contains at most $2h$ of its values, $H(\bar A_j\mid z)\ge\log_2K-\log_2(2w'+1)-1=k'_\gamma$, and the $\bar A_j$ are conditionally independent given $Z$, so~\eqref{M:eq:chain} holds with $\bar A_j$ in place of $A_j$. A window of $h$ consecutive residues meets at most two cells, every cell having at least $h$ of them, so $\mathcal L_j$ determines $\bar A_j$ up to a list of size $2$ and Lemma~\ref{lem:fanolist} gives $I(\bar A_j;W^*_j,\sigma_t\mid Z)\ge(1-\delta)(k'_\gamma-1)-h_2(\delta)-\delta\log_2K'=:\ell'_\delta$.
+
+We now follow the proof of Theorem~\ref{M:thm:rate2} from~\eqref{M:eq:chain} with $\bar A_j$ and $\ell'_\delta$, replacing the per-coordinate step by
+\[
+I\big(\bar A_j;W^*_j\mid E_j=1,s,z\big)\le\tfrac12\E\big[t(W^*_j)\mid E_j=1,s,z\big]+A_2',
+\]
+which is Lemma~\ref{M:lem:gibbs} for the pair $(\bar A_j,W^*_j)$ with $|\supp\bar A_j|\le K'$, $\tau_*=\tau_*'$ and the profile $n_{\varepsilon'}$; no conditioning on the frame is needed, because $(X,Y)$ is a function of $(s,z)$. On the event $E_j=0$, when coordinate $j$ is incorrect, the representative is $W^*_j=I$ by definition, a constant given $(s,z)$, so $I(\bar A_j;W^*_j\mid E_j=0,s,z)=0$ and splitting on $E_j$ costs only $h_2(d_j)$:
+\[
+\begin{aligned}I(\bar A_j;W^*_j\mid s,z)&\le h_2(d_j)\\&\quad+(1-d_j)\,I\big(\bar A_j;W^*_j\mid E_j=1,s,z\big).\end{aligned}
+\]
+Then $(1-d_j)\E[t(W^*_j)\mid E_j=1,s,z]\le\E[t(W^*_j)\mid s,z]\le\E[t_j\mid s,z]/(1-\gamma)$ by~\eqref{eq:rep}, and summing over $j$ and averaging as in Theorem~\ref{M:thm:rate2} (Jensen's inequality for $h_2$, $\sum_j\bar d_j\le m\delta$),
+\[
+m\ell'_\delta\le S+\frac{\bar T_t}{2(1-\gamma)}+mA_2'+mh_2(\delta),
+\]
+which rearranges to~\eqref{eq:mixtwo}.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:mixq}]
+Keep the notation of the proof of Theorem~\ref{thm:mixing}(b): the coarse variable $\bar A_j$ with $|\supp\bar A_j|\le K'$, the representative $W^*_j$ in the tube of radius $\varepsilon'$ around $Y^\dagger V_aX^\dagger$, whose frame $(X,Y)$ is a function of $(s,z)$, and~\eqref{eq:rep}. Conditional on $E_j=1$ the alphabet of $W^*_j$ is that tube, and since $\varepsilon'\le2^{-6}$ Conjecture~\ref{M:conj:equid} gives it the profile $n'(\tau):=2^{\psi(\tau)}(1+2^\tau\varepsilon'^2)$. 
+
+For~\eqref{eq:mixrate}, with $1<\alpha<3$ as in the proof of Theorem~\ref{M:thm:main2}, follow the proof of Theorem~\ref{thm:mixing}(b) with Lemma~\ref{M:lem:gibbs} at $\lambda=1/\alpha$, $\tau'_*:=\lceil\alpha\log_2K'\rceil$ and the profile $n'$ in place of $n_{\varepsilon'}$; the sum $Z_\lambda$ is bounded in terms of $\alpha$ alone exactly as in the proof of Theorem~\ref{M:thm:main2}, with $L'$ in place of $L$, because $K'\le\pi/(2\varepsilon')$: if $(4Q/\pi)\varepsilon'\ge2$ then $2w'+1\ge(2Q/\pi)\varepsilon'$, and otherwise $K'\le Q<\pi/(2\varepsilon')$. Every step that produced the factor $2$ in~\eqref{eq:mixtwo} now produces $\alpha$, and the extra $-\delta m\log_2K'$ in $D_t'$ only weakens the bound. 
+
+For~\eqref{eq:mixactive}, follow the proof of~\eqref{M:eq:active} with $A_j\to\bar A_j$, $k\to\bar k$, $\ell_\delta\to\ell'_\delta$ and $\tau_\nu\to\tau'_\nu$, with no additional contribution from the frame, since $(X,Y)$ is a function of $(s,z)$: on $E_j=1$ the representatives of cost at most $\tau'_\nu$ number at most $2^{\psi(\tau'_\nu)+1}$, because $2^{\tau'_\nu}\varepsilon'^2\le1$, so $I(\bar A_j;W^*_j\mid s,z)\le h_2(d_j)+d_j\bar k+(1-d_j)[2+\psi(\tau'_\nu)+q_j\bar k]$, and averaging and summing gives~\eqref{eq:mixactive}.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:adaptive}]
+\emph{Transcripts.} Fix a coordinate and a round and consider the adaptive circuit as a tree of branches. On a branch with outcome string $o$, move every Clifford to the right end: a $T$ gate conjugated by the Cliffords before it becomes a Pauli rotation $e^{-i\pi P/8}$ with $P$ one of the $2\cdot4^n$ signed $n$-qubit Paulis, and a computational-basis measurement becomes a Pauli measurement with outcome $\pm$, one of $2\cdot4^n$ with sign and outcome merged. The branch is therefore determined by a \emph{transcript}: a sequence of $\tau+\mu$ tokens, each from a set of size $4\cdot4^n=2^{2n+2}$, followed by one Clifford in $\mathcal C_n$. The number of transcripts with $N$ tokens is at most $|\mathcal C_n|2^{(2n+2)N}$, and the number of $m$-tuples with at most $N$ tokens in total is at most $|\mathcal C_n|^m2^{(2n+2)N}\binom{N+m}m$. By the Elias-$\gamma$ argument of Lemma~\ref{M:lem:ent}, an $m$-tuple $M^*$ of transcripts with $N^*$ tokens in total has $H(M^*)\le(2n+2)\bar N^*+m\log_2|\mathcal C_n|+\rho_m(\bar N^*)$.
+
+\emph{Branch probabilities.} On a branch the operation induced on the coordinate's qubit is $K_o=\sqrt{p_o}U_o$ with $U_o$ unitary; $K_o^\dagger K_o=p_oI$ shows that $p_o$ does not depend on the input, that $\sum_op_o=1$, and that the program implements the mixed-unitary channel $\sum_op_o\mathcal U_{U_o}$ on the coordinate's qubit---the ancillas are returned to $|0\rangle$ or measured, so no additional quantum state is retained. The expected numbers of $T$ gates and measurements are $\sum_op_o\tau(o)$ and $\sum_op_o\mu(o)$.
+
+\emph{Representative and decoding.} Everything in the proof of Theorem~\ref{thm:mixing}(a) now applies with ``word'' replaced by ``transcript'' and $t(U)$ by the token count $\tau(o)+\mu(o)$: the composite channel on the coordinate is a mixture of unitaries $X=U^>_{o'}U_oU^<_{o''}$ over independent branches of the three programs, Lemma~\ref{lem:fid} and Markov's inequality give a qualifying set of round-$t$ branches with total probability $\ge1-\gamma$, the cheapest qualifying transcript $W^*_j$ satisfies $\E[\tau+\mu]\ge(1-\gamma)(\tau+\mu)(W^*_j)$, and Lemma~\ref{lem:conc}(i) applied to the mixture $\mathcal C_{W^*_j}$ list-decodes $A_j$ to a window of half-width $w$. Lemma~\ref{lem:fanolist} and the transcript count replace Lemma~\ref{M:lem:ent} in the counting step, giving~\eqref{eq:adaptive}.
+\end{proof}
+
+\begin{remark}[Constants]\label{rem:mixconst}
+Theorem~\ref{thm:mixing} is asymptotic in the same sense as Theorems~\ref{M:thm:main1} and~\ref{M:thm:rate2}, and its additive terms are larger, because $\log_236$ and $A_2'$ are now compared with $\tfrac12L$ bits instead of $L$: at $\varepsilon=10^{-10}$, $\gamma=1/4$ and $S=0$, \eqref{eq:mixone} gives $\bar T_t\ge4.1\,m$ and~\eqref{eq:mixtwo} is vacuous; \eqref{eq:mixtwo} becomes positive at $L\ge56$ and reaches $16.6\,m$ at $L=80$ and $102.1\,m$ at $L=200$, against $\tfrac32L=120$ and $300$ achievable. Optimizing $\gamma$ helps little: $54\,m$ instead of $45\,m$ at $L=120$, at $\gamma=0.05$. 
+
+Two sources of slack can be identified. The tube radius $36\sqrt2\eta$ of Lemma~\ref{lem:cluster} costs $\log_236\approx5.2$ coarse bits per coordinate against the radius $\sqrt2\eta$ available when the prefix and suffix programs of every coordinate have supports of size at most $2^{n_f}$: in that case Theorem~\ref{thm:mixing}(b) holds with $\varepsilon'=\sqrt2\eta$ and $A_2'+n_f$ in place of $A_2'$, becomes positive from $L\ge45$, and gives $23.7\,m$ at $L=80$. 
+
+The remaining loss is inherited from Theorem~\ref{M:thm:tube}, whose term $C_2(k+1)2^{k/2}$ contributes $2\log_2L+\log_2C_2\approx17$ bits to $A_2'$ at $L=33$ and which~\eqref{eq:mixtwo} applies against half as many bits; any improvement of $C_2$ improves both bounds. Corollary~\ref{cor:mixq}, which uses the profile of Conjecture~\ref{M:conj:equid} in place of Theorem~\ref{M:thm:tube}, bounds the asymptotic rate and gives no numerical value, so that~\eqref{eq:mixone} ($4.1\,m$) is the only statement of this subsection that is nonvacuous at $\varepsilon=10^{-10}$. All the numbers in this subsection are computed by \texttt{scripts/mixing\_bounds.py}.
+\end{remark}
+
+\section{Meaning of the rate \texorpdfstring{$\tfrac52$}{5/2}}\label{sec:what52}
+
+\begin{remark}[Meaning of the rate $\tfrac52$]\label{rem:what52}
+In the notation of Appendix~\ref{M:app:elem} the tube radius is $\delta=\varepsilon R'$ (not the error probability of~\eqref{M:eq:rate52}), so $R'/\delta=R'^{a_0}$ with $\alpha=4/a_0$. The target count $2^{t/\alpha}$ at $t=\alpha L$ is therefore the number of $\delta$-cubes along the core, and a rate corresponds to a bound of $R'^{o(1)}$ words per $\delta$-cube. The five-point determinant of Lemma~\ref{M:lem:E1} forces the points of a $\delta$-cube onto a hyperplane exactly when $a_0>\tfrac85$, i.e.\ $\alpha<\tfrac52$. Beyond $\tfrac52$, most $\delta$-cubes must be shown to be empty at $T$-count $\tfrac52L$, where volume predicts $2^{L/2}$ words against $2^L$ cubes. Proposition~\ref{M:prop:dense} shows that some sparsity is necessary. A randomized version of its process, with a shared random offset in the snapshot, replaces the maximal gap by a length-weighted mean log-gap, so the exact condition lies between \emph{no dense tube} and \emph{sparse by a power}.
+
+Balls behave differently from tubes, which is one reason why Conjecture~\ref{M:conj:equid} is stated for tubes. Heuristically, near rational points $g/|g|$, $g\in\mathcal O$ with $N(\mathrm{nrd}\,g)\asymp2^{t(4/\alpha-1)/3}$, there are sphere sections $\{\mathrm{nrd}(w)=n_t,\ \langle w,g\rangle=s\}$ within distance $2^{-t/\alpha}$ of $g/|g|$ that carry $2^{t(2/3-5/(3\alpha))+o(t)}$ words each, with large constants ($126$ against about $5$ in the instance below). A bound obtained by covering the tube with balls of radius $2^{-t/\alpha}$ is therefore expected to give no rate above $\tfrac52$. An exact example illustrates this behavior: for $g=((3+2\sqrt2)+i+j-k)/2$, the $\dproj$-ball of radius $0.0025$ around $g/|g|$, whose Haar expectation is $16$ words, contains $126$ words of $T$-count $25$, all on the section $\langle w,g\rangle=(357+256\sqrt2)/2$. Heuristically a tube meets few such sections, and they are compatible with Conjecture~\ref{M:conj:equid}.
+
+Heuristically, auxiliary surfaces of higher degree offer no further improvement: a rational quadric through the points of a box longer than a $\delta$-cube can be a thin tube of radius at most $\delta$ around the core, and on such a surface the second level reproduces, in a model calculation, exactly the degree-one box count $R'^{(8-2a_0)/3}$; we do not prove this.
+\end{remark}
+
+\begin{thebibliography}{99}
+\bibitem{Paper1} J. Yang, Y. Li, and X.-H. Deng, Representation-dependent recoverability in quantum compilation, arXiv:2609.29210 (2026).
+\bibitem{RennerWolf} R. Renner and S. Wolf, Simple and tight bounds for information reconciliation and privacy amplification, in \emph{Advances in Cryptology -- ASIACRYPT 2005}, Lecture Notes in Computer Science Vol.~3788 (Springer, Berlin, 2005), pp.~199--216.
+\bibitem{TomamichelHayashi} M. Tomamichel and M. Hayashi, A hierarchy of information quantities for finite block length analysis of quantum tasks, IEEE Trans. Inf. Theory \textbf{59}, 7693 (2013).
+\bibitem{Campbell17} E. T. Campbell, Shorter gate sequences for quantum computing by mixing unitaries, Phys. Rev. A \textbf{95}, 042306 (2017); arXiv:1612.02689.
+\bibitem{Hastings17} M. B. Hastings, Turning gate synthesis errors into incoherent errors, Quantum Inf. Comput. \textbf{17}, 488 (2017); arXiv:1612.01011.
+\bibitem{KLMPP} V. Kliuchnikov, K. Lauter, R. Minko, A. Paetznick, and C. Petit, Shorter quantum circuits via single-qubit gate approximation, Quantum \textbf{7}, 1208 (2023).
+\bibitem{Bothe} M. Bothe, C. S\"underhauf, M. J. Witham, E. T. Campbell, and N. S. Blunt, More efficient Clifford+T synthesis for small-angle rotations and application to Trotterization, arXiv:2605.31544 (2026).
+\bibitem{BRS} A. Bocharov, M. Roetteler, and K. M. Svore, Efficient synthesis of universal repeat-until-success quantum circuits, Phys. Rev. Lett. \textbf{114}, 080502 (2015).
+\bibitem{Gidney} C. Gidney, Halving the cost of quantum addition, Quantum \textbf{2}, 74 (2018).
+\bibitem{GKW} D. Gosset, R. Kothari, and K. Wu, Quantum state preparation with optimal T-count, Quantum \textbf{10}, 2168 (2026); arXiv:2411.04790.
+\bibitem{Babbush} R. Babbush, C. Gidney, D. W. Berry, N. Wiebe, J. McClean, A. Paler, A. Fowler, and H. Neven, Encoding electronic spectra in quantum circuits with linear T complexity, Phys. Rev. X \textbf{8}, 041015 (2018).
+\bibitem{LKS} G. H. Low, V. Kliuchnikov, and L. Schaeffer, Trading T gates for dirty qubits in state preparation and unitary synthesis, Quantum \textbf{8}, 1375 (2024).
+\bibitem{Sanders} Y. R. Sanders, D. W. Berry, P. C. S. Costa, L. W. Tessler, N. Wiebe, C. Gidney, H. Neven, and R. Babbush, Compilation of fault-tolerant quantum heuristics for combinatorial optimization, PRX Quantum \textbf{1}, 020312 (2020).
+\bibitem{BCHK} M. Beverland, E. Campbell, M. Howard, and V. Kliuchnikov, Lower bounds on the non-Clifford resources for quantum computations, Quantum Sci. Technol. \textbf{5}, 035009 (2020).
+\bibitem{Watrous} J. Watrous, The Theory of Quantum Information (Cambridge University Press, 2018), Theorem~3.55.
+\end{thebibliography}
+
+\end{document}

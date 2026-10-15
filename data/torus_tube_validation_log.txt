@@ -1,0 +1,89 @@
+torus_tube_enum.py validate {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"} tmax 22 eps_ref 0.125
+t= 0: exhaustive tube words        4  (c,d)-enumeration        4  identical sets: True  max |diff| 1.1e-16  keys unique: True  (c,d) pairs 1  times 0.0s / 0.0s
+t= 1: exhaustive tube words        4  (c,d)-enumeration        4  identical sets: True  max |diff| 5.6e-17  keys unique: True  (c,d) pairs 1  times 0.0s / 0.0s
+t= 2: exhaustive tube words        0  (c,d)-enumeration        0  identical sets: True  max |diff| 0.0e+00  keys unique: True  (c,d) pairs 1  times 0.0s / 0.0s
+t= 3: exhaustive tube words        0  (c,d)-enumeration        0  identical sets: True  max |diff| 0.0e+00  keys unique: True  (c,d) pairs 1  times 0.0s / 0.0s
+t= 4: exhaustive tube words        0  (c,d)-enumeration        0  identical sets: True  max |diff| 0.0e+00  keys unique: True  (c,d) pairs 1  times 0.0s / 0.0s
+t= 5: exhaustive tube words        0  (c,d)-enumeration        0  identical sets: True  max |diff| 0.0e+00  keys unique: True  (c,d) pairs 1  times 0.0s / 0.0s
+t= 6: exhaustive tube words        0  (c,d)-enumeration        0  identical sets: True  max |diff| 0.0e+00  keys unique: True  (c,d) pairs 9  times 0.0s / 0.0s
+t= 7: exhaustive tube words       32  (c,d)-enumeration       32  identical sets: True  max |diff| 3.3e-16  keys unique: True  (c,d) pairs 17  times 0.0s / 0.0s
+t= 8: exhaustive tube words       96  (c,d)-enumeration       96  identical sets: True  max |diff| 5.6e-16  keys unique: True  (c,d) pairs 25  times 0.0s / 0.0s
+t= 9: exhaustive tube words      384  (c,d)-enumeration      384  identical sets: True  max |diff| 5.6e-16  keys unique: True  (c,d) pairs 73  times 0.0s / 0.0s
+t=10: exhaustive tube words      864  (c,d)-enumeration      864  identical sets: True  max |diff| 5.6e-16  keys unique: True  (c,d) pairs 153  times 0.0s / 0.0s
+t=11: exhaustive tube words     1248  (c,d)-enumeration     1248  identical sets: True  max |diff| 6.7e-16  keys unique: True  (c,d) pairs 321  times 0.0s / 0.0s
+t=12: exhaustive tube words     2272  (c,d)-enumeration     2272  identical sets: True  max |diff| 7.8e-16  keys unique: True  (c,d) pairs 625  times 0.0s / 0.0s
+t=13: exhaustive tube words     4544  (c,d)-enumeration     4544  identical sets: True  max |diff| 8.9e-16  keys unique: True  (c,d) pairs 1281  times 0.0s / 0.0s
+t=14: exhaustive tube words     8992  (c,d)-enumeration     8992  identical sets: True  max |diff| 1.0e-15  keys unique: True  (c,d) pairs 2505  times 0.0s / 0.0s
+t=15: exhaustive tube words    17600  (c,d)-enumeration    17600  identical sets: True  max |diff| 1.0e-15  keys unique: True  (c,d) pairs 5049  times 0.0s / 0.1s
+t=16: exhaustive tube words    35488  (c,d)-enumeration    35488  identical sets: True  max |diff| 1.0e-15  keys unique: True  (c,d) pairs 10081  times 0.0s / 0.1s
+t=17: exhaustive tube words    74176  (c,d)-enumeration    74176  identical sets: True  max |diff| 1.2e-15  keys unique: True  (c,d) pairs 20153  times 0.1s / 0.3s
+t=18: exhaustive tube words   149152  (c,d)-enumeration   149152  identical sets: True  max |diff| 1.2e-15  keys unique: True  (c,d) pairs 40265  times 0.1s / 0.5s
+t=19: exhaustive tube words   295104  (c,d)-enumeration   295104  identical sets: True  max |diff| 1.3e-15  keys unique: True  (c,d) pairs 80585  times 0.2s / 0.9s
+t=20: exhaustive tube words   587136  (c,d)-enumeration   587136  identical sets: True  max |diff| 1.4e-15  keys unique: True  (c,d) pairs 161025  times 0.5s / 2.0s
+t=21: exhaustive tube words  1171232  (c,d)-enumeration  1171232  identical sets: True  max |diff| 1.4e-15  keys unique: True  (c,d) pairs 322145  times 1.0s / 3.8s
+t=22: exhaustive tube words  2345056  (c,d)-enumeration  2345056  identical sets: True  max |diff| 1.6e-15  keys unique: True  (c,d) pairs 644353  times 4.4s / 17.4s
+set comparison: PASS  (70s)
+eps=0.125 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 32, 96, 384, 864, 1248, 2272, 4544, 8992, 17600, 35488, 74176, 149152, 295104, 587136, 1171232, 2345056]
+eps=0.125 Q=   6: equal=True  shells(mine)=[2, 0, 0, 0, 0, 0, 0, 16, 48, 64, 336, 336, 704, 1552, 2976, 5984, 11200, 24160, 47104, 92624, 186048, 371584, 756592]
+eps=0.0625 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 32, 64, 64, 128, 192, 320, 960, 2112, 4448, 9504, 18912, 37280, 74688, 148096, 294528, 591296]
+eps=0.0625 Q=  12: equal=True  shells(mine)=[4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160, 64, 512, 544, 1088, 3424, 6560, 11776, 22720, 43552, 94464, 190400]
+eps=0.03125 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160, 128, 160, 256, 736, 2432, 5216, 9216, 18016, 37280, 73472, 149792]
+eps=0.03125 Q=  25: equal=True  shells(mine)=[1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 24, 48, 56, 64, 96, 272, 816, 1616, 3136, 6104, 12624, 24104, 49784]
+eps=0.015625 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64, 64, 64, 128, 512, 1120, 2240, 4800, 9024, 17856, 37184]
+eps=0.015625 Q=  50: equal=True  shells(mine)=[2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, 32, 48, 160, 400, 752, 1456, 3024, 6336, 11344]
+eps=0.0078125 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64, 192, 576, 1184, 2816, 5664, 9152]
+eps=0.0078125 Q= 100: equal=True  shells(mine)=[4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64, 192, 1184, 2208, 2624]
+eps=0.00390625 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 384, 1024, 1632, 2112]
+eps=0.00390625 Q= 201: equal=True  shells(mine)=[1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 80, 336, 400, 736]
+eps=0.024532 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160, 128, 160, 256, 640, 1728, 3392, 6080, 11424, 22496, 45312, 92000]
+eps=0.024532 Q=  32: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160, 128, 128, 192, 352, 704, 1440, 2656, 4128, 7616, 15744, 30528]
+eps=0.024531 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160, 128, 160, 256, 640, 1728, 3392, 6080, 11424, 22496, 45312, 92000]
+eps=0.024531 Q=  32: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160, 128, 128, 192, 352, 704, 1440, 2656, 4128, 7616, 15744, 30528]
+eps=0.0265 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160, 128, 160, 256, 672, 1920, 3936, 7232, 13248, 25632, 51968, 105888]
+eps=0.0265 Q=  29: equal=True  shells(mine)=[1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 16, 64, 48, 64, 64, 240, 568, 1160, 2344, 4184, 8680, 17496, 35104]
+eps=0.0264991 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160, 128, 160, 256, 672, 1920, 3936, 7232, 13248, 25632, 51968, 105888]
+eps=0.0264991 Q=  29: equal=True  shells(mine)=[1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 16, 64, 48, 64, 64, 240, 568, 1160, 2344, 4184, 8680, 17496, 35088]
+eps=0.004232317 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 128, 416, 1024, 1760, 2624]
+eps=0.004232317 Q= 185: equal=True  shells(mine)=[1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 16, 136, 352, 544, 896]
+eps=0.004756514 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 128, 544, 1664, 2912, 3840]
+eps=0.004756514 Q= 165: equal=True  shells(mine)=[1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 32, 160, 528, 648, 1200]
+eps=0.006048712 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64, 64, 256, 800, 2304, 4448, 6272]
+eps=0.006048712 Q= 129: equal=True  shells(mine)=[1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 16, 80, 312, 752, 1568, 1928]
+eps=0.007961731 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64, 192, 576, 1184, 2816, 5920, 9792]
+eps=0.007961731 Q=  98: equal=True  shells(mine)=[2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 80, 160, 464, 1184, 2096, 3456]
+eps=0.009783221 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64, 64, 192, 448, 768, 1568, 3712, 7776, 14464]
+eps=0.009783221 Q=  80: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 128, 224, 480, 1440, 3328, 5408]
+eps=0.01186612 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64, 64, 64, 128, 320, 544, 960, 2368, 5568, 10944, 20928]
+eps=0.01186612 Q=  66: equal=True  shells(mine)=[2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 16, 160, 192, 416, 800, 1952, 4000, 6800]
+eps=0.01704797 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64, 64, 64, 128, 576, 1408, 2944, 5856, 10816, 21632, 44800]
+eps=0.01704797 Q=  46: equal=True  shells(mine)=[2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 16, 32, 64, 192, 336, 896, 1888, 3680, 7104, 15536]
+eps=0.01759005 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64, 64, 64, 128, 576, 1408, 2944, 6048, 11776, 23456, 47232]
+eps=0.01759005 Q=  44: equal=True  shells(mine)=[4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 64, 256, 416, 1184, 1952, 3328, 7584, 15904]
+eps=0.01805156 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64, 64, 64, 128, 576, 1536, 3200, 6304, 12352, 25120, 49472]
+eps=0.01805156 Q=  43: equal=True  shells(mine)=[1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 32, 16, 32, 40, 224, 472, 976, 2080, 4112, 7872, 16704]
+eps=0.03646477 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160, 128, 224, 384, 1120, 3328, 6624, 12352, 24896, 50720, 102496, 208224]
+eps=0.03646477 Q=  21: equal=True  shells(mine)=[1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 24, 80, 40, 80, 128, 392, 1008, 2192, 4120, 8184, 16400, 33640, 68184]
+eps=0.03798137 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160, 128, 224, 576, 1568, 3904, 7328, 13184, 26752, 54432, 109632, 224608]
+eps=0.03798137 Q=  20: equal=True  shells(mine)=[4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 0, 96, 192, 512, 896, 2336, 4064, 8896, 18336, 35392, 70080]
+eps=0.03989218 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 32, 128, 192, 128, 224, 640, 1824, 4512, 8608, 14880, 28832, 58624, 120704, 250752]
+eps=0.03989218 Q=  19: equal=True  shells(mine)=[1, 2, 0, 0, 0, 0, 0, 0, 0, 8, 32, 72, 48, 88, 192, 528, 1232, 2760, 4616, 9488, 19288, 39176, 80664]
+eps=0.04154067 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 32, 128, 192, 128, 224, 704, 1952, 4640, 9056, 16480, 31648, 63040, 130496, 269504]
+eps=0.04154067 Q=  18: equal=True  shells(mine)=[2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 80, 64, 112, 128, 688, 1216, 2960, 4880, 9712, 20528, 40112, 86896]
+eps=0.04748118 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 32, 128, 192, 256, 544, 1024, 2528, 6304, 12128, 21920, 42016, 82816, 168928, 345856]
+eps=0.04748118 Q=  16: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 32, 96, 96, 128, 288, 1056, 2624, 4160, 8448, 17024, 29536, 58624, 119872]
+eps=0.04832436 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 32, 128, 192, 256, 576, 1088, 2624, 6496, 12320, 22496, 43680, 85568, 174880, 358464]
+eps=0.04832436 Q=  16: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 32, 96, 96, 128, 288, 1056, 2624, 4160, 8512, 17600, 30752, 60032, 122752]
+eps=0.05665859 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 32, 64, 64, 128, 192, 320, 768, 1664, 3776, 8352, 16640, 31392, 60640, 119040, 238112, 484672]
+eps=0.05665859 Q=  13: equal=True  shells(mine)=[1, 2, 0, 0, 0, 0, 0, 0, 0, 8, 64, 88, 112, 240, 488, 1240, 2800, 5336, 9992, 18960, 37248, 74176, 154616]
+eps=0.0596051 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 32, 64, 64, 128, 192, 320, 960, 2112, 4224, 8864, 17728, 34400, 68288, 136064, 269824, 540032]
+eps=0.0596051 Q=  13: equal=True  shells(mine)=[1, 2, 0, 0, 0, 0, 0, 8, 16, 16, 64, 88, 112, 296, 560, 1312, 3112, 5960, 11272, 21784, 43440, 88568, 179448]
+eps=0.06648478 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 32, 64, 64, 128, 192, 448, 1280, 2880, 5664, 10592, 20544, 41760, 84000, 166912, 333696, 668864]
+eps=0.06648478 Q=  11: equal=True  shells(mine)=[1, 2, 0, 0, 0, 0, 0, 8, 16, 24, 48, 64, 144, 416, 728, 1744, 3432, 6920, 12928, 25680, 51720, 104568, 209264]
+eps=0.08195415 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 32, 96, 192, 288, 352, 832, 1984, 3968, 7648, 15360, 32064, 63744, 125504, 251200, 502656, 1012224]
+eps=0.08195415 Q=   9: equal=True  shells(mine)=[1, 2, 0, 0, 0, 0, 0, 8, 24, 56, 88, 120, 288, 584, 1288, 2432, 5040, 10224, 20368, 38984, 78888, 157336, 319264]
+eps=0.1006105 Q=tube: equal=True  shells(mine)=[4, 4, 0, 0, 0, 0, 0, 32, 96, 256, 480, 608, 1280, 2976, 6144, 12544, 24128, 47616, 95616, 191072, 378304, 750368, 1517376]
+eps=0.1006105 Q=   7: equal=True  shells(mine)=[1, 2, 0, 0, 0, 0, 0, 16, 32, 64, 136, 176, 408, 768, 1784, 3920, 7032, 14344, 29152, 56120, 112520, 225808, 457472]
+count comparison over 195 (eps, Q) cells x 23 shells: PASS; exact ties met: 0
+comparison with data/enum_res2.pkl (identity coset, 115 (t, eps) cells, grid and tube): PASS
+identity coset, eps=0.024532, Q=Q_eps=32: grid shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160, 128], cumulative at tau=11: 232, required c (c0,c1)=(8,2): 163.9  (paper: 232 words, c >= 163.9)
+total 106s

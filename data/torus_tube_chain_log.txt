@@ -1,0 +1,373 @@
+==== 2026-10-12 09:58:40 chain-step k=2  code {"script_sha256_16": "2445355f35c7cfae", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+class t=10: C^2+D^2 = (34, -24), N(4n_t - C^2 - D^2) = [(2, 2), (17, 1), (113, 1)]: 64 words at tube distance 0.0214478427198376 (2^t d^2 = 0.47105)  [0s]
+class t=11: C^2+D^2 = (20, -14), N(4n_t - C^2 - D^2) = [(2, 3), (17, 1), (113, 1)]: 128 words at tube distance 0.0214478427198376 (2^t d^2 = 0.9421)  [0s]
+  sample of 20 words of class t=10: explicit gate strings with T-count 10: 20/20
+  sample of 20 words of class t=11: explicit gate strings with T-count 11: 20/20
+  eps=2.1447842720e-02 Q=32 (Q_eps=36): grid count >= 0 (tube 192), 2^tau eps^2=0.942, required c >= -31.8
+  eps=2.1447842720e-02 Q=36 (Q_eps=36): grid count >= 0 (tube 192), 2^tau eps^2=0.942, required c >= -31.8
+  eps=2.1447842741e-02 Q=32 (Q_eps=36): grid count >= 0 (tube 192), 2^tau eps^2=0.942, required c >= -31.8
+  eps=2.1447842741e-02 Q=36 (Q_eps=36): grid count >= 0 (tube 192), 2^tau eps^2=0.942, required c >= -31.8
+  eps=2.1662321147e-02 Q=32 (Q_eps=36): grid count >= 0 (tube 192), 2^tau eps^2=0.961, required c >= -31.2
+  eps=2.1662321147e-02 Q=36 (Q_eps=36): grid count >= 0 (tube 192), 2^tau eps^2=0.961, required c >= -31.2
+  eps=2.1876799574e-02 Q=32 (Q_eps=35): grid count >= 0 (tube 192), 2^tau eps^2=0.980, required c >= -30.6
+  eps=2.1876799574e-02 Q=35 (Q_eps=35): grid count >= 16 (tube 192), 2^tau eps^2=0.980, required c >= -14.3
+  eps=2.2520234856e-02 Q=32 (Q_eps=34): grid count >= 0 (tube 192), 2^tau eps^2=1.039, required c >= -28.9
+  eps=2.2520234856e-02 Q=34 (Q_eps=34): grid count >= 32 (tube 192), 2^tau eps^2=1.039, required c >= 1.9
+  eps=2.3592626992e-02 Q=32 (Q_eps=33): grid count >= 96 (tube 192), 2^tau eps^2=1.140, required c >= 57.9
+  eps=2.3592626992e-02 Q=33 (Q_eps=33): grid count >= 48 (tube 192), 2^tau eps^2=1.140, required c >= 15.8
+  eps=2.4665019128e-02 Q=0 (Q_eps=31): grid count >= 192 (tube 192), 2^tau eps^2=1.246, required c >= 130.0
+  eps=2.4665019128e-02 Q=16 (Q_eps=31): grid count >= 96 (tube 192), 2^tau eps^2=1.246, required c >= 53.0
+  eps=2.4665019128e-02 Q=24 (Q_eps=31): grid count >= 96 (tube 192), 2^tau eps^2=1.246, required c >= 53.0
+  eps=2.4665019128e-02 Q=28 (Q_eps=31): grid count >= 96 (tube 192), 2^tau eps^2=1.246, required c >= 53.0
+  eps=2.4665019128e-02 Q=31 (Q_eps=31): grid count >= 48 (tube 192), 2^tau eps^2=1.246, required c >= 14.4
+  eps=2.5737411264e-02 Q=0 (Q_eps=30): grid count >= 192 (tube 192), 2^tau eps^2=1.357, required c >= 119.4
+  eps=2.5737411264e-02 Q=16 (Q_eps=30): grid count >= 96 (tube 192), 2^tau eps^2=1.357, required c >= 48.7
+  eps=2.5737411264e-02 Q=24 (Q_eps=30): grid count >= 96 (tube 192), 2^tau eps^2=1.357, required c >= 48.7
+  eps=2.5737411264e-02 Q=28 (Q_eps=30): grid count >= 96 (tube 192), 2^tau eps^2=1.357, required c >= 48.7
+  eps=2.5737411264e-02 Q=30 (Q_eps=30): grid count >= 48 (tube 192), 2^tau eps^2=1.357, required c >= 13.3
+  eps=2.7882195536e-02 Q=0 (Q_eps=28): grid count >= 192 (tube 192), 2^tau eps^2=1.592, required c >= 101.7
+  eps=2.7882195536e-02 Q=16 (Q_eps=28): grid count >= 96 (tube 192), 2^tau eps^2=1.592, required c >= 41.5
+  eps=2.7882195536e-02 Q=24 (Q_eps=28): grid count >= 96 (tube 192), 2^tau eps^2=1.592, required c >= 41.5
+  eps=2.7882195536e-02 Q=28 (Q_eps=28): grid count >= 96 (tube 192), 2^tau eps^2=1.592, required c >= 41.5
+  eps=3.2171764080e-02 Q=0 (Q_eps=24): grid count >= 192 (tube 192), 2^tau eps^2=2.120, required c >= 76.4
+  eps=3.2171764080e-02 Q=16 (Q_eps=24): grid count >= 96 (tube 192), 2^tau eps^2=2.120, required c >= 31.1
+  eps=3.2171764080e-02 Q=24 (Q_eps=24): grid count >= 192 (tube 192), 2^tau eps^2=2.120, required c >= 76.4
+  eps=3.7533724760e-02 Q=0 (Q_eps=20): grid count >= 192 (tube 192), 2^tau eps^2=2.885, required c >= 56.1
+  eps=3.7533724760e-02 Q=16 (Q_eps=20): grid count >= 96 (tube 192), 2^tau eps^2=2.885, required c >= 22.9
+  eps=3.7533724760e-02 Q=20 (Q_eps=20): grid count >= 64 (tube 192), 2^tau eps^2=2.885, required c >= 11.8
+  eps=4.2895685440e-02 Q=0 (Q_eps=18): grid count >= 192 (tube 192), 2^tau eps^2=3.768, required c >= 43.0
+  eps=4.2895685440e-02 Q=16 (Q_eps=18): grid count >= 96 (tube 192), 2^tau eps^2=3.768, required c >= 17.5
+  eps=4.2895685440e-02 Q=18 (Q_eps=18): grid count >= 96 (tube 192), 2^tau eps^2=3.768, required c >= 17.5
+  eps=2.1447842720e-02 Q=32 (Q_eps=36): grid count >= 0 (tube 192), 2^tau eps^2=0.942, required c >= -31.8
+  eps=2.1447842720e-02 Q=36 (Q_eps=36): grid count >= 0 (tube 192), 2^tau eps^2=0.942, required c >= -31.8
+  eps=2.1447842741e-02 Q=32 (Q_eps=36): grid count >= 0 (tube 192), 2^tau eps^2=0.942, required c >= -31.8
+  eps=2.1447842741e-02 Q=36 (Q_eps=36): grid count >= 0 (tube 192), 2^tau eps^2=0.942, required c >= -31.8
+  eps=2.1662321147e-02 Q=32 (Q_eps=36): grid count >= 0 (tube 192), 2^tau eps^2=0.961, required c >= -31.2
+  eps=2.1662321147e-02 Q=36 (Q_eps=36): grid count >= 0 (tube 192), 2^tau eps^2=0.961, required c >= -31.2
+  eps=2.1876799574e-02 Q=32 (Q_eps=35): grid count >= 0 (tube 192), 2^tau eps^2=0.980, required c >= -30.6
+  eps=2.1876799574e-02 Q=35 (Q_eps=35): grid count >= 16 (tube 192), 2^tau eps^2=0.980, required c >= -14.3
+  eps=2.2520234856e-02 Q=32 (Q_eps=34): grid count >= 0 (tube 192), 2^tau eps^2=1.039, required c >= -28.9
+  eps=2.2520234856e-02 Q=34 (Q_eps=34): grid count >= 32 (tube 192), 2^tau eps^2=1.039, required c >= 1.9
+  eps=2.3592626992e-02 Q=32 (Q_eps=33): grid count >= 96 (tube 192), 2^tau eps^2=1.140, required c >= 57.9
+  eps=2.3592626992e-02 Q=33 (Q_eps=33): grid count >= 48 (tube 192), 2^tau eps^2=1.140, required c >= 15.8
+  eps=2.4665019128e-02 Q=0 (Q_eps=31): grid count >= 192 (tube 192), 2^tau eps^2=1.246, required c >= 130.0
+  eps=2.4665019128e-02 Q=16 (Q_eps=31): grid count >= 96 (tube 192), 2^tau eps^2=1.246, required c >= 53.0
+  eps=2.4665019128e-02 Q=24 (Q_eps=31): grid count >= 96 (tube 192), 2^tau eps^2=1.246, required c >= 53.0
+  eps=2.4665019128e-02 Q=28 (Q_eps=31): grid count >= 96 (tube 192), 2^tau eps^2=1.246, required c >= 53.0
+  eps=2.4665019128e-02 Q=31 (Q_eps=31): grid count >= 48 (tube 192), 2^tau eps^2=1.246, required c >= 14.4
+  eps=2.5737411264e-02 Q=0 (Q_eps=30): grid count >= 192 (tube 192), 2^tau eps^2=1.357, required c >= 119.4
+  eps=2.5737411264e-02 Q=16 (Q_eps=30): grid count >= 96 (tube 192), 2^tau eps^2=1.357, required c >= 48.7
+  eps=2.5737411264e-02 Q=24 (Q_eps=30): grid count >= 96 (tube 192), 2^tau eps^2=1.357, required c >= 48.7
+  eps=2.5737411264e-02 Q=28 (Q_eps=30): grid count >= 96 (tube 192), 2^tau eps^2=1.357, required c >= 48.7
+  eps=2.5737411264e-02 Q=30 (Q_eps=30): grid count >= 48 (tube 192), 2^tau eps^2=1.357, required c >= 13.3
+  eps=2.7882195536e-02 Q=0 (Q_eps=28): grid count >= 192 (tube 192), 2^tau eps^2=1.592, required c >= 101.7
+  eps=2.7882195536e-02 Q=16 (Q_eps=28): grid count >= 96 (tube 192), 2^tau eps^2=1.592, required c >= 41.5
+  eps=2.7882195536e-02 Q=24 (Q_eps=28): grid count >= 96 (tube 192), 2^tau eps^2=1.592, required c >= 41.5
+  eps=2.7882195536e-02 Q=28 (Q_eps=28): grid count >= 96 (tube 192), 2^tau eps^2=1.592, required c >= 41.5
+  eps=3.2171764080e-02 Q=0 (Q_eps=24): grid count >= 192 (tube 192), 2^tau eps^2=2.120, required c >= 76.4
+  eps=3.2171764080e-02 Q=16 (Q_eps=24): grid count >= 96 (tube 192), 2^tau eps^2=2.120, required c >= 31.1
+  eps=3.2171764080e-02 Q=24 (Q_eps=24): grid count >= 192 (tube 192), 2^tau eps^2=2.120, required c >= 76.4
+  eps=3.7533724760e-02 Q=0 (Q_eps=20): grid count >= 192 (tube 192), 2^tau eps^2=2.885, required c >= 56.1
+  eps=3.7533724760e-02 Q=16 (Q_eps=20): grid count >= 96 (tube 192), 2^tau eps^2=2.885, required c >= 22.9
+  eps=3.7533724760e-02 Q=20 (Q_eps=20): grid count >= 64 (tube 192), 2^tau eps^2=2.885, required c >= 11.8
+  eps=4.2895685440e-02 Q=0 (Q_eps=18): grid count >= 192 (tube 192), 2^tau eps^2=3.768, required c >= 43.0
+  eps=4.2895685440e-02 Q=16 (Q_eps=18): grid count >= 96 (tube 192), 2^tau eps^2=3.768, required c >= 17.5
+  eps=4.2895685440e-02 Q=18 (Q_eps=18): grid count >= 96 (tube 192), 2^tau eps^2=3.768, required c >= 17.5
+chain k=2, tau=11: required c >= 130.0 (eps=2.4665019128e-02, Q=0, N>=192); tuned Q: >= 76.4 (eps=3.2171764080e-02, Q=24, N>=192); tube: >= 172.0  [0s]
+==== 2026-10-12 09:58:40 chain-step k=3  code {"script_sha256_16": "2445355f35c7cfae", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+class t=22: C^2+D^2 = (1154, -816), N(4n_t - C^2 - D^2) = [(2, 2), (3, 2), (17, 2), (41, 1), (113, 1)]: 512 words at tube distance 0.000459957067208272 (2^t d^2 = 0.887349)  [0s]
+class t=23: C^2+D^2 = (676, -478), N(4n_t - C^2 - D^2) = [(2, 3), (3, 2), (17, 2), (41, 1), (113, 1)]: 1024 words at tube distance 0.000459957067208272 (2^t d^2 = 1.7747)  [0s]
+  sample of 20 words of class t=22: explicit gate strings with T-count 22: 20/20
+  sample of 20 words of class t=23: explicit gate strings with T-count 23: 20/20
+  eps=4.5995706721e-04 Q=1696 (Q_eps=1707): grid count >= 0 (tube 1536), 2^tau eps^2=1.775, required c >= -30.4
+  eps=4.5995706721e-04 Q=1704 (Q_eps=1707): grid count >= 0 (tube 1536), 2^tau eps^2=1.775, required c >= -30.4
+  eps=4.5995706721e-04 Q=1707 (Q_eps=1707): grid count >= 0 (tube 1536), 2^tau eps^2=1.775, required c >= -30.4
+  eps=4.5995706767e-04 Q=1696 (Q_eps=1707): grid count >= 0 (tube 1536), 2^tau eps^2=1.775, required c >= -30.4
+  eps=4.5995706767e-04 Q=1704 (Q_eps=1707): grid count >= 0 (tube 1536), 2^tau eps^2=1.775, required c >= -30.4
+  eps=4.5995706767e-04 Q=1707 (Q_eps=1707): grid count >= 0 (tube 1536), 2^tau eps^2=1.775, required c >= -30.4
+  eps=4.6455663788e-04 Q=1664 (Q_eps=1690): grid count >= 192 (tube 1536), 2^tau eps^2=1.810, required c >= 76.2
+  eps=4.6455663788e-04 Q=1680 (Q_eps=1690): grid count >= 0 (tube 1536), 2^tau eps^2=1.810, required c >= -29.8
+  eps=4.6455663788e-04 Q=1688 (Q_eps=1690): grid count >= 96 (tube 1536), 2^tau eps^2=1.810, required c >= 23.2
+  eps=4.6455663788e-04 Q=1690 (Q_eps=1690): grid count >= 112 (tube 1536), 2^tau eps^2=1.810, required c >= 32.0
+  eps=4.6915620855e-04 Q=1664 (Q_eps=1674): grid count >= 192 (tube 1536), 2^tau eps^2=1.846, required c >= 74.7
+  eps=4.6915620855e-04 Q=1672 (Q_eps=1674): grid count >= 192 (tube 1536), 2^tau eps^2=1.846, required c >= 74.7
+  eps=4.6915620855e-04 Q=1674 (Q_eps=1674): grid count >= 128 (tube 1536), 2^tau eps^2=1.846, required c >= 40.1
+  eps=4.8295492057e-04 Q=1600 (Q_eps=1626): grid count >= 384 (tube 1536), 2^tau eps^2=1.957, required c >= 168.7
+  eps=4.8295492057e-04 Q=1616 (Q_eps=1626): grid count >= 192 (tube 1536), 2^tau eps^2=1.957, required c >= 70.5
+  eps=4.8295492057e-04 Q=1624 (Q_eps=1626): grid count >= 288 (tube 1536), 2^tau eps^2=1.957, required c >= 119.6
+  eps=4.8295492057e-04 Q=1626 (Q_eps=1626): grid count >= 176 (tube 1536), 2^tau eps^2=1.957, required c >= 62.4
+  eps=5.0595277393e-04 Q=1536 (Q_eps=1552): grid count >= 288 (tube 1536), 2^tau eps^2=2.147, required c >= 109.0
+  eps=5.0595277393e-04 Q=1552 (Q_eps=1552): grid count >= 480 (tube 1536), 2^tau eps^2=2.147, required c >= 198.4
+  eps=5.2895062729e-04 Q=1472 (Q_eps=1484): grid count >= 288 (tube 1536), 2^tau eps^2=2.347, required c >= 99.7
+  eps=5.2895062729e-04 Q=1480 (Q_eps=1484): grid count >= 480 (tube 1536), 2^tau eps^2=2.347, required c >= 181.5
+  eps=5.2895062729e-04 Q=1484 (Q_eps=1484): grid count >= 384 (tube 1536), 2^tau eps^2=2.347, required c >= 140.6
+  eps=5.5194848065e-04 Q=1408 (Q_eps=1422): grid count >= 384 (tube 1536), 2^tau eps^2=2.556, required c >= 129.1
+  eps=5.5194848065e-04 Q=1416 (Q_eps=1422): grid count >= 288 (tube 1536), 2^tau eps^2=2.556, required c >= 91.6
+  eps=5.5194848065e-04 Q=1420 (Q_eps=1422): grid count >= 704 (tube 1536), 2^tau eps^2=2.556, required c >= 254.3
+  eps=5.5194848065e-04 Q=1422 (Q_eps=1422): grid count >= 432 (tube 1536), 2^tau eps^2=2.556, required c >= 147.9
+  eps=5.9794418737e-04 Q=1312 (Q_eps=1313): grid count >= 768 (tube 1536), 2^tau eps^2=2.999, required c >= 238.1
+  eps=5.9794418737e-04 Q=1313 (Q_eps=1313): grid count >= 504 (tube 1536), 2^tau eps^2=2.999, required c >= 150.0
+  eps=6.8993560081e-04 Q=1120 (Q_eps=1138): grid count >= 384 (tube 1536), 2^tau eps^2=3.993, required c >= 82.6
+  eps=6.8993560081e-04 Q=1136 (Q_eps=1138): grid count >= 288 (tube 1536), 2^tau eps^2=3.993, required c >= 58.6
+  eps=6.8993560081e-04 Q=1138 (Q_eps=1138): grid count >= 592 (tube 1536), 2^tau eps^2=3.993, required c >= 134.7
+  eps=8.0492486762e-04 Q=960 (Q_eps=975): grid count >= 1056 (tube 1536), 2^tau eps^2=5.435, required c >= 184.4
+  eps=8.0492486762e-04 Q=968 (Q_eps=975): grid count >= 576 (tube 1536), 2^tau eps^2=5.435, required c >= 96.0
+  eps=8.0492486762e-04 Q=972 (Q_eps=975): grid count >= 704 (tube 1536), 2^tau eps^2=5.435, required c >= 119.6
+  eps=8.0492486762e-04 Q=975 (Q_eps=975): grid count >= 656 (tube 1536), 2^tau eps^2=5.435, required c >= 110.8
+  eps=9.1991413442e-04 Q=832 (Q_eps=853): grid count >= 768 (tube 1536), 2^tau eps^2=7.099, required c >= 100.6
+  eps=9.1991413442e-04 Q=848 (Q_eps=853): grid count >= 576 (tube 1536), 2^tau eps^2=7.099, required c >= 73.5
+  eps=9.1991413442e-04 Q=852 (Q_eps=853): grid count >= 736 (tube 1536), 2^tau eps^2=7.099, required c >= 96.1
+  eps=9.1991413442e-04 Q=853 (Q_eps=853): grid count >= 696 (tube 1536), 2^tau eps^2=7.099, required c >= 90.4
+  eps=4.5995706721e-04 Q=1696 (Q_eps=1707): grid count >= 0 (tube 1536), 2^tau eps^2=1.775, required c >= -30.4
+  eps=4.5995706721e-04 Q=1704 (Q_eps=1707): grid count >= 0 (tube 1536), 2^tau eps^2=1.775, required c >= -30.4
+  eps=4.5995706721e-04 Q=1707 (Q_eps=1707): grid count >= 0 (tube 1536), 2^tau eps^2=1.775, required c >= -30.4
+  eps=4.5995706767e-04 Q=1696 (Q_eps=1707): grid count >= 0 (tube 1536), 2^tau eps^2=1.775, required c >= -30.4
+  eps=4.5995706767e-04 Q=1704 (Q_eps=1707): grid count >= 0 (tube 1536), 2^tau eps^2=1.775, required c >= -30.4
+  eps=4.5995706767e-04 Q=1707 (Q_eps=1707): grid count >= 0 (tube 1536), 2^tau eps^2=1.775, required c >= -30.4
+  eps=4.6455663788e-04 Q=1664 (Q_eps=1690): grid count >= 192 (tube 1536), 2^tau eps^2=1.810, required c >= 76.2
+  eps=4.6455663788e-04 Q=1680 (Q_eps=1690): grid count >= 0 (tube 1536), 2^tau eps^2=1.810, required c >= -29.8
+  eps=4.6455663788e-04 Q=1688 (Q_eps=1690): grid count >= 96 (tube 1536), 2^tau eps^2=1.810, required c >= 23.2
+  eps=4.6455663788e-04 Q=1690 (Q_eps=1690): grid count >= 112 (tube 1536), 2^tau eps^2=1.810, required c >= 32.0
+  eps=4.6915620855e-04 Q=1664 (Q_eps=1674): grid count >= 192 (tube 1536), 2^tau eps^2=1.846, required c >= 74.7
+  eps=4.6915620855e-04 Q=1672 (Q_eps=1674): grid count >= 192 (tube 1536), 2^tau eps^2=1.846, required c >= 74.7
+  eps=4.6915620855e-04 Q=1674 (Q_eps=1674): grid count >= 128 (tube 1536), 2^tau eps^2=1.846, required c >= 40.1
+  eps=4.8295492057e-04 Q=1600 (Q_eps=1626): grid count >= 384 (tube 1536), 2^tau eps^2=1.957, required c >= 168.7
+  eps=4.8295492057e-04 Q=1616 (Q_eps=1626): grid count >= 192 (tube 1536), 2^tau eps^2=1.957, required c >= 70.5
+  eps=4.8295492057e-04 Q=1624 (Q_eps=1626): grid count >= 288 (tube 1536), 2^tau eps^2=1.957, required c >= 119.6
+  eps=4.8295492057e-04 Q=1626 (Q_eps=1626): grid count >= 176 (tube 1536), 2^tau eps^2=1.957, required c >= 62.4
+  eps=5.0595277393e-04 Q=1536 (Q_eps=1552): grid count >= 288 (tube 1536), 2^tau eps^2=2.147, required c >= 109.0
+  eps=5.0595277393e-04 Q=1552 (Q_eps=1552): grid count >= 480 (tube 1536), 2^tau eps^2=2.147, required c >= 198.4
+  eps=5.2895062729e-04 Q=1472 (Q_eps=1484): grid count >= 288 (tube 1536), 2^tau eps^2=2.347, required c >= 99.7
+  eps=5.2895062729e-04 Q=1480 (Q_eps=1484): grid count >= 480 (tube 1536), 2^tau eps^2=2.347, required c >= 181.5
+  eps=5.2895062729e-04 Q=1484 (Q_eps=1484): grid count >= 384 (tube 1536), 2^tau eps^2=2.347, required c >= 140.6
+  eps=5.5194848065e-04 Q=1408 (Q_eps=1422): grid count >= 384 (tube 1536), 2^tau eps^2=2.556, required c >= 129.1
+  eps=5.5194848065e-04 Q=1416 (Q_eps=1422): grid count >= 288 (tube 1536), 2^tau eps^2=2.556, required c >= 91.6
+  eps=5.5194848065e-04 Q=1420 (Q_eps=1422): grid count >= 704 (tube 1536), 2^tau eps^2=2.556, required c >= 254.3
+  eps=5.5194848065e-04 Q=1422 (Q_eps=1422): grid count >= 432 (tube 1536), 2^tau eps^2=2.556, required c >= 147.9
+  eps=5.9794418737e-04 Q=1312 (Q_eps=1313): grid count >= 768 (tube 1536), 2^tau eps^2=2.999, required c >= 238.1
+  eps=5.9794418737e-04 Q=1313 (Q_eps=1313): grid count >= 504 (tube 1536), 2^tau eps^2=2.999, required c >= 150.0
+  eps=6.8993560081e-04 Q=1120 (Q_eps=1138): grid count >= 384 (tube 1536), 2^tau eps^2=3.993, required c >= 82.6
+  eps=6.8993560081e-04 Q=1136 (Q_eps=1138): grid count >= 288 (tube 1536), 2^tau eps^2=3.993, required c >= 58.6
+  eps=6.8993560081e-04 Q=1138 (Q_eps=1138): grid count >= 592 (tube 1536), 2^tau eps^2=3.993, required c >= 134.7
+  eps=8.0492486762e-04 Q=960 (Q_eps=975): grid count >= 1056 (tube 1536), 2^tau eps^2=5.435, required c >= 184.4
+  eps=8.0492486762e-04 Q=968 (Q_eps=975): grid count >= 576 (tube 1536), 2^tau eps^2=5.435, required c >= 96.0
+  eps=8.0492486762e-04 Q=972 (Q_eps=975): grid count >= 704 (tube 1536), 2^tau eps^2=5.435, required c >= 119.6
+  eps=8.0492486762e-04 Q=975 (Q_eps=975): grid count >= 656 (tube 1536), 2^tau eps^2=5.435, required c >= 110.8
+  eps=9.1991413442e-04 Q=832 (Q_eps=853): grid count >= 768 (tube 1536), 2^tau eps^2=7.099, required c >= 100.6
+  eps=9.1991413442e-04 Q=848 (Q_eps=853): grid count >= 576 (tube 1536), 2^tau eps^2=7.099, required c >= 73.5
+  eps=9.1991413442e-04 Q=852 (Q_eps=853): grid count >= 736 (tube 1536), 2^tau eps^2=7.099, required c >= 96.1
+  eps=9.1991413442e-04 Q=853 (Q_eps=853): grid count >= 696 (tube 1536), 2^tau eps^2=7.099, required c >= 90.4
+chain k=3, tau=23: required c >= 254.3 (eps=5.5194848065e-04, Q=1420, N>=704); tuned Q: >= 198.4 (eps=5.0595277393e-04, Q=1552, N>=480); tube: >= 835.1  [0s]
+==== 2026-10-12 09:58:41 chain-step k=4  code {"script_sha256_16": "2445355f35c7cfae", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+class t=46: C^2+D^2 = (1331714, -941664), N(4n_t - C^2 - D^2) = [(2, 2), (3, 2), (17, 2), (41, 1), (113, 1), (2113, 1), (10177, 1)]: 2048 words at tube distance 2.11560492485374e-7 (2^t d^2 = 3.14955)  [0s]
+class t=47: C^2+D^2 = (780100, -551614), N(4n_t - C^2 - D^2) = [(2, 3), (3, 2), (17, 2), (41, 1), (113, 1), (2113, 1), (10177, 1)]: 4096 words at tube distance 2.11560492485374e-7 (2^t d^2 = 6.29911)  [0s]
+  sample of 20 words of class t=46: explicit gate strings with T-count 46: 20/20
+  sample of 20 words of class t=47: explicit gate strings with T-count 47: 20/20
+  eps=2.1156049249e-07 Q=3712384 (Q_eps=3712404): grid count >= 0 (tube 6144), 2^tau eps^2=6.299, required c >= -16.2
+  eps=2.1156049249e-07 Q=3712400 (Q_eps=3712404): grid count >= 0 (tube 6144), 2^tau eps^2=6.299, required c >= -16.2
+  eps=2.1156049249e-07 Q=3712404 (Q_eps=3712404): grid count >= 0 (tube 6144), 2^tau eps^2=6.299, required c >= -16.2
+  eps=2.1156049270e-07 Q=3712384 (Q_eps=3712404): grid count >= 0 (tube 6144), 2^tau eps^2=6.299, required c >= -16.2
+  eps=2.1156049270e-07 Q=3712400 (Q_eps=3712404): grid count >= 0 (tube 6144), 2^tau eps^2=6.299, required c >= -16.2
+  eps=2.1156049270e-07 Q=3712404 (Q_eps=3712404): grid count >= 0 (tube 6144), 2^tau eps^2=6.299, required c >= -16.2
+  eps=2.1367609741e-07 Q=3675648 (Q_eps=3675648): grid count >= 480 (tube 6144), 2^tau eps^2=6.426, required c >= 58.8
+  eps=2.1579170234e-07 Q=3639584 (Q_eps=3639612): grid count >= 864 (tube 6144), 2^tau eps^2=6.554, required c >= 116.3
+  eps=2.1579170234e-07 Q=3639600 (Q_eps=3639612): grid count >= 576 (tube 6144), 2^tau eps^2=6.554, required c >= 72.3
+  eps=2.1579170234e-07 Q=3639608 (Q_eps=3639612): grid count >= 768 (tube 6144), 2^tau eps^2=6.554, required c >= 101.6
+  eps=2.1579170234e-07 Q=3639612 (Q_eps=3639612): grid count >= 544 (tube 6144), 2^tau eps^2=6.554, required c >= 67.4
+  eps=2.2213851711e-07 Q=3535616 (Q_eps=3535623): grid count >= 1536 (tube 6144), 2^tau eps^2=6.945, required c >= 206.5
+  eps=2.2213851711e-07 Q=3535620 (Q_eps=3535623): grid count >= 1056 (tube 6144), 2^tau eps^2=6.945, required c >= 137.4
+  eps=2.2213851711e-07 Q=3535623 (Q_eps=3535623): grid count >= 888 (tube 6144), 2^tau eps^2=6.945, required c >= 113.2
+  eps=2.3271654173e-07 Q=3374912 (Q_eps=3374913): grid count >= 1344 (tube 6144), 2^tau eps^2=7.622, required c >= 163.0
+  eps=2.3271654173e-07 Q=3374913 (Q_eps=3374913): grid count >= 1424 (tube 6144), 2^tau eps^2=7.622, required c >= 173.4
+  eps=2.4329456636e-07 Q=3228160 (Q_eps=3228177): grid count >= 1440 (tube 6144), 2^tau eps^2=8.331, required c >= 160.6
+  eps=2.4329456636e-07 Q=3228176 (Q_eps=3228177): grid count >= 1728 (tube 6144), 2^tau eps^2=8.331, required c >= 195.2
+  eps=2.4329456636e-07 Q=3228177 (Q_eps=3228177): grid count >= 1520 (tube 6144), 2^tau eps^2=8.331, required c >= 170.2
+  eps=2.5387259098e-07 Q=3093664 (Q_eps=3093670): grid count >= 2112 (tube 6144), 2^tau eps^2=9.071, required c >= 221.6
+  eps=2.5387259098e-07 Q=3093668 (Q_eps=3093670): grid count >= 1824 (tube 6144), 2^tau eps^2=9.071, required c >= 189.8
+  eps=2.5387259098e-07 Q=3093670 (Q_eps=3093670): grid count >= 1680 (tube 6144), 2^tau eps^2=9.071, required c >= 174.0
+  eps=2.7502864023e-07 Q=2855680 (Q_eps=2855695): grid count >= 864 (tube 6144), 2^tau eps^2=10.645, required c >= 71.6
+  eps=2.7502864023e-07 Q=2855688 (Q_eps=2855695): grid count >= 1824 (tube 6144), 2^tau eps^2=10.645, required c >= 161.8
+  eps=2.7502864023e-07 Q=2855692 (Q_eps=2855695): grid count >= 2304 (tube 6144), 2^tau eps^2=10.645, required c >= 206.8
+  eps=2.7502864023e-07 Q=2855695 (Q_eps=2855695): grid count >= 1936 (tube 6144), 2^tau eps^2=10.645, required c >= 172.3
+  eps=3.1734073873e-07 Q=2474912 (Q_eps=2474936): grid count >= 2496 (tube 6144), 2^tau eps^2=14.173, required c >= 168.9
+  eps=3.1734073873e-07 Q=2474928 (Q_eps=2474936): grid count >= 2112 (tube 6144), 2^tau eps^2=14.173, required c >= 141.8
+  eps=3.1734073873e-07 Q=2474936 (Q_eps=2474936): grid count >= 2400 (tube 6144), 2^tau eps^2=14.173, required c >= 162.1
+  eps=3.7023086185e-07 Q=2121344 (Q_eps=2121374): grid count >= 1440 (tube 6144), 2^tau eps^2=19.291, required c >= 69.4
+  eps=3.7023086185e-07 Q=2121360 (Q_eps=2121374): grid count >= 2976 (tube 6144), 2^tau eps^2=19.291, required c >= 149.0
+  eps=3.7023086185e-07 Q=2121368 (Q_eps=2121374): grid count >= 2304 (tube 6144), 2^tau eps^2=19.291, required c >= 114.1
+  eps=3.7023086185e-07 Q=2121372 (Q_eps=2121374): grid count >= 2496 (tube 6144), 2^tau eps^2=19.291, required c >= 124.1
+  eps=3.7023086185e-07 Q=2121374 (Q_eps=2121374): grid count >= 2352 (tube 6144), 2^tau eps^2=19.291, required c >= 116.6
+  eps=4.2312098497e-07 Q=1856192 (Q_eps=1856202): grid count >= 2784 (tube 6144), 2^tau eps^2=25.196, required c >= 106.4
+  eps=4.2312098497e-07 Q=1856200 (Q_eps=1856202): grid count >= 2592 (tube 6144), 2^tau eps^2=25.196, required c >= 98.8
+  eps=4.2312098497e-07 Q=1856202 (Q_eps=1856202): grid count >= 2704 (tube 6144), 2^tau eps^2=25.196, required c >= 103.3
+  eps=2.1156049249e-07 Q=3712384 (Q_eps=3712404): grid count >= 0 (tube 6144), 2^tau eps^2=6.299, required c >= -16.2
+  eps=2.1156049249e-07 Q=3712400 (Q_eps=3712404): grid count >= 0 (tube 6144), 2^tau eps^2=6.299, required c >= -16.2
+  eps=2.1156049249e-07 Q=3712404 (Q_eps=3712404): grid count >= 0 (tube 6144), 2^tau eps^2=6.299, required c >= -16.2
+  eps=2.1156049270e-07 Q=3712384 (Q_eps=3712404): grid count >= 0 (tube 6144), 2^tau eps^2=6.299, required c >= -16.2
+  eps=2.1156049270e-07 Q=3712400 (Q_eps=3712404): grid count >= 0 (tube 6144), 2^tau eps^2=6.299, required c >= -16.2
+  eps=2.1156049270e-07 Q=3712404 (Q_eps=3712404): grid count >= 0 (tube 6144), 2^tau eps^2=6.299, required c >= -16.2
+  eps=2.1367609741e-07 Q=3675648 (Q_eps=3675648): grid count >= 480 (tube 6144), 2^tau eps^2=6.426, required c >= 58.8
+  eps=2.1579170234e-07 Q=3639584 (Q_eps=3639612): grid count >= 864 (tube 6144), 2^tau eps^2=6.554, required c >= 116.3
+  eps=2.1579170234e-07 Q=3639600 (Q_eps=3639612): grid count >= 576 (tube 6144), 2^tau eps^2=6.554, required c >= 72.3
+  eps=2.1579170234e-07 Q=3639608 (Q_eps=3639612): grid count >= 768 (tube 6144), 2^tau eps^2=6.554, required c >= 101.6
+  eps=2.1579170234e-07 Q=3639612 (Q_eps=3639612): grid count >= 544 (tube 6144), 2^tau eps^2=6.554, required c >= 67.4
+  eps=2.2213851711e-07 Q=3535616 (Q_eps=3535623): grid count >= 1536 (tube 6144), 2^tau eps^2=6.945, required c >= 206.5
+  eps=2.2213851711e-07 Q=3535620 (Q_eps=3535623): grid count >= 1056 (tube 6144), 2^tau eps^2=6.945, required c >= 137.4
+  eps=2.2213851711e-07 Q=3535623 (Q_eps=3535623): grid count >= 888 (tube 6144), 2^tau eps^2=6.945, required c >= 113.2
+  eps=2.3271654173e-07 Q=3374912 (Q_eps=3374913): grid count >= 1344 (tube 6144), 2^tau eps^2=7.622, required c >= 163.0
+  eps=2.3271654173e-07 Q=3374913 (Q_eps=3374913): grid count >= 1424 (tube 6144), 2^tau eps^2=7.622, required c >= 173.4
+  eps=2.4329456636e-07 Q=3228160 (Q_eps=3228177): grid count >= 1440 (tube 6144), 2^tau eps^2=8.331, required c >= 160.6
+  eps=2.4329456636e-07 Q=3228176 (Q_eps=3228177): grid count >= 1728 (tube 6144), 2^tau eps^2=8.331, required c >= 195.2
+  eps=2.4329456636e-07 Q=3228177 (Q_eps=3228177): grid count >= 1520 (tube 6144), 2^tau eps^2=8.331, required c >= 170.2
+  eps=2.5387259098e-07 Q=3093664 (Q_eps=3093670): grid count >= 2112 (tube 6144), 2^tau eps^2=9.071, required c >= 221.6
+  eps=2.5387259098e-07 Q=3093668 (Q_eps=3093670): grid count >= 1824 (tube 6144), 2^tau eps^2=9.071, required c >= 189.8
+  eps=2.5387259098e-07 Q=3093670 (Q_eps=3093670): grid count >= 1680 (tube 6144), 2^tau eps^2=9.071, required c >= 174.0
+  eps=2.7502864023e-07 Q=2855680 (Q_eps=2855695): grid count >= 864 (tube 6144), 2^tau eps^2=10.645, required c >= 71.6
+  eps=2.7502864023e-07 Q=2855688 (Q_eps=2855695): grid count >= 1824 (tube 6144), 2^tau eps^2=10.645, required c >= 161.8
+  eps=2.7502864023e-07 Q=2855692 (Q_eps=2855695): grid count >= 2304 (tube 6144), 2^tau eps^2=10.645, required c >= 206.8
+  eps=2.7502864023e-07 Q=2855695 (Q_eps=2855695): grid count >= 1936 (tube 6144), 2^tau eps^2=10.645, required c >= 172.3
+  eps=3.1734073873e-07 Q=2474912 (Q_eps=2474936): grid count >= 2496 (tube 6144), 2^tau eps^2=14.173, required c >= 168.9
+  eps=3.1734073873e-07 Q=2474928 (Q_eps=2474936): grid count >= 2112 (tube 6144), 2^tau eps^2=14.173, required c >= 141.8
+  eps=3.1734073873e-07 Q=2474936 (Q_eps=2474936): grid count >= 2400 (tube 6144), 2^tau eps^2=14.173, required c >= 162.1
+  eps=3.7023086185e-07 Q=2121344 (Q_eps=2121374): grid count >= 1440 (tube 6144), 2^tau eps^2=19.291, required c >= 69.4
+  eps=3.7023086185e-07 Q=2121360 (Q_eps=2121374): grid count >= 2976 (tube 6144), 2^tau eps^2=19.291, required c >= 149.0
+  eps=3.7023086185e-07 Q=2121368 (Q_eps=2121374): grid count >= 2304 (tube 6144), 2^tau eps^2=19.291, required c >= 114.1
+  eps=3.7023086185e-07 Q=2121372 (Q_eps=2121374): grid count >= 2496 (tube 6144), 2^tau eps^2=19.291, required c >= 124.1
+  eps=3.7023086185e-07 Q=2121374 (Q_eps=2121374): grid count >= 2352 (tube 6144), 2^tau eps^2=19.291, required c >= 116.6
+  eps=4.2312098497e-07 Q=1856192 (Q_eps=1856202): grid count >= 2784 (tube 6144), 2^tau eps^2=25.196, required c >= 106.4
+  eps=4.2312098497e-07 Q=1856200 (Q_eps=1856202): grid count >= 2592 (tube 6144), 2^tau eps^2=25.196, required c >= 98.8
+  eps=4.2312098497e-07 Q=1856202 (Q_eps=1856202): grid count >= 2704 (tube 6144), 2^tau eps^2=25.196, required c >= 103.3
+chain k=4, tau=47: required c >= 221.6 (eps=2.5387259098e-07, Q=3093664, N>=2112); tuned Q: >= 174.0 (eps=2.5387259098e-07, Q=3093670, N>=1680); tube: >= 959.2  [0s]
+==== 2026-10-12 09:59:40 chain-step k=2  code {"script_sha256_16": "ed6ef683f900c69e", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+class t=10: C^2+D^2 = (34, -24), N(4n_t - C^2 - D^2) = [(2, 2), (17, 1), (113, 1)]: 64 words at tube distance 0.0214478427198376 (2^t d^2 = 0.47105)  [0s]
+class t=11: C^2+D^2 = (20, -14), N(4n_t - C^2 - D^2) = [(2, 3), (17, 1), (113, 1)]: 128 words at tube distance 0.0214478427198376 (2^t d^2 = 0.9421)  [0s]
+  sample of 10 words of class t=10: explicit gate strings with T-count 10: 10/10
+  sample of 10 words of class t=11: explicit gate strings with T-count 11: 10/10
+  eps=2.1447842720e-02 (Q_eps=36, 2^tau eps^2=0.942, tube count 192): best of 68 moduli Q=3: grid count >= 0, c >= -31.8; tuned: count >= 0, c >= -31.8
+  eps=2.1447842741e-02 (Q_eps=36, 2^tau eps^2=0.942, tube count 192): best of 68 moduli Q=3: grid count >= 0, c >= -31.8; tuned: count >= 0, c >= -31.8
+  eps=2.1662321147e-02 (Q_eps=36, 2^tau eps^2=0.961, tube count 192): best of 68 moduli Q=22: grid count >= 32, c >= 2.1; tuned: count >= 0, c >= -31.2
+  eps=2.1876799574e-02 (Q_eps=35, 2^tau eps^2=0.980, tube count 192): best of 66 moduli Q=22: grid count >= 32, c >= 2.0; tuned: count >= 16, c >= -14.3
+  eps=2.2520234856e-02 (Q_eps=34, 2^tau eps^2=1.039, tube count 192): best of 64 moduli Q=22: grid count >= 32, c >= 1.9; tuned: count >= 32, c >= 1.9
+  eps=2.3592626992e-02 (Q_eps=33, 2^tau eps^2=1.140, tube count 192): best of 62 moduli Q=8: grid count >= 96, c >= 57.9; tuned: count >= 48, c >= 15.8
+  eps=2.4665019128e-02 (Q_eps=31, 2^tau eps^2=1.246, tube count 192): best of 58 moduli Q=8: grid count >= 96, c >= 53.0; tuned: count >= 48, c >= 14.4
+  eps=2.5737411264e-02 (Q_eps=30, 2^tau eps^2=1.357, tube count 192): best of 56 moduli Q=8: grid count >= 96, c >= 48.7; tuned: count >= 48, c >= 13.3
+  eps=2.7882195536e-02 (Q_eps=28, 2^tau eps^2=1.592, tube count 192): best of 52 moduli Q=8: grid count >= 96, c >= 41.5; tuned: count >= 96, c >= 41.5
+  eps=3.2171764080e-02 (Q_eps=24, 2^tau eps^2=2.120, tube count 192): best of 44 moduli Q=24: grid count >= 192, c >= 76.4; tuned: count >= 192, c >= 76.4
+  eps=3.7533724760e-02 (Q_eps=20, 2^tau eps^2=2.885, tube count 192): best of 36 moduli Q=12: grid count >= 128, c >= 34.0; tuned: count >= 64, c >= 11.8
+  eps=4.2895685440e-02 (Q_eps=18, 2^tau eps^2=3.768, tube count 192): best of 32 moduli Q=12: grid count >= 128, c >= 26.0; tuned: count >= 96, c >= 17.5
+chain k=2, tau=11: required c >= 76.4 (eps=3.2171764080e-02, Q=24, N>=192); tuned Q: >= 76.4 (eps=3.2171764080e-02, Q=24, N>=192); tube: >= 172.0  [0s]
+==== 2026-10-12 09:59:40 chain-step k=3  code {"script_sha256_16": "ed6ef683f900c69e", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+class t=22: C^2+D^2 = (1154, -816), N(4n_t - C^2 - D^2) = [(2, 2), (3, 2), (17, 2), (41, 1), (113, 1)]: 512 words at tube distance 0.000459957067208272 (2^t d^2 = 0.887349)  [0s]
+class t=23: C^2+D^2 = (676, -478), N(4n_t - C^2 - D^2) = [(2, 3), (3, 2), (17, 2), (41, 1), (113, 1)]: 1024 words at tube distance 0.000459957067208272 (2^t d^2 = 1.7747)  [0s]
+  sample of 10 words of class t=22: explicit gate strings with T-count 22: 10/10
+  sample of 10 words of class t=23: explicit gate strings with T-count 23: 10/10
+  eps=4.5995706721e-04 (Q_eps=1707, 2^tau eps^2=1.775, tube count 1536): best of 512 moduli Q=1452: grid count >= 0, c >= -30.4; tuned: count >= 0, c >= -30.4
+  eps=4.5995706767e-04 (Q_eps=1707, 2^tau eps^2=1.775, tube count 1536): best of 512 moduli Q=1452: grid count >= 0, c >= -30.4; tuned: count >= 0, c >= -30.4
+  eps=4.6455663788e-04 (Q_eps=1690, 2^tau eps^2=1.810, tube count 1536): best of 512 moduli Q=1584: grid count >= 384, c >= 182.3; tuned: count >= 112, c >= 32.0
+  eps=4.6915620855e-04 (Q_eps=1674, 2^tau eps^2=1.846, tube count 1536): best of 512 moduli Q=1584: grid count >= 384, c >= 178.7; tuned: count >= 128, c >= 40.1
+  eps=4.8295492057e-04 (Q_eps=1626, 2^tau eps^2=1.957, tube count 1536): best of 512 moduli Q=1420: grid count >= 512, c >= 234.1; tuned: count >= 176, c >= 62.4
+  eps=5.0595277393e-04 (Q_eps=1552, 2^tau eps^2=2.147, tube count 1536): best of 512 moduli Q=1360: grid count >= 576, c >= 243.1; tuned: count >= 480, c >= 198.4
+  eps=5.2895062729e-04 (Q_eps=1484, 2^tau eps^2=2.347, tube count 1536): best of 512 moduli Q=1276: grid count >= 704, c >= 276.9; tuned: count >= 384, c >= 140.6
+  eps=5.5194848065e-04 (Q_eps=1422, 2^tau eps^2=2.556, tube count 1536): best of 512 moduli Q=1276: grid count >= 736, c >= 266.9; tuned: count >= 432, c >= 147.9
+  eps=5.9794418737e-04 (Q_eps=1313, 2^tau eps^2=2.999, tube count 1536): best of 512 moduli Q=1240: grid count >= 768, c >= 238.1; tuned: count >= 504, c >= 150.0
+  eps=6.8993560081e-04 (Q_eps=1138, 2^tau eps^2=3.993, tube count 1536): best of 512 moduli Q=960: grid count >= 960, c >= 226.9; tuned: count >= 592, c >= 134.7
+  eps=8.0492486762e-04 (Q_eps=975, 2^tau eps^2=5.435, tube count 1536): best of 512 moduli Q=960: grid count >= 1056, c >= 184.4; tuned: count >= 656, c >= 110.8
+  eps=9.1991413442e-04 (Q_eps=853, 2^tau eps^2=7.099, tube count 1536): best of 512 moduli Q=840: grid count >= 960, c >= 127.6; tuned: count >= 696, c >= 90.4
+chain k=3, tau=23: required c >= 276.9 (eps=5.2895062729e-04, Q=1276, N>=704); tuned Q: >= 198.4 (eps=5.0595277393e-04, Q=1552, N>=480); tube: >= 835.1  [1s]
+==== 2026-10-12 09:59:42 chain-step k=4  code {"script_sha256_16": "ed6ef683f900c69e", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+class t=46: C^2+D^2 = (1331714, -941664), N(4n_t - C^2 - D^2) = [(2, 2), (3, 2), (17, 2), (41, 1), (113, 1), (2113, 1), (10177, 1)]: 2048 words at tube distance 2.11560492485374e-7 (2^t d^2 = 3.14955)  [0s]
+class t=47: C^2+D^2 = (780100, -551614), N(4n_t - C^2 - D^2) = [(2, 3), (3, 2), (17, 2), (41, 1), (113, 1), (2113, 1), (10177, 1)]: 4096 words at tube distance 2.11560492485374e-7 (2^t d^2 = 6.29911)  [0s]
+  sample of 10 words of class t=46: explicit gate strings with T-count 46: 10/10
+  sample of 10 words of class t=47: explicit gate strings with T-count 47: 10/10
+  eps=2.1156049249e-07 (Q_eps=3712404, 2^tau eps^2=6.299, tube count 6144): best of 512 moduli Q=3712149: grid count >= 0, c >= -16.2; tuned: count >= 0, c >= -16.2
+  eps=2.1156049270e-07 (Q_eps=3712404, 2^tau eps^2=6.299, tube count 6144): best of 512 moduli Q=3712351: grid count >= 16, c >= -13.7; tuned: count >= 0, c >= -16.2
+  eps=2.1367609741e-07 (Q_eps=3675648, 2^tau eps^2=6.426, tube count 6144): best of 512 moduli Q=3675496: grid count >= 1056, c >= 148.5; tuned: count >= 480, c >= 58.8
+  eps=2.1579170234e-07 (Q_eps=3639612, 2^tau eps^2=6.554, tube count 6144): best of 512 moduli Q=3639472: grid count >= 1056, c >= 145.6; tuned: count >= 544, c >= 67.4
+  eps=2.2213851711e-07 (Q_eps=3535623, 2^tau eps^2=6.945, tube count 6144): best of 512 moduli Q=3535616: grid count >= 1536, c >= 206.5; tuned: count >= 888, c >= 113.2
+  eps=2.3271654173e-07 (Q_eps=3374913, 2^tau eps^2=7.622, tube count 6144): best of 512 moduli Q=3374728: grid count >= 2304, c >= 288.9; tuned: count >= 1424, c >= 173.4
+  eps=2.4329456636e-07 (Q_eps=3228177, 2^tau eps^2=8.331, tube count 6144): best of 512 moduli Q=3227992: grid count >= 2400, c >= 275.9; tuned: count >= 1520, c >= 170.2
+  eps=2.5387259098e-07 (Q_eps=3093670, 2^tau eps^2=9.071, tube count 6144): best of 512 moduli Q=3093448: grid count >= 2208, c >= 232.2; tuned: count >= 1680, c >= 174.0
+  eps=2.7502864023e-07 (Q_eps=2855695, 2^tau eps^2=10.645, tube count 6144): best of 512 moduli Q=2855496: grid count >= 2592, c >= 233.9; tuned: count >= 1936, c >= 172.3
+  eps=3.1734073873e-07 (Q_eps=2474936, 2^tau eps^2=14.173, tube count 6144): best of 512 moduli Q=2474832: grid count >= 3072, c >= 209.6; tuned: count >= 2400, c >= 162.1
+  eps=3.7023086185e-07 (Q_eps=2121374, 2^tau eps^2=19.291, tube count 6144): best of 512 moduli Q=2121240: grid count >= 4128, c >= 208.7; tuned: count >= 2352, c >= 116.6
+  eps=4.2312098497e-07 (Q_eps=1856202, 2^tau eps^2=25.196, tube count 6144): best of 512 moduli Q=1856184: grid count >= 3360, c >= 129.3; tuned: count >= 2704, c >= 103.3
+chain k=4, tau=47: required c >= 288.9 (eps=2.3271654173e-07, Q=3374728, N>=2304); tuned Q: >= 174.0 (eps=2.5387259098e-07, Q=3093670, N>=1680); tube: >= 959.2  [4s]
+==== 2026-10-12 09:59:46 chain-step k=5  code {"script_sha256_16": "ed6ef683f900c69e", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+class t=94: C^2+D^2 = (1773462177794, -1254027132096), N(4n_t - C^2 - D^2) = [(2, 2), (3, 2), (17, 2), (41, 1), (113, 1), (1601, 1), (2113, 1), (3457, 1), (5569, 1), (9857, 1), (10177, 1)]: 32768 words at tube distance 4.47578419806537e-14 (2^t d^2 = 39.6787)  [0s]
+class t=95: C^2+D^2 = (1038870091396, -734592086398), N(4n_t - C^2 - D^2) = [(2, 3), (3, 2), (17, 2), (41, 1), (113, 1), (1601, 1), (2113, 1), (3457, 1), (5569, 1), (9857, 1), (10177, 1)]: 65536 words at tube distance 4.47578419806537e-14 (2^t d^2 = 79.3575)  [1s]
+  sample of 30 words of class t=94: explicit gate strings with T-count 94: 30/30
+  sample of 30 words of class t=95: explicit gate strings with T-count 95: 30/30
+  eps=4.4757841981e-14 (Q_eps=17547721888292, 2^tau eps^2=79.357, tube count 98304): best of 512 moduli Q=17547721888125: grid count >= 16, c >= -2.3; tuned: count >= 0, c >= -2.5
+  eps=4.4757842025e-14 (Q_eps=17547721870744, 2^tau eps^2=79.357, tube count 98304): best of 512 moduli Q=17547721870741: grid count >= 40, c >= -2.0; tuned: count >= 0, c >= -2.5
+  eps=4.5205420401e-14 (Q_eps=17373982067616, 2^tau eps^2=80.953, tube count 98304): best of 512 moduli Q=17373982067540: grid count >= 9024, c >= 109.0; tuned: count >= 6624, c >= 79.4
+  eps=4.5652998820e-14 (Q_eps=17203648910090, 2^tau eps^2=82.564, tube count 98304): best of 512 moduli Q=17203648909920: grid count >= 13248, c >= 158.1; tuned: count >= 10400, c >= 123.6
+  eps=4.6995734080e-14 (Q_eps=16712116084088, 2^tau eps^2=87.492, tube count 98304): best of 512 moduli Q=16712116084024: grid count >= 17952, c >= 202.9; tuned: count >= 15264, c >= 172.2
+  eps=4.9233626179e-14 (Q_eps=15952474443902, 2^tau eps^2=96.023, tube count 98304): best of 512 moduli Q=15952474443900: grid count >= 21440, c >= 221.2; tuned: count >= 20352, c >= 209.9
+  eps=5.1471518278e-14 (Q_eps=15258888598515, 2^tau eps^2=104.950, tube count 98304): best of 512 moduli Q=15258888598496: grid count >= 32640, c >= 309.1; tuned: count >= 24256, c >= 229.2
+  eps=5.3709410377e-14 (Q_eps=14623101573577, 2^tau eps^2=114.275, tube count 98304): best of 512 moduli Q=14623101573356: grid count >= 29760, c >= 258.7; tuned: count >= 27248, c >= 236.7
+  eps=5.8185194575e-14 (Q_eps=13498247606379, 2^tau eps^2=134.114, tube count 98304): best of 512 moduli Q=13498247606176: grid count >= 37824, c >= 280.6; tuned: count >= 31448, c >= 233.0
+  eps=6.7136762971e-14 (Q_eps=11698481258861, 2^tau eps^2=178.554, tube count 98304): best of 512 moduli Q=11698481258720: grid count >= 42048, c >= 234.4; tuned: count >= 36600, c >= 203.9
+  eps=7.8326223466e-14 (Q_eps=10027269650452, 2^tau eps^2=243.032, tube count 98304): best of 512 moduli Q=10027269650228: grid count >= 43392, c >= 177.7; tuned: count >= 40576, c >= 166.1
+  eps=8.9515683961e-14 (Q_eps=8773860944146, 2^tau eps^2=317.430, tube count 98304): best of 512 moduli Q=8773860944048: grid count >= 43872, c >= 137.6; tuned: count >= 41776, c >= 131.0
+chain k=5, tau=95: required c >= 309.1 (eps=5.1471518278e-14, Q=15258888598496, N>=32640); tuned Q: >= 236.7 (eps=5.3709410377e-14, Q=14623101573577, N>=27248); tube: >= 1236.3  [71s]
+==== 2026-10-12 10:03:46 chain-survey mmax=40  code {"script_sha256_16": "0d6ee86ac85c4b21", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+m= 2 t=4,5 d=2^-2.77 2^t2 d^2=    0.690 words      32+     64  tube bound c >=    124.6   N(X^m-1) = [(17, 1)]  [0.0s]
+==== 2026-10-12 10:04:14 chain-survey mmax=44  code {"script_sha256_16": "f6de84e151ac5cf7", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+m= 2 t=4,5 d=2^-2.77 2^t2 d^2=    0.690 words      32+     64  tube bound c >=    124.6   N(X^m-1) = [(17, 1)]  [0.0s]
+m= 4 t=10,11 d=2^-5.54 2^t2 d^2=    0.942 words      64+    128  tube bound c >=    180.4   N(X^m-1) = [(17, 1), (113, 1)]  [0.0s]
+m= 6 t=16,17 d=2^-8.31 2^t2 d^2=    1.293 words       0+      0  tube bound c >=    -26.3   N(X^m-1) = [(7, 2), (17, 1), (193, 1)]  [0.0s]
+m= 8 t=22,23 d=2^-11.09 2^t2 d^2=    1.775 words     512+   1024  tube bound c >=    839.6   N(X^m-1) = [(3, 2), (17, 2), (41, 1), (113, 1)]  [0.0s]
+m=10 t=28,29 d=2^-13.86 2^t2 d^2=    2.436 words     128+    256  tube bound c >=    133.8   N(X^m-1) = [(17, 1), (2801, 1), (17921, 1)]  [0.0s]
+m=12 t=34,35 d=2^-16.63 2^t2 d^2=    3.344 words       0+      0  tube bound c >=    -20.9   N(X^m-1) = [(7, 2), (17, 1), (113, 1), (193, 1), (3217, 1)]  [0.0s]
+m=14 t=40,41 d=2^-19.40 2^t2 d^2=    4.589 words       0+      0  tube bound c >=    -17.9   N(X^m-1) = [(17, 1), (71, 1), (113, 1), (2311, 1), (12433, 1)]  [0.0s]
+m=16 t=46,47 d=2^-22.17 2^t2 d^2=    6.299 words    2048+   4096  tube bound c >=    960.5   N(X^m-1) = [(3, 2), (17, 2), (41, 1), (113, 1), (2113, 1), (10177, 1)]  [0.0s]
+m=18 t=52,53 d=2^-24.94 2^t2 d^2=    8.646 words       0+      0  tube bound c >=    -12.3   N(X^m-1) = [(7, 2), (17, 1), (127, 1), (193, 1), (4159, 1), (199873, 1)]  [0.0s]
+m=20 t=58,59 d=2^-27.72 2^t2 d^2=   11.867 words    1024+   2048  tube bound c >=    248.9   N(X^m-1) = [(17, 1), (113, 1), (241, 1), (2801, 1), (17921, 1), (47521, 1)]  [0.0s]
+m=22 t=64,65 d=2^-30.49 2^t2 d^2=   16.289 words       0+      0  tube bound c >=     -8.0   N(X^m-1) = [(17, 1), (23, 2), (1122529, 1), (7084965889, 1)]  [0.0s]
+m=24 t=70,71 d=2^-33.26 2^t2 d^2=   22.358 words       0+      0  tube bound c >=     -6.4   N(X^m-1) = [(3, 4), (5, 2), (7, 2), (17, 2), (41, 1), (97, 1), (113, 1), (193, 1), (577, 1), (3217, 1)]  [0.0s]
+m=26 t=76,77 d=2^-36.03 2^t2 d^2=   30.688 words       0+      0  tube bound c >=     -5.0   N(X^m-1) = [(17, 1), (79, 2), (76843937, 1), (36466389233, 1)]  [0.0s]
+m=28 t=82,83 d=2^-38.80 2^t2 d^2=   42.122 words       0+      0  tube bound c >=     -3.9   N(X^m-1) = [(17, 1), (71, 1), (113, 2), (2311, 1), (3697, 1), (12433, 1), (11674657, 1)]  [0.0s]
+m=30 t=88,89 d=2^-41.57 2^t2 d^2=   57.816 words       0+      0  tube bound c >=     -3.1   N(X^m-1) = [(7, 2), (17, 1), (31, 2), (193, 1), (2801, 1), (3121, 1), (5281, 1), (9601, 1), (17921, 1)]  [0.0s]
+m=32 t=94,95 d=2^-44.34 2^t2 d^2=   79.357 words   32768+  65536  tube bound c >=   1236.4   N(X^m-1) = [(3, 2), (17, 2), (41, 1), (113, 1), (1601, 1), (2113, 1), (3457, 1), (5569, 1), (9857, 1), (10177, 1)]  [0.1s]
+m=34 t=100,101 d=2^-47.12 2^t2 d^2=  108.925 words       0+      0  tube bound c >=     -1.9   N(X^m-1) = [(17, 2), (103, 2), (1327, 1), (784201841, 1), (28289, 1), (55920719, 1)]  [0.0s]
+m=36 t=106,107 d=2^-49.89 2^t2 d^2=  149.508 words       0+      0  tube bound c >=     -1.4   N(X^m-1) = [(7, 2), (17, 1), (113, 1), (127, 1), (193, 1), (3217, 1), (4159, 1), (8929, 1), (199873, 1), (5870881, 1)]  [0.0s]
+m=38 t=112,113 d=2^-52.66 2^t2 d^2=  205.212 words       0+      0  tube bound c >=     -1.1   N(X^m-1) = [(17, 1), (3880447, 1), (35305605631, 1), (8895814393983217, 1)]  [0.0s]
+m=40 t=118,119 d=2^-55.43 2^t2 d^2=  281.671 words  262144+ 524288  tube bound c >=   2791.2   N(X^m-1) = [(3, 2), (17, 2), (41, 2), (113, 1), (241, 2), (401, 1), (761, 1), (2801, 1), (17921, 1), (47521, 1), (63521, 1)]  [0.6s]
+m=42 t=124,125 d=2^-58.20 2^t2 d^2=  386.617 words       0+      0  tube bound c >=     -0.6   N(X^m-1) = [(7, 4), (17, 1), (71, 1), (113, 1), (193, 1), (2311, 1), (12433, 1), (1426705057, 1), (32792321857, 1)]  [0.0s]
+m=44 t=130,131 d=2^-60.97 2^t2 d^2=  530.664 words       0+      0  tube bound c >=     -0.5   N(X^m-1) = [(17, 1), (23, 2), (113, 1), (1122529, 1), (19436561, 1), (7084965889, 1), (34626790529, 1)]  [0.0s]
+==== 2026-10-12 10:04:45 chain-step m=20  code {"script_sha256_16": "f6de84e151ac5cf7", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+class t=58: C^2+D^2 = (45239074, -31988856), N(4n_t - C^2 - D^2) = [(2, 2), (17, 1), (113, 1), (241, 1), (2801, 1), (17921, 1), (47521, 1)]: 1024 words at tube distance 4.53725524822844e-9 (2^t d^2 = 5.93371)  [0s]
+class t=59: C^2+D^2 = (26500436, -18738638), N(4n_t - C^2 - D^2) = [(2, 3), (17, 1), (113, 1), (241, 1), (2801, 1), (17921, 1), (47521, 1)]: 2048 words at tube distance 4.53725524822844e-9 (2^t d^2 = 11.8674)  [0s]
+  sample of 10 words of class t=58: explicit gate strings with T-count 58: 10/10
+  sample of 10 words of class t=59: explicit gate strings with T-count 59: 10/10
+  eps=4.5372552482e-09 (Q_eps=173099841, 2^tau eps^2=11.867, tube count 3072): best of 512 moduli Q=173099586: grid count >= 0, c >= -10.6; tuned: count >= 0, c >= -10.6
+  eps=4.5372552528e-09 (Q_eps=173099841, 2^tau eps^2=11.867, tube count 3072): best of 512 moduli Q=173099586: grid count >= 0, c >= -10.6; tuned: count >= 0, c >= -10.6
+  eps=4.5826278007e-09 (Q_eps=171385981, 2^tau eps^2=12.106, tube count 3072): best of 512 moduli Q=171385760: grid count >= 576, c >= 37.2; tuned: count >= 208, c >= 6.8
+  eps=4.6280003532e-09 (Q_eps=169705726, 2^tau eps^2=12.347, tube count 3072): best of 512 moduli Q=169705512: grid count >= 576, c >= 36.4; tuned: count >= 304, c >= 14.4
+  eps=4.7641180106e-09 (Q_eps=164856991, 2^tau eps^2=13.084, tube count 3072): best of 512 moduli Q=164856892: grid count >= 896, c >= 58.9; tuned: count >= 456, c >= 25.2
+  eps=4.9909807731e-09 (Q_eps=157363492, 2^tau eps^2=14.360, tube count 3072): best of 512 moduli Q=157363288: grid count >= 1344, c >= 84.8; tuned: count >= 640, c >= 35.8
+  eps=5.2178435355e-09 (Q_eps=150521601, 2^tau eps^2=15.695, tube count 3072): best of 512 moduli Q=150521544: grid count >= 1152, c >= 65.4; tuned: count >= 744, c >= 39.4
+  eps=5.4447062979e-09 (Q_eps=144249867, 2^tau eps^2=17.089, tube count 3072): best of 512 moduli Q=144249648: grid count >= 1344, c >= 71.3; tuned: count >= 768, c >= 37.6
+  eps=5.8984318227e-09 (Q_eps=133153724, 2^tau eps^2=20.056, tube count 3072): best of 512 moduli Q=133153716: grid count >= 1536, c >= 70.3; tuned: count >= 960, c >= 41.6
+  eps=6.8058828723e-09 (Q_eps=115399894, 2^tau eps^2=26.702, tube count 3072): best of 512 moduli Q=115399800: grid count >= 1536, c >= 52.8; tuned: count >= 1184, c >= 39.6
+  eps=7.9401966844e-09 (Q_eps=98914195, 2^tau eps^2=36.344, tube count 3072): best of 512 moduli Q=98914184: grid count >= 2016, c >= 52.0; tuned: count >= 1320, c >= 32.9
+  eps=9.0745104965e-09 (Q_eps=86549920, 2^tau eps^2=47.470, tube count 3072): best of 512 moduli Q=86549672: grid count >= 2304, c >= 45.9; tuned: count >= 1056, c >= 19.6
+chain m=20, tau=59: required c >= 84.8 (eps=4.9909807731e-09, Q=157363288, N>=1344); tuned Q: >= 41.6 (eps=5.8984318227e-09, Q=133153724, N>=960); tube: >= 248.2  [2s]
+==== 2026-10-12 10:04:48 chain-step m=40  code {"script_sha256_16": "f6de84e151ac5cf7", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+class t=118: C^2+D^2 = 2 u^-..., N(4n_t - C^2 - D^2) = [(2, 2), (3, 2), (17, 2), (41, 2), (113, 1), (241, 2), (401, 1), (761, 1), (2801, 1), (17921, 1), (47521, 1), (63521, 1)]: 262144 words at tube distance 2.05866851875765e-17 (2^t d^2 = 140.836)  [4s]
+class t=119: C^2+D^2 = 2 u^-..., N(4n_t - C^2 - D^2) = [(2, 3), (3, 2), (17, 2), (41, 2), (113, 1), (241, 2), (401, 1), (761, 1), (2801, 1), (17921, 1), (47521, 1), (63521, 1)]: 524288 words at tube distance 2.05866851875765e-17 (2^t d^2 = 281.671)  [11s]
+  sample of 5 words of class t=118: explicit gate strings with T-count 118: 5/5
+  sample of 5 words of class t=119: explicit gate strings with T-count 119: 5/5
+  eps=2.0586685188e-17 (Q_eps=38150783199940688, 2^tau eps^2=281.671, tube count 786432): best of 48 moduli Q=38150783199940675: grid count >= 16, c >= -0.8; tuned: count >= 0, c >= -0.9
+  eps=2.0586685208e-17 (Q_eps=38150783161789904, 2^tau eps^2=281.671, tube count 786432): best of 48 moduli Q=38150783161789884: grid count >= 64, c >= -0.6; tuned: count >= 0, c >= -0.9
+  eps=2.0792552039e-17 (Q_eps=37773052673208600, 2^tau eps^2=287.333, tube count 786432): best of 48 moduli Q=37773052673208588: grid count >= 56608, c >= 196.2; tuned: count >= 55008, c >= 190.6
+  eps=2.0998418891e-17 (Q_eps=37402728627392832, 2^tau eps^2=293.051, tube count 786432): best of 48 moduli Q=37402728627392824: grid count >= 83232, c >= 283.2; tuned: count >= 79104, c >= 269.1
+  eps=2.1616019447e-17 (Q_eps=36334079238038752, 2^tau eps^2=310.542, tube count 786432): best of 48 moduli Q=36334079238038732: grid count >= 121760, c >= 391.3; tuned: count >= 119040, c >= 382.5
+  eps=2.2645353706e-17 (Q_eps=34682530181764260, 2^tau eps^2=340.822, tube count 786432): best of 48 moduli Q=34682530181764238: grid count >= 164752, c >= 482.7; tuned: count >= 164064, c >= 480.7
+  eps=2.3674687966e-17 (Q_eps=33174594086904944, 2^tau eps^2=372.510, tube count 786432): best of 48 moduli Q=33174594086904940: grid count >= 197952, c >= 530.7; tuned: count >= 194592, c >= 521.7
+  eps=2.4704022225e-17 (Q_eps=31792319333283904, 2^tau eps^2=405.606, tube count 786432): best of 48 moduli Q=31792319333283888: grid count >= 224832, c >= 553.7; tuned: count >= 221376, c >= 545.2
+  eps=2.6762690744e-17 (Q_eps=29346756307646680, 2^tau eps^2=476.024, tube count 786432): best of 48 moduli Q=29346756307646672: grid count >= 253344, c >= 531.7; tuned: count >= 250944, c >= 526.6
+  eps=3.0880027781e-17 (Q_eps=25433855466627124, 2^tau eps^2=633.760, tube count 786432): best of 48 moduli Q=25433855466627104: grid count >= 354912, c >= 559.6; tuned: count >= 290624, c >= 458.2
+  eps=3.6026699078e-17 (Q_eps=21800447542823248, 2^tau eps^2=862.618, tube count 786432): best of 48 moduli Q=21800447542823244: grid count >= 328448, c >= 380.5; tuned: count >= 322176, c >= 373.2
+  eps=4.1173370375e-17 (Q_eps=19075391599970344, 2^tau eps^2=1126.685, tube count 786432): best of 48 moduli Q=19075391599970328: grid count >= 350400, c >= 310.8; tuned: count >= 340704, c >= 302.2
+chain m=40, tau=119: required c >= 559.6 (eps=3.0880027781e-17, Q=25433855466627104, N>=354912); tuned Q: >= 545.2 (eps=2.4704022225e-17, Q=31792319333283904, N>=221376); tube: >= 2791.1  [652s]

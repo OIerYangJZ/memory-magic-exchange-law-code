@@ -1,0 +1,6 @@
+enumerated shells t<=TMAX=9: sizes [24, 72, 144, 288, 576, 1152, 2304, 4608, 9216, 18432]  (0.0s)
+MA normal form unique for t<=6; max unitarity error 3.11e-15
+distinct rotation axes of words with t<=3: 213
+HT-axis frame, eps=0.0264991, Q_eps=29 (sin(pi/2Q)=0.054139 >= 2 eps): grid shells t=0..9 [1, 2, 2, 2, 2, 2, 2, 6, 18, 26], cumulative 63; required c = (N - c0 - c1 tau)/(2^tau eps^2) = 102.9
+HT-axis frame, eps=0.0265, Q_eps=29 (sin(pi/2Q)=0.054139 >= 2 eps): grid shells t=0..9 [1, 2, 2, 2, 2, 2, 2, 6, 18, 32], cumulative 69; required c = (N - c0 - c1 tau)/(2^tau eps^2) = 119.6
+words of T-count <= 9 at distance in (0.0264, 0.0266) from the Q = 29 grid: 6, at distances [0.026499139], T-counts [9]

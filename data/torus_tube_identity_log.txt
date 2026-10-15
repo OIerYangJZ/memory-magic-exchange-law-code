@@ -1,0 +1,1197 @@
+==== 2026-10-12 08:46:34 band L=3: eps in (0.0625, 0.125], tau <= 22, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 3 --K 16 --name identity  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t=  7:         32 torus words,        17 (c,d) pairs, 0.0s
+  level t=  8:         96 torus words,        25 (c,d) pairs, 0.0s
+  level t=  9:        384 torus words,        73 (c,d) pairs, 0.0s
+  level t= 10:        864 torus words,       153 (c,d) pairs, 0.0s
+==== 2026-10-12 08:46:34 band L=14: eps in (3.0517578125e-05, 6.103515625e-05], tau <= 46, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 14 --K 18 --name identity  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t= 11:       1248 torus words,       321 (c,d) pairs, 0.0s
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+==== 2026-10-12 08:46:34 band L=12: eps in (0.0001220703125, 0.000244140625], tau <= 40, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 12 --K 16 --name identity  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 19:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 20:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 21:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 22:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 23:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 24:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 25:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 26:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:       2272 torus words,       625 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 27:         32 torus words,         9 (c,d) pairs, 0.0s
+  level t= 19:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 28:         64 torus words,         9 (c,d) pairs, 0.0s
+  level t= 20:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 21:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 22:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 29:         32 torus words,        17 (c,d) pairs, 0.0s
+  level t= 23:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 24:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 30:          0 torus words,        33 (c,d) pairs, 0.0s
+  level t= 25:          0 torus words,        17 (c,d) pairs, 0.0s
+  level t= 26:          0 torus words,        33 (c,d) pairs, 0.0s
+  level t= 31:         32 torus words,        73 (c,d) pairs, 0.0s
+  level t= 27:        352 torus words,        81 (c,d) pairs, 0.0s
+  level t= 32:        192 torus words,       161 (c,d) pairs, 0.0s
+  level t= 28:        896 torus words,       161 (c,d) pairs, 0.0s
+  level t= 33:        704 torus words,       321 (c,d) pairs, 0.0s
+  level t= 29:       1600 torus words,       289 (c,d) pairs, 0.0s
+  level t= 13:       4544 torus words,      1281 (c,d) pairs, 0.0s
+  level t= 34:       1856 torus words,       657 (c,d) pairs, 0.0s
+  level t= 30:       2496 torus words,       609 (c,d) pairs, 0.0s
+  level t= 35:       4800 torus words,      1281 (c,d) pairs, 0.0s
+  level t= 14:       8992 torus words,      2505 (c,d) pairs, 0.0s
+  level t= 31:       3520 torus words,      1265 (c,d) pairs, 0.0s
+  level t= 32:       8704 torus words,      2529 (c,d) pairs, 0.0s
+  level t= 36:       9472 torus words,      2529 (c,d) pairs, 0.0s
+  level t= 15:      17600 torus words,      5049 (c,d) pairs, 0.1s
+  level t= 37:      17120 torus words,      5081 (c,d) pairs, 0.1s
+  level t= 33:      20480 torus words,      5057 (c,d) pairs, 0.1s
+  level t= 16:      35488 torus words,     10081 (c,d) pairs, 0.1s
+  level t= 38:      38336 torus words,     10121 (c,d) pairs, 0.1s
+  level t= 34:      39232 torus words,     10105 (c,d) pairs, 0.1s
+  level t= 17:      74176 torus words,     20153 (c,d) pairs, 0.2s
+  level t= 39:      78272 torus words,     20233 (c,d) pairs, 0.3s
+  level t= 35:      75616 torus words,     20241 (c,d) pairs, 0.3s
+  level t= 18:     149152 torus words,     40265 (c,d) pairs, 0.5s
+  level t= 36:     141888 torus words,     40393 (c,d) pairs, 0.5s
+  level t= 40:     151872 torus words,     40457 (c,d) pairs, 0.5s
+  level t= 19:     295104 torus words,     80585 (c,d) pairs, 0.9s
+  level t= 37:     277312 torus words,     80857 (c,d) pairs, 0.9s
+  level t= 41:     297920 torus words,     80889 (c,d) pairs, 1.0s
+  level t= 20:     587136 torus words,    161025 (c,d) pairs, 1.7s
+  level t= 38:     573248 torus words,    161721 (c,d) pairs, 1.8s
+  level t= 42:     598400 torus words,    161681 (c,d) pairs, 1.9s
+  level t= 21:    1171232 torus words,    322145 (c,d) pairs, 3.6s
+  level t= 39:    1171808 torus words,    323361 (c,d) pairs, 3.9s
+  level t= 43:    1205024 torus words,    323353 (c,d) pairs, 4.1s
+  level t= 22:    2345056 torus words,    644353 (c,d) pairs, 7.1s
+enumeration: torus levels <= 22, 4693384 words of T-count <= 22 within 0.125 of the coset, 15s
+tube: max required c over the band = 109.9 at tau=9, eps=0.07327249, N=328
+  level t= 40:    2363776 torus words,    646641 (c,d) pairs, 7.4s
+  level t= 44:    2401728 torus words,    646713 (c,d) pairs, 7.6s
+enumeration: torus levels <= 40, 4680936 words of T-count <= 40 within 0.000244140625 of the coset, 16s
+tube: max required c over the band = 136.8 at tau=29, eps=0.00018341, N=2536
+grid, all 10 moduli 3..12, tau 0..22: max required c = 35.4 (Q=4, tau=10, eps=0.11208538, N=484, 2^tau eps^2=12.865); tuned Q only: 33.9 (Q=10); post-onset: 35.4; 2s
+grid, selected moduli [3, 4, 5, 6, 7, 8, 9, 10, 11, 12], tau <= 22: max 35.4 at Q=4, tau=10
+worst cell: Q=4 (Q_eps=6), eps=0.1120854 (jump at 0.1120853823), tau=10: N=484, shells [4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 480], required c = 35.4
+dyadic cell eps=2^-3, Q=6: grid shells [2, 0, 0, 0, 0, 0, 0, 16, 48, 64, 336, 336, 704, 1552, 2976, 5984, 11200, 24160, 47104, 92624, 186048, 371584, 756592]; grid shell/Haar at t=tau_max: 1.009; tube shell/Haar at t=tau_max: 0.998
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L3.json  (total 19s)
+==== 2026-10-12 08:46:53 band L=4: eps in (0.03125, 0.0625], tau <= 24, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 4 --K 16 --name identity  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:         32 torus words,         9 (c,d) pairs, 0.0s
+  level t=  8:         64 torus words,         9 (c,d) pairs, 0.0s
+  level t=  9:         64 torus words,        17 (c,d) pairs, 0.0s
+  level t= 10:        128 torus words,        33 (c,d) pairs, 0.0s
+  level t= 11:        192 torus words,        65 (c,d) pairs, 0.0s
+  level t= 12:        320 torus words,       137 (c,d) pairs, 0.0s
+  level t= 13:        960 torus words,       313 (c,d) pairs, 0.0s
+  level t= 14:       2112 torus words,       609 (c,d) pairs, 0.0s
+  level t= 15:       4448 torus words,      1249 (c,d) pairs, 0.0s
+  level t= 16:       9504 torus words,      2529 (c,d) pairs, 0.1s
+  level t= 17:      18912 torus words,      5033 (c,d) pairs, 0.1s
+  level t= 18:      37280 torus words,     10097 (c,d) pairs, 0.2s
+  level t= 19:      74688 torus words,     20193 (c,d) pairs, 0.5s
+  level t= 20:     148096 torus words,     40345 (c,d) pairs, 1.0s
+  level t= 21:     294528 torus words,     80713 (c,d) pairs, 2.1s
+  level t= 22:     591296 torus words,    161529 (c,d) pairs, 3.7s
+  level t= 23:    1180160 torus words,    323065 (c,d) pairs, 8.3s
+  level t= 45:    4771168 torus words,   1293553 (c,d) pairs, 32.6s
+  level t= 24:    2353152 torus words,    646145 (c,d) pairs, 15.2s
+enumeration: torus levels <= 24, 4715944 words of T-count <= 24 within 0.0625 of the coset, 32s
+tube: max required c over the band = 102.6 at tau=11, eps=0.03963595, N=360
+grid, all 23 moduli 3..25, tau 0..24: max required c = 101.0 (Q=24, tau=11, eps=0.03125000, N=232, 2^tau eps^2=2.000); tuned Q only: 100.1 (Q=24); post-onset: 101.0; 2s
+grid, selected moduli [4, 8, 12, 16, 17, 18, 19, 20, 21, 23, 24], tau <= 24: max 101.0 at Q=24, tau=11
+worst cell: Q=24 (Q_eps=25), eps=0.03125 (jump at 0.0312500000), tau=11: N=232, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160], required c = 101.0
+dyadic cell eps=2^-4, Q=12: grid shells [4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160, 64, 512, 544, 1088, 3424, 6560, 11776, 22720, 43552, 94464, 190400, 377600, 768288]; grid shell/Haar at t=tau_max: 1.023; tube shell/Haar at t=tau_max: 0.998
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L4.json  (total 36s)
+==== 2026-10-12 08:47:30 band L=5: eps in (0.015625, 0.03125], tau <= 26, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 5 --K 16 --name identity  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:         64 torus words,         9 (c,d) pairs, 0.0s
+  level t= 11:        160 torus words,        25 (c,d) pairs, 0.0s
+  level t= 12:        128 torus words,        49 (c,d) pairs, 0.0s
+  level t= 13:        160 torus words,        97 (c,d) pairs, 0.0s
+  level t= 14:        256 torus words,       169 (c,d) pairs, 0.0s
+  level t= 15:        736 torus words,       313 (c,d) pairs, 0.0s
+  level t= 16:       2432 torus words,       649 (c,d) pairs, 0.0s
+  level t= 17:       5216 torus words,      1265 (c,d) pairs, 0.0s
+  level t= 18:       9216 torus words,      2521 (c,d) pairs, 0.0s
+  level t= 19:      18016 torus words,      5073 (c,d) pairs, 0.1s
+  level t= 20:      37280 torus words,     10081 (c,d) pairs, 0.2s
+  level t= 21:      73472 torus words,     20209 (c,d) pairs, 0.4s
+  level t= 22:     149792 torus words,     40345 (c,d) pairs, 0.9s
+  level t= 23:     302336 torus words,     80761 (c,d) pairs, 1.7s
+  level t= 24:     596160 torus words,    161601 (c,d) pairs, 3.4s
+  level t= 25:    1184832 torus words,    323401 (c,d) pairs, 6.7s
+  level t= 26:    2370144 torus words,    646617 (c,d) pairs, 12.9s
+enumeration: torus levels <= 26, 4750408 words of T-count <= 26 within 0.03125 of the coset, 27s
+tube: max required c over the band = 214.4 at tau=11, eps=0.02144784, N=232
+grid, all 48 moduli 3..50, tau 0..26: max required c = 163.9 (Q=32, tau=11, eps=0.02453096, N=232, 2^tau eps^2=1.232); tuned Q only: 163.9 (Q=32); post-onset: 163.9; 2s
+grid, selected moduli [4, 8, 12, 16, 20, 22, 24, 25, 28, 32, 34, 35], tau <= 26: max 163.9 at Q=32, tau=11
+worst cell: Q=32 (Q_eps=32), eps=0.02453096 (jump at 0.0245309572), tau=11: N=232, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160], required c = 163.9
+dyadic cell eps=2^-5, Q=25: grid shells [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 24, 48, 56, 64, 96, 272, 816, 1616, 3136, 6104, 12624, 24104, 49784, 100104, 198200, 391464, 786504]; grid shell/Haar at t=tau_max: 1.005; tube shell/Haar at t=tau_max: 1.005
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L5.json  (total 32s)
+==== 2026-10-12 08:48:02 band L=6: eps in (0.0078125, 0.015625], tau <= 28, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 6 --K 16 --name identity  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:         32 torus words,         9 (c,d) pairs, 0.0s
+  level t= 12:         64 torus words,        17 (c,d) pairs, 0.0s
+  level t= 13:         64 torus words,        25 (c,d) pairs, 0.0s
+  level t= 14:         64 torus words,        41 (c,d) pairs, 0.0s
+  level t= 15:        128 torus words,        73 (c,d) pairs, 0.0s
+  level t= 16:        512 torus words,       161 (c,d) pairs, 0.0s
+  level t= 17:       1120 torus words,       313 (c,d) pairs, 0.0s
+  level t= 18:       2240 torus words,       625 (c,d) pairs, 0.0s
+  level t= 19:       4800 torus words,      1249 (c,d) pairs, 0.0s
+  level t= 20:       9024 torus words,      2489 (c,d) pairs, 0.0s
+  level t= 21:      17856 torus words,      5001 (c,d) pairs, 0.1s
+  level t= 22:      37184 torus words,     10057 (c,d) pairs, 0.2s
+  level t= 23:      75072 torus words,     20169 (c,d) pairs, 0.4s
+  level t= 24:     148608 torus words,     40361 (c,d) pairs, 0.9s
+  level t= 25:     293056 torus words,     80777 (c,d) pairs, 1.4s
+  level t= 26:     590016 torus words,    161625 (c,d) pairs, 2.8s
+  level t= 27:    1191296 torus words,    323241 (c,d) pairs, 6.3s
+  level t= 46:    9498432 torus words,   2587177 (c,d) pairs, 54.9s
+enumeration: torus levels <= 46, 19075464 words of T-count <= 46 within 6.103515625e-05 of the coset, 107s
+tube: max required c over the band = 76.8 at tau=41, eps=0.00003298, N=183720
+  level t= 28:    2371680 torus words,    646721 (c,d) pairs, 13.2s
+enumeration: torus levels <= 28, 4742824 words of T-count <= 28 within 0.015625 of the coset, 27s
+tube: max required c over the band = 130.5 at tau=12, eps=0.01160702, N=104
+grid, all 98 moduli 3..100, tau 2..28: max required c = 57.2 (Q=56, tau=14, eps=0.00852172, N=104, 2^tau eps^2=1.190); tuned Q only: 53.3 (Q=88); post-onset: 57.2; 5s
+grid, selected moduli [8, 16, 32, 50, 56, 60, 64, 71, 72, 76, 84, 88, 92, 96, 97, 99], tau <= 28: max 57.2 at Q=56, tau=14
+worst cell: Q=56 (Q_eps=92), eps=0.008521719 (jump at 0.0085217189), tau=14: N=104, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64], required c = 57.2
+dyadic cell eps=2^-6, Q=50: grid shells [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, 32, 48, 160, 400, 752, 1456, 3024, 6336, 11344, 24944, 48352, 95456, 195552, 395056, 794384]; grid shell/Haar at t=tau_max: 1.015; tube shell/Haar at t=tau_max: 1.005
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L6.json  (total 37s)
+==== 2026-10-12 08:48:40 band L=7: eps in (0.00390625, 0.0078125], tau <= 30, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 7 --K 16 --name identity  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 15:         32 torus words,        17 (c,d) pairs, 0.0s
+  level t= 16:         64 torus words,        33 (c,d) pairs, 0.0s
+  level t= 17:        192 torus words,        81 (c,d) pairs, 0.0s
+  level t= 18:        576 torus words,       161 (c,d) pairs, 0.0s
+  level t= 19:       1184 torus words,       321 (c,d) pairs, 0.0s
+  level t= 20:       2816 torus words,       657 (c,d) pairs, 0.0s
+  level t= 21:       5664 torus words,      1281 (c,d) pairs, 0.0s
+  level t= 22:       9152 torus words,      2537 (c,d) pairs, 0.1s
+  level t= 23:      17344 torus words,      5065 (c,d) pairs, 0.1s
+  level t= 24:      35008 torus words,     10129 (c,d) pairs, 0.3s
+  level t= 25:      70368 torus words,     20249 (c,d) pairs, 0.6s
+  level t= 26:     146816 torus words,     40433 (c,d) pairs, 1.2s
+  level t= 27:     299776 torus words,     80849 (c,d) pairs, 2.9s
+  level t= 28:     592192 torus words,    161617 (c,d) pairs, 4.2s
+  level t= 29:    1174592 torus words,    323377 (c,d) pairs, 8.8s
+  level t= 30:    2358464 torus words,    646793 (c,d) pairs, 17.8s
+enumeration: torus levels <= 30, 4714248 words of T-count <= 30 within 0.0078125 of the coset, 38s
+tube: max required c over the band = 116.0 at tau=21, eps=0.00540099, N=7144
+grid, all 199 moduli 3..201, tau 4..30: max required c = 60.1 (Q=144, tau=21, eps=0.00544441, N=3784, 2^tau eps^2=62.163); tuned Q only: 60.1 (Q=144); post-onset: 60.1; 10s
+grid, selected moduli [8, 16, 32, 64, 72, 92, 96, 100, 104, 112, 128, 132, 136, 140, 142, 144], tau <= 30: max 60.1 at Q=144, tau=21
+worst cell: Q=144 (Q_eps=144), eps=0.005444408 (jump at 0.0054444074), tau=21: N=3784, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 480, 1152, 2016], required c = 60.1
+dyadic cell eps=2^-7, Q=100: grid shells [4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64, 192, 1184, 2208, 2624, 6176, 10976, 25184, 46144, 98592, 196512, 391168, 769216]; grid shell/Haar at t=tau_max: 0.983; tube shell/Haar at t=tau_max: 1.000
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L7.json  (total 52s)
+==== 2026-10-12 08:49:32 band L=8: eps in (0.001953125, 0.00390625], tau <= 32, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 8 --K 16 --name identity  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,        17 (c,d) pairs, 0.0s
+  level t= 18:         64 torus words,        41 (c,d) pairs, 0.0s
+  level t= 19:        384 torus words,        89 (c,d) pairs, 0.0s
+  level t= 20:       1024 torus words,       177 (c,d) pairs, 0.0s
+  level t= 21:       1632 torus words,       329 (c,d) pairs, 0.0s
+  level t= 22:       2112 torus words,       633 (c,d) pairs, 0.0s
+  level t= 23:       3968 torus words,      1273 (c,d) pairs, 0.0s
+  level t= 24:       8704 torus words,      2513 (c,d) pairs, 0.0s
+  level t= 25:      17920 torus words,      5001 (c,d) pairs, 0.2s
+  level t= 26:      37824 torus words,     10081 (c,d) pairs, 0.3s
+  level t= 27:      75168 torus words,     20177 (c,d) pairs, 0.5s
+  level t= 28:     142848 torus words,     40345 (c,d) pairs, 0.9s
+  level t= 29:     285216 torus words,     80849 (c,d) pairs, 2.3s
+  level t= 30:     589824 torus words,    161697 (c,d) pairs, 4.6s
+  level t= 31:    1183520 torus words,    323345 (c,d) pairs, 9.9s
+  level t= 32:    2351872 torus words,    646785 (c,d) pairs, 14.6s
+enumeration: torus levels <= 32, 4702088 words of T-count <= 32 within 0.00390625 of the coset, 34s
+tube: max required c over the band = 106.0 at tau=21, eps=0.00351151, N=2792
+grid, all 400 moduli 3..402, tau 6..32: max required c = 43.2 (Q=392, tau=23, eps=0.00198323, N=1480, 2^tau eps^2=32.994); tuned Q only: 42.6 (Q=392); post-onset: 43.2; 16s
+grid, selected moduli [8, 16, 32, 64, 128, 192, 201, 208, 256, 280, 284, 320, 360, 364, 376, 384, 388, 392], tau <= 32: max 43.2 at Q=392, tau=23
+worst cell: Q=392 (Q_eps=396), eps=0.001983234 (jump at 0.0019832336), tau=23: N=1480, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64, 64, 384, 928], required c = 43.2
+dyadic cell eps=2^-8, Q=201: grid shells [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 80, 336, 400, 736, 1488, 3056, 6248, 12448, 25720, 46584, 94928, 195680, 393632, 782976]; grid shell/Haar at t=tau_max: 0.996; tube shell/Haar at t=tau_max: 0.997
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L8.json  (total 54s)
+==== 2026-10-12 08:50:27 band L=9: eps in (0.0009765625, 0.001953125], tau <= 34, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 9 --K 16 --name identity  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 19:         64 torus words,        17 (c,d) pairs, 0.0s
+  level t= 20:        192 torus words,        33 (c,d) pairs, 0.0s
+  level t= 21:        224 torus words,        81 (c,d) pairs, 0.0s
+  level t= 22:        704 torus words,       169 (c,d) pairs, 0.0s
+  level t= 23:       1536 torus words,       329 (c,d) pairs, 0.0s
+  level t= 24:       2176 torus words,       649 (c,d) pairs, 0.0s
+  level t= 25:       4704 torus words,      1289 (c,d) pairs, 0.0s
+  level t= 26:       9792 torus words,      2529 (c,d) pairs, 0.0s
+  level t= 27:      17952 torus words,      5089 (c,d) pairs, 0.1s
+  level t= 28:      33856 torus words,     10161 (c,d) pairs, 0.2s
+  level t= 29:      70016 torus words,     20241 (c,d) pairs, 0.4s
+  level t= 30:     142848 torus words,     40401 (c,d) pairs, 0.8s
+  level t= 31:     287264 torus words,     80801 (c,d) pairs, 2.2s
+  level t= 32:     580800 torus words,    161657 (c,d) pairs, 3.5s
+grid, all 6431 moduli 3..6433, tau 14..40: max required c = 87.4 (Q=2792, tau=28, eps=0.00018921, N=904, 2^tau eps^2=9.610); tuned Q only: 74.6 (Q=3696); post-onset: 87.4; 225s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 2792, 3216, 3448, 3696, 3744, 3800, 4024, 4096, 4488, 4549, 4832, 5872, 6216], tau <= 40: max 87.4 at Q=2792, tau=28
+worst cell: Q=2792 (Q_eps=4150), eps=0.0001892109 (jump at 0.0001892108), tau=28: N=904, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256, 640], required c = 87.4
+dyadic cell eps=2^-12, Q=3216: grid shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 576, 800, 992, 2464, 5664, 12064, 25728, 49664, 96736, 196480, 390912, 782016]; grid shell/Haar at t=tau_max: 0.995; tube shell/Haar at t=tau_max: 1.002
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L12.json  (total 244s)
+==== 2026-10-12 08:50:39 band L=13: eps in (6.103515625e-05, 0.0001220703125], tau <= 43, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 13 --K 17 --name identity  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 19:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 20:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 21:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 22:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 23:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 24:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 25:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 26:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 27:         32 torus words,        17 (c,d) pairs, 0.0s
+  level t= 28:        256 torus words,        41 (c,d) pairs, 0.0s
+  level t= 29:        544 torus words,        73 (c,d) pairs, 0.0s
+  level t= 30:        512 torus words,       145 (c,d) pairs, 0.0s
+  level t= 31:        800 torus words,       305 (c,d) pairs, 0.0s
+  level t= 32:       3008 torus words,       625 (c,d) pairs, 0.0s
+  level t= 33:       5888 torus words,      1281 (c,d) pairs, 0.0s
+  level t= 34:       8576 torus words,      2537 (c,d) pairs, 0.0s
+  level t= 35:      16640 torus words,      5081 (c,d) pairs, 0.1s
+  level t= 36:      33216 torus words,     10121 (c,d) pairs, 0.2s
+  level t= 37:      70528 torus words,     20233 (c,d) pairs, 0.5s
+  level t= 38:     155584 torus words,     40433 (c,d) pairs, 0.8s
+  level t= 33:    1174464 torus words,    323409 (c,d) pairs, 7.3s
+  level t= 39:     305376 torus words,     80881 (c,d) pairs, 1.6s
+  level t= 40:     591488 torus words,    161697 (c,d) pairs, 2.9s
+  level t= 41:    1173152 torus words,    323409 (c,d) pairs, 6.6s
+  level t= 34:    2335168 torus words,    646633 (c,d) pairs, 12.3s
+enumeration: torus levels <= 34, 4661768 words of T-count <= 34 within 0.001953125 of the coset, 28s
+tube: max required c over the band = 234.2 at tau=23, eps=0.00097656, N=1928
+  level t= 42:    2355712 torus words,    646921 (c,d) pairs, 18.1s
+grid, all 802 moduli 3..804, tau 8..34: max required c = 130.3 (Q=756, tau=23, eps=0.00100412, N=1156, 2^tau eps^2=8.458); tuned Q only: 122.0 (Q=756); post-onset: 130.3; 29s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 402, 512, 568, 640, 672, 684, 724, 744, 752, 756, 760, 768, 784], tau <= 34: max 130.3 at Q=756, tau=23
+worst cell: Q=756 (Q_eps=782), eps=0.001004121 (jump at 0.0010041203), tau=23: N=1156, shells [4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 1024], required c = 130.3
+dyadic cell eps=2^-9, Q=402: grid shells [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 48, 64, 336, 656, 832, 1296, 3072, 5392, 11104, 22976, 47760, 95760, 194160, 396832, 776368]; grid shell/Haar at t=tau_max: 0.988; tube shell/Haar at t=tau_max: 0.990
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L9.json  (total 59s)
+==== 2026-10-12 08:51:26 band L=10: eps in (0.00048828125, 0.0009765625], tau <= 36, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 10 --K 16 --name identity  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 19:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 20:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 21:         32 torus words,        25 (c,d) pairs, 0.0s
+  level t= 22:        640 torus words,        49 (c,d) pairs, 0.0s
+  level t= 23:       1248 torus words,        81 (c,d) pairs, 0.0s
+  level t= 24:        832 torus words,       153 (c,d) pairs, 0.0s
+  level t= 25:        672 torus words,       297 (c,d) pairs, 0.0s
+  level t= 26:       1792 torus words,       609 (c,d) pairs, 0.0s
+  level t= 27:       3776 torus words,      1249 (c,d) pairs, 0.0s
+  level t= 28:       8064 torus words,      2545 (c,d) pairs, 0.0s
+  level t= 29:      17472 torus words,      5041 (c,d) pairs, 0.1s
+  level t= 30:      34432 torus words,     10073 (c,d) pairs, 0.2s
+  level t= 31:      72384 torus words,     20185 (c,d) pairs, 0.3s
+  level t= 32:     151936 torus words,     40417 (c,d) pairs, 0.6s
+  level t= 33:     301056 torus words,     80801 (c,d) pairs, 1.3s
+  level t= 34:     581824 torus words,    161657 (c,d) pairs, 2.4s
+  level t= 43:    4723552 torus words,   1293673 (c,d) pairs, 26.1s
+  level t= 35:    1151808 torus words,    323161 (c,d) pairs, 5.1s
+enumeration: torus levels <= 43, 9444872 words of T-count <= 43 within 0.0001220703125 of the coset, 58s
+tube: max required c over the band = 186.4 at tau=29, eps=0.00006736, N=520
+  level t= 36:    2351552 torus words,    646673 (c,d) pairs, 16.6s
+enumeration: torus levels <= 36, 4679528 words of T-count <= 36 within 0.0009765625 of the coset, 28s
+tube: max required c over the band = 825.0 at tau=23, eps=0.00048828, N=1704
+grid, all 1606 moduli 3..1608, tau 10..36: max required c = 365.9 (Q=960, tau=23, eps=0.00055513, N=1000, 2^tau eps^2=2.585); tuned Q only: 344.7 (Q=1340); post-onset: 365.9; 73s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 804, 956, 960, 1024, 1137, 1168, 1276, 1312, 1340, 1360, 1420, 1488, 1512], tau <= 36: max 365.9 at Q=960, tau=23
+worst cell: Q=960 (Q_eps=1414), eps=0.0005551348 (jump at 0.0005551347), tau=23: N=1000, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 352, 608], required c = 365.9
+dyadic cell eps=2^-10, Q=804: grid shells [4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 320, 448, 256, 64, 832, 768, 3616, 5568, 10784, 23456, 48960, 101792, 192192, 389472, 776672]; grid shell/Haar at t=tau_max: 0.988; tube shell/Haar at t=tau_max: 0.997
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L10.json  (total 104s)
+==== 2026-10-12 08:53:11 band L=11: eps in (0.000244140625, 0.00048828125], tau <= 38, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 11 --K 16 --name identity  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 19:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 20:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 21:         32 torus words,         9 (c,d) pairs, 0.0s
+  level t= 22:        576 torus words,        17 (c,d) pairs, 0.0s
+  level t= 23:       1088 torus words,        25 (c,d) pairs, 0.0s
+  level t= 24:        576 torus words,        41 (c,d) pairs, 0.0s
+  level t= 25:         32 torus words,        73 (c,d) pairs, 0.0s
+  level t= 26:        192 torus words,       153 (c,d) pairs, 0.0s
+  level t= 27:        896 torus words,       313 (c,d) pairs, 0.0s
+  level t= 28:       2624 torus words,       633 (c,d) pairs, 0.0s
+  level t= 29:       5344 torus words,      1257 (c,d) pairs, 0.0s
+  level t= 30:       8832 torus words,      2513 (c,d) pairs, 0.0s
+  level t= 31:      15392 torus words,      5057 (c,d) pairs, 0.1s
+  level t= 32:      33600 torus words,     10057 (c,d) pairs, 0.2s
+  level t= 33:      73472 torus words,     20217 (c,d) pairs, 0.5s
+  level t= 34:     141760 torus words,     40377 (c,d) pairs, 1.0s
+  level t= 35:     279424 torus words,     80849 (c,d) pairs, 2.1s
+  level t= 36:     583488 torus words,    161601 (c,d) pairs, 3.8s
+  level t= 37:    1191200 torus words,    323217 (c,d) pairs, 7.2s
+  level t= 38:    2366656 torus words,    646793 (c,d) pairs, 11.3s
+enumeration: torus levels <= 38, 4705192 words of T-count <= 38 within 0.00048828125 of the coset, 27s
+tube: max required c over the band = 929.7 at tau=23, eps=0.00045996, N=1704
+grid, all 25733 moduli 3..25735, tau 18..42: max required c = 56.1 (Q=13704, tau=28, eps=0.00005155, N=104, 2^tau eps^2=0.713); tuned Q only: 55.7 (Q=15184); post-onset: 49.1; 320s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 5848, 7856, 8192, 9688, 9864, 11520, 11696, 11872, 12867, 13528, 13704, 13880, 16384, 18198], tau <= 46: max 56.1 at Q=13704, tau=28
+worst cell: Q=13704 (Q_eps=15234), eps=5.155467e-05 (jump at 0.0000515547), tau=28: N=104, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64], required c = 56.1
+dyadic cell eps=2^-14, Q=12867: grid shells [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 16, 8, 0, 16, 96, 192, 552, 1432, 3160, 5472, 12280, 25000, 48632, 100472, 201584, 405952, 803648, 1600984, 3164424]; grid shell/Haar at t=tau_max: 1.006; tube shell/Haar at t=tau_max: 1.006
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L14.json  (total 455s)
+==== 2026-10-12 08:54:10 band L=16: eps in (7.62939453125e-06, 1.52587890625e-05], tau <= 50, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 16 --K 18 --name identity  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 19:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 20:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 21:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 22:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 23:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 24:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 25:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 26:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 27:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 28:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 29:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 30:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 31:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 32:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 33:          0 torus words,        17 (c,d) pairs, 0.0s
+  level t= 34:          0 torus words,        33 (c,d) pairs, 0.0s
+  level t= 35:         96 torus words,        81 (c,d) pairs, 0.0s
+  level t= 36:        320 torus words,       161 (c,d) pairs, 0.0s
+  level t= 37:        928 torus words,       305 (c,d) pairs, 0.0s
+  level t= 38:       1856 torus words,       641 (c,d) pairs, 0.0s
+  level t= 39:       4960 torus words,      1297 (c,d) pairs, 0.0s
+  level t= 40:      11840 torus words,      2569 (c,d) pairs, 0.1s
+  level t= 41:      20384 torus words,      5113 (c,d) pairs, 0.2s
+  level t= 42:      38528 torus words,     10145 (c,d) pairs, 0.3s
+  level t= 43:      75520 torus words,     20257 (c,d) pairs, 0.6s
+  level t= 44:     141504 torus words,     40409 (c,d) pairs, 1.1s
+  level t= 45:     285120 torus words,     80793 (c,d) pairs, 2.1s
+  level t= 46:     579456 torus words,    161601 (c,d) pairs, 4.2s
+  level t= 47:    1150656 torus words,    323233 (c,d) pairs, 8.1s
+  level t= 48:    2320000 torus words,    646745 (c,d) pairs, 15.1s
+  level t= 49:    4719104 torus words,   1293545 (c,d) pairs, 29.6s
+grid, all 3214 moduli 3..3216, tau 12..38: max required c = 337.7 (Q=1360, tau=23, eps=0.00048196, N=712, 2^tau eps^2=1.949); tuned Q only: 277.1 (Q=1696); post-onset: 337.7; 101s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 952, 956, 1024, 1160, 1168, 1360, 1420, 1488, 1584, 1608, 1620, 1696, 2048, 2274], tau <= 38: max 337.7 at Q=1360, tau=23
+worst cell: Q=1360 (Q_eps=1629), eps=0.0004819556 (jump at 0.0004819556), tau=23: N=712, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 256, 416], required c = 337.7
+dyadic cell eps=2^-11, Q=1608: grid shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160, 128, 32, 0, 288, 1120, 1952, 3104, 5344, 11680, 24416, 44768, 89280, 185856, 383808, 774720]; grid shell/Haar at t=tau_max: 0.985; tube shell/Haar at t=tau_max: 1.003
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L11.json  (total 131s)
+grid, all 12865 moduli 3..12867, tau 16..41: max required c = 178.8 (Q=8632, tau=29, eps=0.00006876, N=520, 2^tau eps^2=2.539); tuned Q only: 157.1 (Q=10704); post-onset: 178.8; 234s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 4488, 6433, 6560, 6904, 8192, 8632, 8804, 8976, 9099, 9936, 10360, 10704, 11048], tau <= 43: max 178.8 at Q=8632, tau=29
+worst cell: Q=8632 (Q_eps=11421), eps=6.876425e-05 (jump at 0.0000687642), tau=29: N=520, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 192, 288], required c = 178.8
+dyadic cell eps=2^-13, Q=6433: grid shells [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 88, 168, 152, 288, 1056, 1952, 2944, 5496, 11344, 23120, 51976, 101168, 197272, 392080, 786968, 1579272]; grid shell/Haar at t=tau_max: 1.004; tube shell/Haar at t=tau_max: 1.001
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L13.json  (total 298s)
+==== 2026-10-12 08:55:37 band L=15: eps in (1.52587890625e-05, 3.0517578125e-05], tau <= 48, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 15 --K 18 --name identity  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 19:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 20:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 21:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 22:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 23:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 24:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 25:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 26:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 27:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 28:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 29:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 30:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 31:         32 torus words,        17 (c,d) pairs, 0.0s
+  level t= 32:         64 torus words,        41 (c,d) pairs, 0.0s
+  level t= 33:        128 torus words,        73 (c,d) pairs, 0.0s
+  level t= 34:        448 torus words,       145 (c,d) pairs, 0.0s
+  level t= 35:       1184 torus words,       305 (c,d) pairs, 0.0s
+  level t= 36:       2368 torus words,       617 (c,d) pairs, 0.0s
+  level t= 37:       4160 torus words,      1273 (c,d) pairs, 0.0s
+  level t= 38:       8256 torus words,      2545 (c,d) pairs, 0.0s
+  level t= 39:      18816 torus words,      5073 (c,d) pairs, 0.1s
+  level t= 40:      39808 torus words,     10113 (c,d) pairs, 0.1s
+  level t= 41:      75584 torus words,     20201 (c,d) pairs, 0.3s
+  level t= 42:     153280 torus words,     40385 (c,d) pairs, 0.6s
+  level t= 43:     311872 torus words,     80857 (c,d) pairs, 1.1s
+  level t= 44:     607168 torus words,    161681 (c,d) pairs, 2.0s
+  level t= 45:    1201376 torus words,    323433 (c,d) pairs, 5.1s
+  level t= 50:    9528704 torus words,   2587185 (c,d) pairs, 38.1s
+enumeration: torus levels <= 50, 18878984 words of T-count <= 50 within 1.52587890625e-05 of the coset, 102s
+tube: max required c over the band = 101.6 at tau=39, eps=0.00000763, N=3336
+  level t= 46:    2385728 torus words,    646881 (c,d) pairs, 7.9s
+  level t= 47:    4722304 torus words,   1293777 (c,d) pairs, 32.7s
+  level t= 48:    9430016 torus words,   2587185 (c,d) pairs, 58.4s
+enumeration: torus levels <= 48, 18962600 words of T-count <= 48 within 3.0517578125e-05 of the coset, 114s
+tube: max required c over the band = 78.7 at tau=41, eps=0.00001526, N=40392
+grid, all 51469 moduli 3..51471, tau 20..43: max required c = 45.2 (Q=22760, tau=35, eps=0.00002936, N=1416, 2^tau eps^2=29.618); tuned Q only: 42.0 (Q=26424); post-onset: 45.2; 571s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 22520, 22640, 22760, 23536, 25735, 26424, 27456, 27992, 32448, 32768, 34408, 36396, 38808], tau <= 48: max 45.2 at Q=22760, tau=35
+worst cell: Q=22760 (Q_eps=26750), eps=2.935979e-05 (jump at 0.0000293598), tau=35: N=1416, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 384, 960], required c = 45.2
+dyadic cell eps=2^-15, Q=25735: grid shells [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 16, 40, 128, 312, 640, 1288, 2520, 5984, 13800, 26040, 50480, 103064, 198472, 397336, 793192, 1568656, 3126968]; grid shell/Haar at t=tau_max: 0.994; tube shell/Haar at t=tau_max: 0.999
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L15.json  (total 706s)
+==== 2026-10-12 09:07:25 band L=17: eps in (3.814697265625e-06, 7.62939453125e-06], tau <= 52, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 17 --K 18 --name identity  code {"script_sha256_16": "2941eecd5d611deb", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 19:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 20:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 21:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 22:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 23:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 24:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 25:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 26:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 27:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 28:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 29:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 30:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 31:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 32:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 33:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 34:          0 torus words,        17 (c,d) pairs, 0.0s
+  level t= 35:          0 torus words,        25 (c,d) pairs, 0.0s
+  level t= 36:          0 torus words,        41 (c,d) pairs, 0.0s
+  level t= 37:        512 torus words,        89 (c,d) pairs, 0.0s
+  level t= 38:       1088 torus words,       169 (c,d) pairs, 0.0s
+  level t= 39:       1728 torus words,       313 (c,d) pairs, 0.0s
+  level t= 40:       3008 torus words,       633 (c,d) pairs, 0.0s
+  level t= 41:       4832 torus words,      1273 (c,d) pairs, 0.0s
+  level t= 42:       9600 torus words,      2529 (c,d) pairs, 0.0s
+  level t= 43:      18496 torus words,      5073 (c,d) pairs, 0.1s
+  level t= 44:      33536 torus words,     10081 (c,d) pairs, 0.1s
+  level t= 45:      69440 torus words,     20193 (c,d) pairs, 0.4s
+  level t= 46:     149248 torus words,     40401 (c,d) pairs, 0.7s
+  level t= 47:     294080 torus words,     80817 (c,d) pairs, 1.4s
+  level t= 48:     578048 torus words,    161601 (c,d) pairs, 2.5s
+  level t= 49:    1168224 torus words,    323409 (c,d) pairs, 5.5s
+  level t= 50:    2358528 torus words,    646689 (c,d) pairs, 10.2s
+grid, all 102941 moduli 3..102943, tau 22..44: max required c = 91.2 (Q=95688, tau=38, eps=0.00000763, N=1544, 2^tau eps^2=16.006); tuned Q only: 78.8 (Q=95688); post-onset: 91.2; 729s
+  level t= 51:    4745984 torus words,   1293473 (c,d) pairs, 17.7s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 51471, 65536, 72792, 73216, 77376, 87184, 90272, 91344, 91824, 94136, 94192, 95504, 95688], tau <= 50: max 91.2 at Q=95688, tau=38
+worst cell: Q=95688 (Q_eps=102923), eps=7.630858e-06 (jump at 0.0000076309), tau=38: N=1544, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 512, 1024], required c = 91.2
+dyadic cell eps=2^-16, Q=51471: grid shells [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 128, 360, 688, 1912, 3896, 6248, 12160, 25048, 46192, 95672, 196672, 385176, 770360, 1569392, 3173744]; grid shell/Haar at t=tau_max: 1.009; tube shell/Haar at t=tau_max: 1.010
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L16.json  (total 843s)
+==== 2026-10-12 09:08:14 band L=18: eps in (1.9073486328125e-06, 3.814697265625e-06], tau <= 54, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 18 --K 18 --name identity  code {"script_sha256_16": "2941eecd5d611deb", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 19:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 20:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 21:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 22:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 23:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 24:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 25:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 26:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 27:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 28:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 29:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 30:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 31:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 32:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 33:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 34:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 35:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 36:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 37:        128 torus words,        25 (c,d) pairs, 0.0s
+  level t= 38:        256 torus words,        49 (c,d) pairs, 0.0s
+  level t= 39:        704 torus words,        81 (c,d) pairs, 0.0s
+  level t= 40:       1216 torus words,       153 (c,d) pairs, 0.0s
+  level t= 41:       1408 torus words,       313 (c,d) pairs, 0.0s
+  level t= 42:       2496 torus words,       625 (c,d) pairs, 0.0s
+  level t= 43:       4704 torus words,      1249 (c,d) pairs, 0.0s
+  level t= 44:       7808 torus words,      2545 (c,d) pairs, 0.0s
+  level t= 45:      14208 torus words,      5065 (c,d) pairs, 0.1s
+  level t= 46:      33536 torus words,     10145 (c,d) pairs, 0.1s
+  level t= 47:      70272 torus words,     20225 (c,d) pairs, 0.3s
+  level t= 48:     142784 torus words,     40441 (c,d) pairs, 0.6s
+  level t= 49:     299168 torus words,     80881 (c,d) pairs, 1.2s
+  level t= 50:     600512 torus words,    161649 (c,d) pairs, 2.1s
+  level t= 51:    1198688 torus words,    323265 (c,d) pairs, 4.0s
+  level t= 52:    2402240 torus words,    646793 (c,d) pairs, 8.3s
+  level t= 52:    9518528 torus words,   2587241 (c,d) pairs, 36.4s
+enumeration: torus levels <= 52, 18954888 words of T-count <= 52 within 7.62939453125e-06 of the coset, 78s
+tube: max required c over the band = 171.6 at tau=38, eps=0.00000556, N=1544
+  level t= 53:    4787616 torus words,   1293697 (c,d) pairs, 29.2s
+  level t= 54:    9480064 torus words,   2587369 (c,d) pairs, 76.5s
+enumeration: torus levels <= 54, 19047816 words of T-count <= 54 within 3.814697265625e-06 of the coset, 130s
+tube: max required c over the band = 308.0 at tau=38, eps=0.00000191, N=392
+==== 2026-10-12 09:34:38 band L=6: eps in (0.0078125, 0.015625], tau <= 28, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 6 --K 16 --name identity  code {"script_sha256_16": "6ccdaf99a2c76e37", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 28, 4742824 words of T-count <= 28 within 0.015625 of the coset, 1s
+tube: max required c over the band = 130.5 at tau=12, eps=0.01160702, N=104
+grid, all 98 moduli 3..100, tau 2..28: max required c = 57.2 (Q=56, tau=14, eps=0.00852172, N=104, 2^tau eps^2=1.190); tuned Q only: 53.3 (Q=88); post-onset: 57.2; 4s
+grid, selected moduli [8, 16, 32, 50, 56, 60, 64, 71, 72, 76, 84, 88, 92, 96, 97, 99], tau <= 28: max 57.2 at Q=56, tau=14
+worst cell: Q=56 (Q_eps=92), eps=0.008521719 (jump at 0.0085217189), tau=14: N=104, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64], required c = 57.2
+dyadic cell eps=2^-6, Q=50: grid shells [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, 32, 48, 160, 400, 752, 1456, 3024, 6336, 11344, 24944, 48352, 95456, 195552, 395056, 794384]; grid shell/Haar at t=tau_max: 1.015; tube shell/Haar at t=tau_max: 1.005
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L6.json  (total 6s)
+==== 2026-10-12 09:34:55 band L=18: eps in (1.9073486328125e-06, 3.814697265625e-06], tau <= 54, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 18 --K 18 --name identity  code {"script_sha256_16": "6ccdaf99a2c76e37", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+==== 2026-10-12 09:34:55 band L=17: eps in (3.814697265625e-06, 7.62939453125e-06], tau <= 52, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 17 --K 18 --name identity  code {"script_sha256_16": "6ccdaf99a2c76e37", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 52, 18954888 words of T-count <= 52 within 7.62939453125e-06 of the coset, 4s
+enumeration: torus levels <= 54, 19047816 words of T-count <= 54 within 3.814697265625e-06 of the coset, 4s
+tube: max required c over the band = 171.6 at tau=38, eps=0.00000556, N=1544
+tube: max required c over the band = 308.0 at tau=38, eps=0.00000191, N=392
+grid, all 411772 moduli 3..411774, tau 26..46: max required c = 308.0 (Q=97736, tau=38, eps=0.00000191, N=392, 2^tau eps^2=1.000); tuned Q only: 307.8 (Q=411624); post-onset: 308.0; 170s
+grid, all 205885 moduli 3..205887, tau 24..45: max required c = 155.8 (Q=129856, tau=38, eps=0.00000564, N=1448, 2^tau eps^2=8.756); tuned Q only: 141.5 (Q=129616); post-onset: 155.8; 176s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 168912, 205887, 262144, 289568, 291168, 332528, 336488, 349248, 375488, 383088, 397504, 401400, 402368], tau <= 54: max 308.0 at Q=168912, tau=38
+worst cell: Q=97736 (Q_eps=411774), eps=1.907349e-06 (jump at 0.0000019073), tau=38: N=392, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 256], required c = 308.0
+dyadic cell eps=2^-18, Q=205887: grid shells [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 128, 256, 320, 456, 784, 1392, 2704, 4960, 10616, 23424, 47912, 100736, 199704, 398568, 802768, 1594896, 3156776]; grid shell/Haar at t=tau_max: 1.004; tube shell/Haar at t=tau_max: 1.005
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L18.json  (total 183s)
+==== 2026-10-12 09:37:58 band L=20: eps in (4.76837158203125e-07, 9.5367431640625e-07], tau <= 58, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 20 --K 18 --name identity  code {"script_sha256_16": "6ccdaf99a2c76e37", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 19:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 20:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 21:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 22:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 23:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 24:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 25:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 26:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 27:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 28:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 29:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 30:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 31:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 32:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 33:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 34:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 35:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 36:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 37:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 38:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 39:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 40:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 41:         64 torus words,        17 (c,d) pairs, 0.0s
+  level t= 42:        128 torus words,        41 (c,d) pairs, 0.0s
+  level t= 43:         96 torus words,        73 (c,d) pairs, 0.0s
+  level t= 44:        448 torus words,       161 (c,d) pairs, 0.0s
+  level t= 45:        960 torus words,       329 (c,d) pairs, 0.0s
+  level t= 46:       3776 torus words,       617 (c,d) pairs, 0.0s
+  level t= 47:       8576 torus words,      1273 (c,d) pairs, 0.0s
+  level t= 48:      10432 torus words,      2529 (c,d) pairs, 0.0s
+  level t= 49:      13536 torus words,      5041 (c,d) pairs, 0.1s
+  level t= 50:      26624 torus words,     10073 (c,d) pairs, 0.1s
+  level t= 51:      68544 torus words,     20201 (c,d) pairs, 0.4s
+  level t= 52:     159744 torus words,     40401 (c,d) pairs, 0.7s
+  level t= 53:     310816 torus words,     80881 (c,d) pairs, 1.3s
+  level t= 54:     584896 torus words,    161809 (c,d) pairs, 2.2s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 73216, 73456, 94672, 102943, 108400, 112024, 112800, 125992, 128840, 129616, 129856, 131072, 145584], tau <= 52: max 155.8 at Q=129856, tau=38
+worst cell: Q=129856 (Q_eps=139160), eps=5.643836e-06 (jump at 0.0000056438), tau=38: N=1448, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 480, 960], required c = 155.8
+dyadic cell eps=2^-17, Q=102943: grid shells [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 184, 400, 632, 1088, 1560, 3008, 5976, 10864, 23096, 47688, 96480, 191696, 392328, 784336, 1579376, 3172176]; grid shell/Haar at t=tau_max: 1.008; tube shell/Haar at t=tau_max: 1.009
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L17.json  (total 191s)
+==== 2026-10-12 09:38:06 band L=19: eps in (9.5367431640625e-07, 1.9073486328125e-06], tau <= 56, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 19 --K 18 --name identity  code {"script_sha256_16": "6ccdaf99a2c76e37", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 19:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 20:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 21:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 22:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 23:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 24:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 25:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 26:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 27:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 28:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 29:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 30:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 31:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 32:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 33:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 34:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 35:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 36:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 37:        128 torus words,         9 (c,d) pairs, 0.0s
+  level t= 38:        256 torus words,         9 (c,d) pairs, 0.0s
+  level t= 39:        160 torus words,        17 (c,d) pairs, 0.0s
+  level t= 40:         64 torus words,        33 (c,d) pairs, 0.0s
+  level t= 41:        128 torus words,        81 (c,d) pairs, 0.0s
+  level t= 42:        320 torus words,       169 (c,d) pairs, 0.0s
+  level t= 43:        864 torus words,       329 (c,d) pairs, 0.0s
+  level t= 44:       1984 torus words,       649 (c,d) pairs, 0.0s
+  level t= 45:       3488 torus words,      1289 (c,d) pairs, 0.0s
+  level t= 46:       8256 torus words,      2529 (c,d) pairs, 0.0s
+  level t= 47:      18016 torus words,      5057 (c,d) pairs, 0.1s
+  level t= 48:      35072 torus words,     10121 (c,d) pairs, 0.1s
+  level t= 49:      70176 torus words,     20185 (c,d) pairs, 0.2s
+  level t= 50:     139584 torus words,     40369 (c,d) pairs, 0.4s
+  level t= 55:    1162208 torus words,    323505 (c,d) pairs, 3.9s
+  level t= 51:     285184 torus words,     80785 (c,d) pairs, 0.9s
+  level t= 52:     579904 torus words,    161657 (c,d) pairs, 1.7s
+  level t= 53:    1168352 torus words,    323401 (c,d) pairs, 4.2s
+  level t= 56:    2357952 torus words,    646833 (c,d) pairs, 7.3s
+  level t= 54:    2339136 torus words,    646785 (c,d) pairs, 6.8s
+  level t= 57:    4656064 torus words,   1293713 (c,d) pairs, 19.2s
+  level t= 55:    4694528 torus words,   1293753 (c,d) pairs, 23.4s
+  level t= 58:    9276864 torus words,   2587225 (c,d) pairs, 39.5s
+enumeration: torus levels <= 58, 18641736 words of T-count <= 58 within 9.5367431640625e-07 of the coset, 77s
+tube: max required c over the band = 226.1 at tau=47, eps=0.00000048, N=7336
+  level t= 56:    9408576 torus words,   2587401 (c,d) pairs, 38.2s
+enumeration: torus levels <= 56, 18754184 words of T-count <= 56 within 1.9073486328125e-06 of the coset, 80s
+tube: max required c over the band = 458.3 at tau=38, eps=0.00000156, N=392
+grid, all 1647097 moduli 3..1647099, tau 30..47: max required c = 197.1 (Q=1625640, tau=47, eps=0.00000048, N=6408, 2^tau eps^2=32.000); tuned Q only: 192.9 (Q=1625640); post-onset: 197.1; 168s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 823549, 1048576, 1164675, 1345720, 1465072, 1492824, 1495560, 1506608, 1515456, 1543208, 1560448, 1588200, 1625640], tau <= 58: max 197.1 at Q=1625640, tau=47
+worst cell: Q=1625640 (Q_eps=1647099), eps=4.768372e-07 (jump at 0.0000004768), tau=47: N=6408, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 2144, 4160], required c = 197.1
+dyadic cell eps=2^-20, Q=823549: grid shells [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 32, 40, 144, 408, 1672, 3456, 3816, 4176, 7792, 23472, 55984, 103600, 193240, 388120, 790856, 1552600, 3094272]; grid shell/Haar at t=tau_max: 0.984; tube shell/Haar at t=tau_max: 0.983
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L20.json  (total 253s)
+grid, all 823547 moduli 3..823549, tau 28..47: max required c = 451.9 (Q=379448, tau=38, eps=0.00000157, N=392, 2^tau eps^2=0.682); tuned Q only: 430.3 (Q=486696); post-onset: 334.2; 170s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 150208, 262144, 281712, 300416, 379448, 403704, 411774, 413216, 431920, 450624, 456176, 474880, 524288, 582337], tau <= 56: max 451.9 at Q=379448, tau=38
+worst cell: Q=379448 (Q_eps=498780), eps=1.574636e-06 (jump at 0.0000015746), tau=38: N=392, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 256], required c = 451.9
+dyadic cell eps=2^-19, Q=411774: grid shells [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 64, 64, 32, 48, 128, 192, 480, 1088, 3328, 6896, 13504, 21936, 46240, 98368, 194224, 395872, 772528, 1563968, 3135840]; grid shell/Haar at t=tau_max: 0.997; tube shell/Haar at t=tau_max: 0.997
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L19.json  (total 261s)
+==== 2026-10-12 09:44:06 band L=21: eps in (2.384185791015625e-07, 4.76837158203125e-07], tau <= 60, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 21 --K 18 --name identity  code {"script_sha256_16": "6ccdaf99a2c76e37", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 19:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 20:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 21:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 22:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 23:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 24:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 25:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 26:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 27:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 28:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 29:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 30:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 31:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 32:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 33:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 34:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 35:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 36:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 37:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 38:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 39:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 40:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 41:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 42:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 43:         32 torus words,        17 (c,d) pairs, 0.0s
+  level t= 44:         64 torus words,        33 (c,d) pairs, 0.0s
+  level t= 45:        128 torus words,        81 (c,d) pairs, 0.0s
+  level t= 46:       2304 torus words,       161 (c,d) pairs, 0.0s
+  level t= 47:       4800 torus words,       305 (c,d) pairs, 0.0s
+  level t= 48:       3904 torus words,       641 (c,d) pairs, 0.0s
+  level t= 49:       2976 torus words,      1273 (c,d) pairs, 0.0s
+  level t= 50:       4928 torus words,      2529 (c,d) pairs, 0.0s
+  level t= 51:      17312 torus words,      5073 (c,d) pairs, 0.1s
+  level t= 52:      45632 torus words,     10097 (c,d) pairs, 0.1s
+  level t= 53:      84736 torus words,     20209 (c,d) pairs, 0.2s
+  level t= 54:     152128 torus words,     40433 (c,d) pairs, 0.4s
+  level t= 55:     299520 torus words,     80865 (c,d) pairs, 0.8s
+  level t= 56:     596672 torus words,    161721 (c,d) pairs, 1.5s
+  level t= 57:    1162048 torus words,    323481 (c,d) pairs, 3.2s
+  level t= 58:    2333824 torus words,    646945 (c,d) pairs, 6.0s
+  level t= 59:    4779232 torus words,   1293633 (c,d) pairs, 13.7s
+  level t= 60:    9575232 torus words,   2587345 (c,d) pairs, 25.4s
+enumeration: torus levels <= 60, 19065480 words of T-count <= 60 within 4.76837158203125e-07 of the coset, 53s
+tube: max required c over the band = 788.2 at tau=47, eps=0.00000024, N=6408
+grid, all 3294196 moduli 3..3294198, tau 32..48: max required c = 626.3 (Q=2919736, tau=47, eps=0.00000024, N=5384, 2^tau eps^2=8.434); tuned Q only: 575.2 (Q=2919736); post-onset: 626.3; 152s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 1647099, 2097152, 2329350, 2652960, 2722248, 2813528, 2841280, 2919736, 2936976, 2947488, 2964728, 3049816, 3094808], tau <= 60: max 626.3 at Q=2919736, tau=47
+worst cell: Q=2919736 (Q_eps=3208354), eps=2.447978e-07 (jump at 0.0000002448), tau=47: N=5384, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1792, 3584], required c = 626.3
+dyadic cell eps=2^-21, Q=1647099: grid shells [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 32, 32, 1056, 2120, 1520, 1168, 1680, 5912, 14752, 27880, 50400, 100640, 202400, 386616, 780040, 1588256, 3185856]; grid shell/Haar at t=tau_max: 1.013; tube shell/Haar at t=tau_max: 1.015
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L21.json  (total 213s)
+==== 2026-10-12 09:48:29 band L=5: eps in (0.015625, 0.03125], tau <= 26, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 5 --K 16 --name identity  code {"script_sha256_16": "e971ea63986f28a9", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 26, 4750408 words of T-count <= 26 within 0.03125 of the coset, 0s
+tube: max required c over the band = 214.4 at tau=11, eps=0.02144784, N=232
+grid, all 48 moduli 3..50, tau 0..26: max required c = 163.9 (Q=32, tau=11, eps=0.02453096, N=232, 2^tau eps^2=1.232); tuned Q only: 163.9 (Q=32); post-onset: 163.9; 2s
+grid, selected moduli [4, 8, 12, 16, 20, 22, 24, 25, 28, 32, 34, 35], tau <= 26: max 163.9 at Q=32, tau=11
+worst cell: Q=32 (Q_eps=32), eps=0.02453096 (jump at 0.0245309572), tau=11: N=232, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 64, 160], required c = 163.9
+dyadic cell eps=2^-5, Q=25: grid shells [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 24, 48, 56, 64, 96, 272, 816, 1616, 3136, 6104, 12624, 24104, 49784, 100104, 198200, 391464, 786504]; grid shell/Haar at t=tau_max: 1.005; tube shell/Haar at t=tau_max: 1.005
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L5.json  (total 4s)
+==== 2026-10-12 09:48:34 band L=10: eps in (0.00048828125, 0.0009765625], tau <= 36, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 10 --K 16 --name identity  code {"script_sha256_16": "e971ea63986f28a9", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 36, 4679528 words of T-count <= 36 within 0.0009765625 of the coset, 0s
+tube: max required c over the band = 825.0 at tau=23, eps=0.00048828, N=1704
+grid, all 1606 moduli 3..1608, tau 10..36: max required c = 365.9 (Q=960, tau=23, eps=0.00055513, N=1000, 2^tau eps^2=2.585); tuned Q only: 344.7 (Q=1340); post-onset: 365.9; 27s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 804, 956, 960, 1024, 1137, 1168, 1276, 1312, 1340, 1360, 1420, 1488, 1512], tau <= 36: max 365.9 at Q=960, tau=23
+worst cell: Q=960 (Q_eps=1414), eps=0.0005551348 (jump at 0.0005551347), tau=23: N=1000, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 352, 608], required c = 365.9
+dyadic cell eps=2^-10, Q=804: grid shells [4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 320, 448, 256, 64, 832, 768, 3616, 5568, 10784, 23456, 48960, 101792, 192192, 389472, 776672]; grid shell/Haar at t=tau_max: 0.988; tube shell/Haar at t=tau_max: 0.997
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L10.json  (total 28s)
+==== 2026-10-12 09:49:23 band L=23: eps in (5.960464477539063e-08, 1.1920928955078125e-07], tau <= 64, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 23 --K 18 --name identity  code {"script_sha256_16": "e971ea63986f28a9", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+==== 2026-10-12 09:49:23 band L=22: eps in (1.1920928955078125e-07, 2.384185791015625e-07], tau <= 62, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 22 --K 18 --name identity  code {"script_sha256_16": "e971ea63986f28a9", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 19:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 19:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 20:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 20:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 21:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 21:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 22:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 22:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 23:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 23:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 24:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 24:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 25:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 25:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 26:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 26:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 27:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 27:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 28:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 28:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 29:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 30:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 29:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 31:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 30:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 32:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 31:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 33:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 32:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 34:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 33:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 35:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 34:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 36:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 35:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 37:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 36:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 38:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 37:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 39:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 38:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 39:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 40:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 41:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 40:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 41:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 42:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 42:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 43:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 44:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 43:         32 torus words,         9 (c,d) pairs, 0.0s
+  level t= 45:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 44:         64 torus words,        17 (c,d) pairs, 0.0s
+  level t= 46:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 45:         64 torus words,        25 (c,d) pairs, 0.0s
+  level t= 47:          0 torus words,        25 (c,d) pairs, 0.0s
+  level t= 48:        192 torus words,        49 (c,d) pairs, 0.0s
+  level t= 46:       2112 torus words,        41 (c,d) pairs, 0.0s
+  level t= 49:        640 torus words,        81 (c,d) pairs, 0.0s
+  level t= 50:        704 torus words,       153 (c,d) pairs, 0.0s
+  level t= 47:       4128 torus words,        73 (c,d) pairs, 0.0s
+  level t= 51:        288 torus words,       313 (c,d) pairs, 0.0s
+  level t= 48:       2240 torus words,       161 (c,d) pairs, 0.0s
+  level t= 52:        960 torus words,       617 (c,d) pairs, 0.0s
+  level t= 49:        640 torus words,       321 (c,d) pairs, 0.0s
+  level t= 50:       1344 torus words,       633 (c,d) pairs, 0.0s
+  level t= 53:       4000 torus words,      1249 (c,d) pairs, 0.0s
+  level t= 51:       5152 torus words,      1289 (c,d) pairs, 0.0s
+  level t= 54:       9216 torus words,      2529 (c,d) pairs, 0.0s
+  level t= 52:      11840 torus words,      2561 (c,d) pairs, 0.0s
+  level t= 55:      20864 torus words,      5041 (c,d) pairs, 0.1s
+  level t= 53:      18336 torus words,      5089 (c,d) pairs, 0.1s
+  level t= 56:      42816 torus words,     10097 (c,d) pairs, 0.1s
+  level t= 54:      34496 torus words,     10137 (c,d) pairs, 0.1s
+  level t= 57:      75936 torus words,     20193 (c,d) pairs, 0.2s
+  level t= 55:      79616 torus words,     20265 (c,d) pairs, 0.2s
+  level t= 58:     141312 torus words,     40353 (c,d) pairs, 0.4s
+  level t= 56:     165952 torus words,     40537 (c,d) pairs, 0.4s
+  level t= 59:     277120 torus words,     80793 (c,d) pairs, 0.8s
+  level t= 57:     311680 torus words,     80953 (c,d) pairs, 0.8s
+  level t= 60:     568768 torus words,    161697 (c,d) pairs, 1.6s
+  level t= 58:     591168 torus words,    161745 (c,d) pairs, 1.6s
+  level t= 59:    1176544 torus words,    323449 (c,d) pairs, 3.4s
+  level t= 61:    1156288 torus words,    323369 (c,d) pairs, 3.5s
+  level t= 60:    2375168 torus words,    646841 (c,d) pairs, 6.3s
+  level t= 62:    2326016 torus words,    646753 (c,d) pairs, 6.4s
+  level t= 61:    4770272 torus words,   1293633 (c,d) pairs, 13.8s
+  level t= 63:    4690016 torus words,   1293657 (c,d) pairs, 15.9s
+  level t= 62:    9521472 torus words,   2587297 (c,d) pairs, 27.2s
+enumeration: torus levels <= 62, 19072328 words of T-count <= 62 within 2.384185791015625e-07 of the coset, 56s
+tube: max required c over the band = 980.8 at tau=47, eps=0.00000021, N=6280
+  level t= 64:    9407296 torus words,   2587177 (c,d) pairs, 39.6s
+enumeration: torus levels <= 64, 18722440 words of T-count <= 64 within 1.1920928955078125e-07 of the coset, 72s
+tube: max required c over the band = 113.2 at tau=49, eps=0.00000011, N=840
+grid, all 13176792 moduli 3..13176794, tau 36..52: max required c = 110.2 (Q=5888960, tau=49, eps=0.00000011, N=840, 2^tau eps^2=6.663); tuned Q only: 108.4 (Q=7162008); post-onset: 110.2; 145s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 5413416, 5888960, 6003312, 6138344, 6588397, 6728240, 6845960, 6877752, 6878352, 6897544, 7162008, 8388608, 9317400], tau <= 64: max 110.2 at Q=5888960, tau=49
+worst cell: Q=5888960 (Q_eps=7219038), eps=1.087954e-07 (jump at 0.0000001088), tau=49: N=840, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 192, 640], required c = 110.2
+dyadic cell eps=2^-23, Q=6588397: grid shells [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 192, 192, 80, 336, 1136, 2888, 7280, 14152, 24960, 48304, 94416, 194264, 390768, 776080, 1562160, 3119368]; grid shell/Haar at t=tau_max: 0.996; tube shell/Haar at t=tau_max: 0.997
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L23.json  (total 232s)
+grid, all 6588395 moduli 3..6588397, tau 34..50: max required c = 578.5 (Q=2919736, tau=47, eps=0.00000024, N=4616, 2^tau eps^2=7.803); tuned Q only: 492.6 (Q=3500424); post-onset: 578.5; 221s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 2841280, 2919736, 2936976, 2947488, 3049816, 3094808, 3292092, 3294198, 3339536, 3462984, 3500424, 4194304, 4658700], tau <= 62: max 578.5 at Q=2919736, tau=47
+worst cell: Q=2919736 (Q_eps=3335448), eps=2.3547e-07 (jump at 0.0000002355), tau=47: N=4616, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1536, 3072], required c = 578.5
+dyadic cell eps=2^-22, Q=3294198: grid shells [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 32, 448, 976, 544, 224, 512, 1296, 4256, 5904, 12416, 26064, 54448, 103936, 199744, 384880, 782960, 1588720, 3175472]; grid shell/Haar at t=tau_max: 1.010; tube shell/Haar at t=tau_max: 1.009
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L22.json  (total 287s)
+==== 2026-10-12 09:54:11 band L=24: eps in (2.9802322387695312e-08, 5.960464477539063e-08], tau <= 66, frame identity: '',''  cmd: scripts/torus_tube_enum.py band --L 24 --K 18 --name identity  code {"script_sha256_16": "e971ea63986f28a9", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+  level t=  0:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  1:          4 torus words,         1 (c,d) pairs, 0.0s
+  level t=  2:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  3:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  4:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  5:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  6:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  7:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  8:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t=  9:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 10:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 11:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 12:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 13:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 14:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 15:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 16:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 17:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 18:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 19:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 20:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 21:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 22:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 23:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 24:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 25:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 26:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 27:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 28:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 29:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 30:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 31:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 32:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 33:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 34:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 35:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 36:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 37:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 38:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 39:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 40:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 41:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 42:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 43:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 44:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 45:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 46:          0 torus words,         1 (c,d) pairs, 0.0s
+  level t= 47:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 48:          0 torus words,         9 (c,d) pairs, 0.0s
+  level t= 49:          0 torus words,        17 (c,d) pairs, 0.0s
+  level t= 50:          0 torus words,        33 (c,d) pairs, 0.0s
+  level t= 51:         32 torus words,        81 (c,d) pairs, 0.0s
+  level t= 52:        192 torus words,       153 (c,d) pairs, 0.0s
+  level t= 53:        480 torus words,       313 (c,d) pairs, 0.0s
+  level t= 54:       1792 torus words,       617 (c,d) pairs, 0.0s
+  level t= 55:       5088 torus words,      1257 (c,d) pairs, 0.0s
+  level t= 56:      10304 torus words,      2521 (c,d) pairs, 0.0s
+  level t= 57:      18944 torus words,      5025 (c,d) pairs, 0.1s
+  level t= 58:      35904 torus words,     10097 (c,d) pairs, 0.1s
+  level t= 59:      71840 torus words,     20161 (c,d) pairs, 0.2s
+  level t= 60:     151552 torus words,     40377 (c,d) pairs, 0.4s
+  level t= 61:     300672 torus words,     80793 (c,d) pairs, 0.9s
+  level t= 62:     592512 torus words,    161641 (c,d) pairs, 1.7s
+  level t= 63:    1150624 torus words,    323393 (c,d) pairs, 3.9s
+  level t= 64:    2268736 torus words,    646929 (c,d) pairs, 8.1s
+  level t= 65:    4616384 torus words,   1293737 (c,d) pairs, 18.5s
+  level t= 66:    9283712 torus words,   2587313 (c,d) pairs, 39.1s
+enumeration: torus levels <= 66, 18508776 words of T-count <= 66 within 5.960464477539063e-08 of the coset, 75s
+tube: max required c over the band = 76.6 at tau=56, eps=0.00000005, N=11752
+grid, all 26353587 moduli 3..26353589, tau 38..54: max required c = 34.8 (Q=20221976, tau=54, eps=0.00000003, N=808, 2^tau eps^2=19.886); tuned Q only: 32.5 (Q=20221976); post-onset: 34.8; 151s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 13176794, 16777216, 17410464, 17889824, 18539632, 18634801, 20221976, 21698448, 22244480, 22347416, 22837656, 22849232, 23380392], tau <= 66: max 51.9 at Q=17410464, tau=55
+worst cell: Q=20221976 (Q_eps=23639069), eps=3.322458e-08 (jump at 0.0000000332), tau=54: N=808, shells [4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 64, 64, 640], required c = 34.8
+dyadic cell eps=2^-24, Q=13176794: grid shells [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 32, 144, 608, 1712, 2944, 5888, 12672, 24208, 51456, 101584, 195216, 377296, 754800, 1524624, 3097168]; grid shell/Haar at t=tau_max: 1.000; tube shell/Haar at t=tau_max: 0.984
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_identity_L24.json  (total 234s)

@@ -1,0 +1,72 @@
+==== 2026-10-12 08:54:33 band L=10: eps in (0.00048828125, 0.0009765625], tau <= 34, frame arith_t1: 'SHTSSHSS','HTHSHSSH'  cmd: scripts/torus_tube_enum.py band --L 10 --K 14 --G1 SHTSSHSS --G2 HTHSHSSH --name arith_t1  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+==== 2026-10-12 08:54:33 band L=6: eps in (0.0078125, 0.015625], tau <= 26, frame arith_t1: 'SHTSSHSS','HTHSHSSH'  cmd: scripts/torus_tube_enum.py band --L 6 --K 14 --G1 SHTSSHSS --G2 HTHSHSSH --name arith_t1  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 28, 1181888 words of T-count <= 26 within 0.015625 of the coset, 7s
+tube: max required c over the band = 81.5 at tau=14, eps=0.01160702, N=216
+enumeration: torus levels <= 36, 1175048 words of T-count <= 34 within 0.0009765625 of the coset, 7s
+tube: max required c over the band = 469.0 at tau=23, eps=0.00048828, N=992
+grid, all 98 moduli 3..100, tau 0..26: max required c = 28.5 (Q=88, tau=21, eps=0.00888348, N=4768, 2^tau eps^2=165.499); tuned Q only: 28.5 (Q=88); post-onset: 28.5; 1s
+grid, selected moduli [8, 16, 32, 50, 60, 64, 71, 72, 80, 84, 88, 90, 92, 96, 97, 98], tau <= 26: max 28.5 at Q=88, tau=21
+worst cell: Q=88 (Q_eps=88), eps=0.008883477 (jump at 0.0088834765), tau=21: N=4768, shells [2, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 8, 0, 16, 32, 8, 64, 88, 288, 488, 1120, 2648], required c = 28.5
+dyadic cell eps=2^-6, Q=50: grid shells [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 16, 48, 40, 176, 392, 608, 1504, 3216, 6312, 11320, 25240, 49552, 94992, 194240]; grid shell/Haar at t=tau_max: 0.993; tube shell/Haar at t=tau_max: 1.001
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_arith_t1_L6.json  (total 11s)
+grid, all 1606 moduli 3..1608, tau 0..34: max required c = 253.0 (Q=1340, tau=22, eps=0.00057597, N=404, 2^tau eps^2=1.391); tuned Q only: 244.7 (Q=1340); post-onset: 253.0; 15s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 804, 956, 960, 1024, 1137, 1168, 1240, 1276, 1312, 1340, 1360, 1488, 1512], tau <= 34: max 253.0 at Q=1340, tau=22
+worst cell: Q=1340 (Q_eps=1363), eps=0.0005759651 (jump at 0.0005759650), tau=22: N=404, shells [2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 120, 8, 272], required c = 253.0
+dyadic cell eps=2^-10, Q=804: grid shells [2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 16, 160, 224, 240, 272, 1096, 1104, 2880, 5816, 11960, 23920, 47408, 98304, 191384]; grid shell/Haar at t=tau_max: 0.974; tube shell/Haar at t=tau_max: 1.001
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_arith_t1_L10.json  (total 23s)
+==== 2026-10-12 08:55:32 band L=8: eps in (0.001953125, 0.00390625], tau <= 30, frame arith_t1: 'SHTSSHSS','HTHSHSSH'  cmd: scripts/torus_tube_enum.py band --L 8 --K 14 --G1 SHTSSHSS --G2 HTHSHSSH --name arith_t1  code {"script_sha256_16": "c2a57cf9460921d5", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 32, 1173568 words of T-count <= 30 within 0.00390625 of the coset, 4s
+tube: max required c over the band = 83.2 at tau=21, eps=0.00356256, N=2264
+grid, all 400 moduli 3..402, tau 0..30: max required c = 38.0 (Q=320, tau=20, eps=0.00195312, N=200, 2^tau eps^2=4.000); tuned Q only: 35.6 (Q=392); post-onset: 38.0; 3s
+grid, selected moduli [8, 16, 32, 64, 128, 201, 256, 284, 316, 320, 334, 364, 376, 384, 386, 388, 392, 398], tau <= 30: max 38.0 at Q=320, tau=20
+worst cell: Q=320 (Q_eps=402), eps=0.001953125 (jump at 0.0019531250), tau=20: N=200, shells [2, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 32, 144], required c = 38.0
+dyadic cell eps=2^-8, Q=201: grid shells [1, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 32, 76, 280, 352, 720, 1628, 3184, 6008, 11888, 24964, 48000, 96948, 197320]; grid shell/Haar at t=tau_max: 1.004; tube shell/Haar at t=tau_max: 1.002
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_arith_t1_L8.json  (total 7s)
+==== 2026-10-12 09:05:01 band L=9: eps in (0.0009765625, 0.001953125], tau <= 32, frame arith_t1: 'SHTSSHSS','HTHSHSSH'  cmd: scripts/torus_tube_enum.py band --L 9 --K 14 --G1 SHTSSHSS --G2 HTHSHSSH --name arith_t1  code {"script_sha256_16": "2941eecd5d611deb", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 34, 1155048 words of T-count <= 32 within 0.001953125 of the coset, 10s
+tube: max required c over the band = 149.2 at tau=23, eps=0.00097656, N=1248
+grid, all 802 moduli 3..804, tau 0..32: max required c = 76.9 (Q=640, tau=23, eps=0.00101028, N=712, 2^tau eps^2=8.562); tuned Q only: 68.8 (Q=640); post-onset: 76.9; 14s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 402, 512, 552, 568, 572, 640, 672, 684, 700, 752, 760, 768, 788], tau <= 32: max 76.9 at Q=640, tau=23
+worst cell: Q=640 (Q_eps=777), eps=0.001010278 (jump at 0.0010102776), tau=23: N=712, shells [2, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 88, 8, 192, 416], required c = 76.9
+dyadic cell eps=2^-9, Q=402: grid shells [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 8, 112, 48, 240, 488, 648, 1720, 3152, 5480, 11472, 23208, 48248, 97352, 192384]; grid shell/Haar at t=tau_max: 0.979; tube shell/Haar at t=tau_max: 0.980
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_arith_t1_L9.json  (total 26s)
+==== 2026-10-12 09:07:04 band L=11: eps in (0.000244140625, 0.00048828125], tau <= 36, frame arith_t1: 'SHTSSHSS','HTHSHSSH'  cmd: scripts/torus_tube_enum.py band --L 11 --K 14 --G1 SHTSSHSS --G2 HTHSHSSH --name arith_t1  code {"script_sha256_16": "2941eecd5d611deb", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 38, 1161776 words of T-count <= 36 within 0.00048828125 of the coset, 6s
+tube: max required c over the band = 528.5 at tau=23, eps=0.00045996, N=992
+grid, all 3214 moduli 3..3216, tau 0..36: max required c = 181.7 (Q=1360, tau=23, eps=0.00048196, N=408, 2^tau eps^2=1.949); tuned Q only: 148.0 (Q=1696); post-onset: 181.7; 22s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 952, 956, 1024, 1160, 1168, 1360, 1420, 1488, 1584, 1608, 1620, 1696, 2048, 2274], tau <= 36: max 181.7 at Q=1360, tau=23
+worst cell: Q=1360 (Q_eps=1629), eps=0.0004819556 (jump at 0.0004819556), tau=23: N=408, shells [2, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 48, 16, 128, 200], required c = 181.7
+dyadic cell eps=2^-11, Q=1608: grid shells [2, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 8, 32, 80, 48, 144, 232, 320, 912, 1392, 3296, 5792, 11344, 24120, 45048, 94272, 189584]; grid shell/Haar at t=tau_max: 0.965; tube shell/Haar at t=tau_max: 0.997
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_arith_t1_L11.json  (total 29s)
+==== 2026-10-12 09:08:34 band L=12: eps in (0.0001220703125, 0.000244140625], tau <= 38, frame arith_t1: 'SHTSSHSS','HTHSHSSH'  cmd: scripts/torus_tube_enum.py band --L 12 --K 14 --G1 SHTSSHSS --G2 HTHSHSSH --name arith_t1  code {"script_sha256_16": "2941eecd5d611deb", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 40, 1166032 words of T-count <= 38 within 0.000244140625 of the coset, 3s
+tube: max required c over the band = 108.2 at tau=30, eps=0.00018341, N=3976
+grid, all 6431 moduli 3..6433, tau 0..38: max required c = 58.7 (Q=2792, tau=28, eps=0.00018980, N=632, 2^tau eps^2=9.670); tuned Q only: 52.2 (Q=3696); post-onset: 58.7; 66s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 2792, 3116, 3216, 3544, 3696, 3744, 4024, 4096, 4488, 4549, 4832, 5872, 6216], tau <= 38: max 58.7 at Q=2792, tau=28
+worst cell: Q=2792 (Q_eps=4138), eps=0.0001897984 (jump at 0.0001897983), tau=28: N=632, shells [2, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 32, 160, 368], required c = 58.7
+dyadic cell eps=2^-12, Q=3216: grid shells [2, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 64, 112, 408, 704, 1200, 3072, 6008, 11432, 25112, 49168, 96472, 198576]; grid shell/Haar at t=tau_max: 1.010; tube shell/Haar at t=tau_max: 0.994
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_arith_t1_L12.json  (total 69s)
+==== 2026-10-12 09:15:10 band L=13: eps in (6.103515625e-05, 0.0001220703125], tau <= 40, frame arith_t1: 'SHTSSHSS','HTHSHSSH'  cmd: scripts/torus_tube_enum.py band --L 13 --K 14 --G1 SHTSSHSS --G2 HTHSHSSH --name arith_t1  code {"script_sha256_16": "2941eecd5d611deb", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 42, 1182720 words of T-count <= 40 within 0.0001220703125 of the coset, 22s
+tube: max required c over the band = 110.8 at tau=29, eps=0.00006736, N=336
+grid, all 12865 moduli 3..12867, tau 0..40: max required c = 98.3 (Q=10704, tau=29, eps=0.00006936, N=320, 2^tau eps^2=2.583); tuned Q only: 93.4 (Q=10704); post-onset: 98.3; 229s
+grid, selected moduli [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 4488, 6433, 6560, 6832, 6904, 8192, 8632, 8976, 9099, 9936, 10360, 10704, 11048], tau <= 40: max 98.3 at Q=10704, tau=29
+worst cell: Q=10704 (Q_eps=11322), eps=6.936436e-05 (jump at 0.0000693644), tau=29: N=320, shells [2, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 32, 16, 96, 160], required c = 98.3
+dyadic cell eps=2^-13, Q=6433: grid shells [1, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 8, 48, 156, 244, 344, 844, 1680, 2780, 6208, 12612, 23080, 51228, 97744, 196636]; grid shell/Haar at t=tau_max: 1.000; tube shell/Haar at t=tau_max: 1.004
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_arith_t1_L13.json  (total 253s)
+==== 2026-10-12 09:27:46 band L=5: eps in (0.015625, 0.03125], tau <= 24, frame arith_t1: 'SHTSSHSS','HTHSHSSH'  cmd: scripts/torus_tube_enum.py band --L 5 --K 14 --G1 SHTSSHSS --G2 HTHSHSSH --name arith_t1  code {"script_sha256_16": "2941eecd5d611deb", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 26, 1189424 words of T-count <= 24 within 0.03125 of the coset, 16s
+tube: max required c over the band = 146.5 at tau=11, eps=0.02144784, N=168
+grid, all 48 moduli 3..50, tau 0..24: max required c = 112.0 (Q=32, tau=11, eps=0.02453096, N=168, 2^tau eps^2=1.232); tuned Q only: 112.0 (Q=32); post-onset: 112.0; 1s
+grid, selected moduli [4, 8, 12, 16, 20, 22, 24, 25, 28, 32, 34, 35], tau <= 24: max 112.0 at Q=32, tau=11
+worst cell: Q=32 (Q_eps=32), eps=0.02453096 (jump at 0.0245309572), tau=11: N=168, shells [2, 0, 2, 4, 0, 0, 0, 0, 16, 8, 32, 104], required c = 112.0
+dyadic cell eps=2^-5, Q=25: grid shells [1, 0, 0, 2, 0, 0, 0, 0, 8, 4, 8, 40, 24, 96, 200, 324, 696, 1500, 3172, 5920, 13000, 24308, 48820, 99184, 199200]; grid shell/Haar at t=tau_max: 1.019; tube shell/Haar at t=tau_max: 1.005
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_arith_t1_L5.json  (total 19s)
+==== 2026-10-12 09:30:24 band L=7: eps in (0.00390625, 0.0078125], tau <= 28, frame arith_t1: 'SHTSSHSS','HTHSHSSH'  cmd: scripts/torus_tube_enum.py band --L 7 --K 14 --G1 SHTSSHSS --G2 HTHSHSSH --name arith_t1  code {"script_sha256_16": "2941eecd5d611deb", "git_head": "44352b9", "python_flint": "0.9.0", "numpy": "2.5.3"}
+enumeration: torus levels <= 30, 1177384 words of T-count <= 28 within 0.0078125 of the coset, 14s
+tube: max required c over the band = 96.0 at tau=21, eps=0.00540099, N=5920
+grid, all 199 moduli 3..201, tau 0..28: max required c = 44.9 (Q=144, tau=21, eps=0.00544441, N=2840, 2^tau eps^2=62.163); tuned Q only: 44.9 (Q=144); post-onset: 44.9; 3s
+grid, selected moduli [8, 16, 32, 64, 92, 100, 104, 112, 118, 128, 132, 136, 140, 142, 144], tau <= 28: max 44.9 at Q=144, tau=21
+worst cell: Q=144 (Q_eps=144), eps=0.005444408 (jump at 0.0054444074), tau=21: N=2840, shells [2, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 56, 208, 400, 648, 1488], required c = 44.9
+dyadic cell eps=2^-7, Q=100: grid shells [2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 16, 40, 184, 312, 824, 1776, 2584, 6480, 11928, 25040, 46792, 98696, 191560]; grid shell/Haar at t=tau_max: 0.980; tube shell/Haar at t=tau_max: 1.000
+wrote /Users/yangjinsey/Desktop/memory-magic-exchange-law-main/scripts/../data/torus_tube_arith_t1_L7.json  (total 19s)

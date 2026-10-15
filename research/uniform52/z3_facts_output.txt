@@ -1,0 +1,4 @@
+z3 5.1.0
+(i)  HIGH(g,y) > T with y >= 6/5: unsat  (unsat = fact holds)
+(ii) tangent piece, y < 6/5, X >= 6, N2 or N3 != pm: unsat  (unsat = fact holds)
+(ii) crossing piece, y < 6/5, X >= 6, N2 or N3 != pm: unsat  (unsat = fact holds)

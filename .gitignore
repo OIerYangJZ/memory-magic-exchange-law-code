@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+
+# LaTeX build artifacts
+*.bbl
+*.blg
+*Notes.bib
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.out
+*.synctex.gz
+main.pdf
+out/
+
+# QIP build output
+qip/*.pdf
+qip/
+
+.claude/settings.local.json
+research/colab/HOST
+
+# Supplemental Material build output
+supplement.pdf
