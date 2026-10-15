@@ -156,3 +156,8 @@ tie-breaking.
   2.721, 3.020; certified family 3.333, 3.334, 3.113, the last at `eps = 1e-10` with gridsynth).
 
 `data/enum_res2.pkl.bak-t19` is the `t <= 19` enumeration, kept for comparison.
+
+## License
+
+Code is under the MIT License; data, manuscript sources, figures and notes are under CC BY 4.0.
+See `LICENSE` for which files fall under which.
