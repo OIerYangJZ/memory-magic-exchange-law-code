@@ -159,5 +159,11 @@ tie-breaking.
 
 ## License
 
-Code is under the MIT License; data, manuscript sources, figures and notes are under CC BY 4.0.
-See `LICENSE` for which files fall under which.
+- Code (the files in `scripts/` and the scripts and programs in `research/`: `*.py`, `*.cpp`, `*.sh`):
+  MIT License, see [`LICENSE`](LICENSE).
+- Everything else (data in `data/`, outputs and certificates in `research/`, `main.tex`, `supplement.tex`,
+  the figures, `popular_summary.txt`, this README and the notes in `research/`): Creative Commons
+  Attribution 4.0 International, see [`LICENSE-CC-BY`](LICENSE-CC-BY).
+
+When reusing either, please cite J. Yang, H. Luan, Y. Li, and X.-H. Deng, "A Memory–Magic Exchange Law
+in Streaming Clifford+T Compilation", [arXiv:2609.37368](https://arxiv.org/abs/2609.37368).

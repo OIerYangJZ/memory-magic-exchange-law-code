@@ -1,8 +1,4 @@
-This repository is licensed under two licenses.
-
-1. Code: all source code (the files in scripts/, the scripts and programs in
-   research/, and any other *.py, *.cpp, *.sh files) is licensed under the
-   MIT License below.
+MIT License below.
 
 2. Everything else: data (data/, outputs and certificates in research/),
    the manuscript sources (main.tex, supplement.tex), the figures,
