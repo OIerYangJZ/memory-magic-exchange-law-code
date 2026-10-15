@@ -1,17 +1,3 @@
-MIT License below.
-
-2. Everything else: data (data/, outputs and certificates in research/),
-   the manuscript sources (main.tex, supplement.tex), the figures,
-   popular_summary.txt, README.md and the notes in research/ are licensed under
-   the Creative Commons Attribution 4.0 International License (CC BY 4.0),
-   https://creativecommons.org/licenses/by/4.0/legalcode
-
-When reusing either, please cite
-J. Yang, H. Luan, Y. Li, and X.-H. Deng, "A Memory-Magic Exchange Law in
-Streaming Clifford+T Compilation", arXiv:2609.37368.
-
---------------------------------------------------------------------------------
-
 MIT License
 
 Copyright (c) 2026 Jinze Yang, Haotong Luan, Yangyang Li, Xiu-Hao Deng
