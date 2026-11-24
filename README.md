@@ -87,6 +87,20 @@ cost-4/5 axes. The keys are now canonical and the samples are taken from sorted 
 fresh `scan2.py` run is deterministic across machines; it samples a different set of forty
 cost-4/5 axes, and the numbers in the paper are those of `scan2_report.py` on the stored file.
 
+### Typical z-rotations (IEEE Transactions on Information Theory version)
+
+The table above uses the numbering of the PRX Quantum version. The IEEE TIT version of the paper
+("The Memory–Magic Tradeoff in One-Pass Clifford+T Compilation") adds an explicit lower bound for
+typical z-rotations; its numbers and its Fig. 2 come from the following files.
+
+| Paper (TIT version) | Script | Input / output in `data/` |
+|---|---|---|
+| Thm. 2 (typical z-rotations: at `eps = 1e-10` all but 1% of angles need at least 75 T gates, 74 on the tuned grid; also `eps = 1e-6, 1e-15`) and Thm. 3 (volume law at Clifford cosets with the constant 785; the values of `R(X)`) | `thm1_explicit.py`; `--selfcheck` compares the bound with brute-force counts (uses `research/zomega.py`); `--exact` evaluates the count with the actual representation numbers | stdout only |
+| Fig. 2(a), (c): exact counts near the torus `{R_z(theta)}` to T-count 28, and exact optima on the tuned grid | `typical_enum.py` (about 3 min on 10 cores; a fresh run reproduces the stored file except its `runtime_s` field) | `typical_enum.json` |
+| Fig. 2(b), (c): Ross–Selinger at nominal tolerance `eps = 1e-10` (20 000 grid angles; 200 re-verified) | `gridsynth_run.py --dproj 1e-10 --out gridsynth_tau_dproj_eps.json` (see above) | `gridsynth_tau_dproj_eps.json` |
+| Fig. 2 caption: Ross–Selinger against the exact optimum on grid angles at `eps = 2^-5, ..., 2^-10` | `typical_gridsynth_check.py` (needs `pygridsynth`) | `typical_gridsynth_check.json` |
+| Fig. 2 | `make_fig_typical.py` | reads the two JSON files above, writes `fig_typical.pdf` (byte-identical to the figure in the paper) |
+
 ## Quick reproduction
 
 Cheap (seconds to a couple of minutes, all from cached data):
