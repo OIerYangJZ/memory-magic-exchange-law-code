@@ -100,6 +100,8 @@ typical z-rotations; its numbers and its Fig. 2 come from the following files.
 | Fig. 2(b), (c): Ross–Selinger at nominal tolerance `eps = 1e-10` (20 000 grid angles; 200 re-verified) | `gridsynth_run.py --dproj 1e-10 --out gridsynth_tau_dproj_eps.json` (see above) | `gridsynth_tau_dproj_eps.json` |
 | Fig. 2 caption: Ross–Selinger against the exact optimum on grid angles at `eps = 2^-5, ..., 2^-10` | `typical_gridsynth_check.py` (needs `pygridsynth`) | `typical_gridsynth_check.json` |
 | Fig. 2 | `make_fig_typical.py` | reads the two JSON files above, writes `fig_typical.pdf` (byte-identical to the figure in the paper) |
+| Cor. 4 (zero-memory endpoint of the rate-two bound: at `eps = 1e-10`, `S = 0`, `delta = 0`, at least 39.968 committed T gates per coordinate and round) | `endpoint_bound.py` (exact rational lower bound with `w = 2^14`, and a 60-digit evaluation with `w` optimised per `tau`) | stdout only |
+| Fig. 4 (the tradeoff family against the lower bounds; the PRX Quantum Fig. 3 with a legend free of PRX Quantum theorem numbers and the endpoint of Cor. 4 marked) | `make_fig_frontier_tit.py` | same inputs as `make_fig2.py`; writes `fig_frontier_tit.png` |
 
 ## Quick reproduction
 
